@@ -1,448 +1,238 @@
 <span>upcoming schedule</span>
 
--   Aug 28 - Coordinate Transformation, Principal Values
+-   Aug 29 - Griffith Fracture
 
--   Aug 30 - Tensor Calculus
+-   Aug 31 - Griffith Fracture
 
--   Sep 4 - Labor Day (No Class)
+-   Sep 5 - Elastic Stress Field, Homework 1 Due
 
--   Sep 6 - Homework 1 Due, Displacement and Strain
+-   Sep 7 - Elastic Stress Field
 
-Coordinate Transformation
-=========================
-
-<span>coordinate transformation in two dimensions</span>
-
-(0,3) node (yaxis) \[above\] <span>*x*<sub>2</sub></span> |- (3,0) node (xaxis) \[right\] <span>*x*<sub>1</sub></span>; (0,0) – (-2.12,2.12) node (yprime) \[above left\] <span>*x*<sub>2</sub><sup>′</sup></span>; (0,0) – (2.12,2.12) node (xprime) \[above right\] <span>*x*<sub>1</sub><sup>′</sup></span>; (0,0) – (1.5,1.5) node (v) \[above left\] <span>*v*</span>;
-
-<span>coordinate transformation in two dimensions</span>
-
--   The vector, *v*, remains fixed, but we transform our coordinate system
-
--   In the new coordinate system, the *x*<sub>2</sub><sup>′</sup> portion of *v* is zero.
-
--   To transform the coordinate system, we first define some unit vectors.
-
--   $\\hat{e}\_1$ is a unit vector in the direction of *x*<sub>1</sub>, while $\\hat{e}\_1^\\prime$ is a unit vector in the direction of *x*<sub>1</sub><sup>′</sup>
-
-<span>coordinate transformation in two dimensions</span>
-
-(0,3) node (yaxis) \[above\] <span>*x*<sub>2</sub></span> |- (3,0) node (xaxis) \[right\] <span>*x*<sub>1</sub></span>; (0,1) node (j) \[above right\] <span>$\\hat{e}\_2$</span> |- (1,0) node (i) \[below right\] <span>$\\hat{e}\_1$</span>; (0,0) – (-2.12,2.12) node (yprime) \[above left\] <span>*x*<sub>2</sub><sup>′</sup></span>; (0,0) – (2.12,2.12) node (xprime) \[above right\] <span>*x*<sub>1</sub><sup>′</sup></span>; (0,0) – (-.707,.707) node (jprime) \[above right\] <span>$\\hat{e}\_2^\\prime$</span>; (0,0) – (.707,.707) node (iprime) \[right\] <span>$\\hat{e}\_1^\\prime$</span>; (0,0) – (1.5,1.5) node (v) \[above left\] <span>*v*</span>; (0.5,0) arc (0:45:0.5) node (theta) \[below right = -0.1cm and 0.3cm\] <span>*θ*</span>;
-
-<span>coordinate transformation in two dimensions</span>
-
--   For this example, let us assume *v* = ⟨2, 2⟩ and *θ* = 45<sup>∘</sup>
-
--   We can write the transformed unit vectors, $\\hat{e}\_1^\\prime$ and $\\hat{e}\_2^\\prime$ in terms of $\\hat{e}\_1$, $\\hat{e}\_2$ and the angle of rotation, *θ*.
-    $$\\begin{aligned}
-    \\hat{e}\_1^\\prime &= \\langle \\hat{e}\_1 \\cos \\theta , \\hat{e}\_2 \\sin \\theta\\rangle\\\\
-    \\hat{e}\_2^\\prime &= \\langle -\\hat{e}\_1 \\sin \\theta , \\hat{e}\_2 \\cos \\theta \\rangle\\end{aligned}$$
-
-<span>coordinate transformation in two dimensions</span>
-
--   We can write the vector, *v*, in terms of the unit vectors describing our axis system
-
--   $v = v\_1 \\hat{e}\_1 + v\_2 \\hat{e}\_2$
-
--   (note: $\\hat{e}\_1=\\langle 1, 0 \\rangle$ and $\\hat{e}\_2 = \\langle 0,1 \\rangle$)
-
--   *v* = ⟨2, 2⟩=2⟨1, 0⟩+2⟨0, 1⟩
-
-<span>coordinate transformation in two dimensions</span>
-
--   When expressed in the transformed coordinate system, we refer to *v*<sup>′</sup>
-
--   *v*<sup>′</sup> = ⟨*v*<sub>1</sub>cos*θ* + *v*<sub>2</sub>sin*θ*, −*v*<sub>1</sub>sin*θ* + *v*<sub>2</sub>cos*θ*⟩
-
--   $v^\\prime = \\langle 2\\sqrt{2}, 0 \\rangle$
-
--   We can recover the original vector from the transformed coordinates:
-
--   $v = v\_1^\\prime \\hat{e}\_1^\\prime + v\_2^\\prime \\hat{e}\_2^\\prime$
-
--   (note: $\\hat{e}\_1^\\prime=\\langle \\frac{\\sqrt{2}}{2},\\frac{\\sqrt{2}}{2} \\rangle$ and $\\hat{e}\_2^\\prime = \\langle -\\frac{\\sqrt{2}}{2},\\frac{\\sqrt{2}}{2} \\rangle$)
-
--   $v = 2\\sqrt{2}\\langle \\frac{\\sqrt{2}}{2},\\frac{\\sqrt{2}}{2} \\rangle, 0 \\langle -\\frac{\\sqrt{2}}{2},\\frac{\\sqrt{2}}{2} \\rangle = \\langle 2, 2 \\rangle$
-
-<span>general coordinate transformation</span>
-
--   Coordinate transformation can become much more complicated in three dimensions, and with higher-order tensors
-
--   It is convenient to define a general form of the coordinate transformation in index notation
-
--   We define *Q*<sub>*i**j*</sub> as the cosine of the angle between the *x*<sub>*i*</sub><sup>′</sup> axis and the *x*<sub>*j*</sub> axis.
-
--   This is also referred to as the “direction cosine”
-    *Q*<sub>*i**j*</sub> = cos(*x*<sub>*i*</sub><sup>′</sup>, *x*<sub>*j*</sub>)
-
-<span>general coordinate transformation</span>
-
--   We can use this form on our 2D transformation example
-    $$\\begin{aligned}
-    Q\_{ij} &= \\cos (x\_i^\\prime, x\_j)\\\\ &= \\begin{bmatrix}
-    \\cos (x\_1^\\prime, x\_1) & \\cos (x\_1^\\prime, x\_2)\\\\
-    \\cos (x\_2^\\prime, x\_1) & \\cos (x\_2^\\prime, x\_2)
-    \\end{bmatrix}\\\\ &= \\begin{bmatrix}
-    \\cos \\theta & \\cos (90-\\theta)\\\\
-    \\cos (90+\\theta) & \\cos \\theta
-    \\end{bmatrix} \\\\ &= \\begin{bmatrix}
-    \\cos \\theta & \\sin \\theta \\\\
-    -\\sin \\theta & \\cos \\theta
-    \\end{bmatrix}\\end{aligned}$$
-
-<span>general coordinate transformation</span>
-
--   We can transform any-order tensor using *Q*<sub>*i**j*</sub>
-
--   Vectors (first-order tensors): *v*<sub>*i*</sub><sup>′</sup> = *Q*<sub>*i**j*</sub>*v*<sub>*j*</sub>
-
--   Matrices (second-order tensors): *σ*<sub>*m**n*</sub><sup>′</sup> = *Q*<sub>*m**i*</sub>*Q*<sub>*n**j*</sub>*σ*<sub>*i**j*</sub>
-
--   Fourth-order tensors: *C*<sub>*i**j**k**l*</sub><sup>′</sup> = *Q*<sub>*i**m*</sub>*Q*<sub>*j**n*</sub>*Q*<sub>*k**o*</sub>*Q*<sub>*l**p*</sub>*C*<sub>*m**n**o**p*</sub>
-
-<span>general coordinate transformation</span>
-
--   We can similarly use *Q*<sub>*i**j*</sub> to find tensors in the original coordinate system
-
--   Vectors (first-order tensors): *v*<sub>*i*</sub> = *Q*<sub>*j**i*</sub>*v*<sub>*j*</sub><sup>′</sup>
-
--   Matrices (second-order tensors): *σ*<sub>*m**n*</sub> = *Q*<sub>*i**m*</sub>*Q*<sub>*j**n*</sub>*σ*<sub>*i**j*</sub><sup>′</sup>
-
--   Fourth-order tensors: *C*<sub>*i**j**k**l*</sub> = *Q*<sub>*m**i*</sub>*Q*<sub>*n**j*</sub>*Q*<sub>*o**k*</sub>*Q*<sub>*p**l*</sub>*C*<sub>*m**n**o**p*</sub><sup>′</sup>
-
-<span>general coordinate transformation</span>
-
--   We can derive some interesting properties of the transformation tensor, *Q*<sub>*i**j*</sub>
-
--   We know that *v*<sub>*i*</sub> = *Q*<sub>*j**i*</sub>*v*<sub>*j*</sub><sup>′</sup> and that *v*<sub>*i*</sub><sup>′</sup> = *Q*<sub>*i**j*</sub>*v*<sub>*j*</sub>
-
--   If we substitute (changing the appropriate indexes) we find:
-
--   *v*<sub>*i*</sub> = *Q*<sub>*j**i*</sub>*Q*<sub>*j**k*</sub>*v*<sub>*k*</sub>
-
--   We can now use the Kronecker Delta to substitute *v*<sub>*i*</sub> = *δ*<sub>*i**k*</sub>*v*<sub>*k*</sub> which gives
-
--   *δ*<sub>*i**k*</sub>*v*<sub>*k*</sub> = *Q*<sub>*j**i*</sub>*Q*<sub>*j**k*</sub>*v*<sub>*k*</sub>
-
-Examples
-========
-
-<span>example</span>
-
-(0,0,0) – (3,0,0) node\[below left\] <span>*x*<sub>1</sub></span>; (0,0,0) – (0,3,0) node\[right\] <span>*x*<sub>2</sub></span>; (0,0,0) – (0,0,3) node\[above\] <span>*x*<sub>3</sub></span>;
-
--   Find *Q*<sub>*i**j*</sub><sup>1</sup> for rotation of 60<sup>∘</sup> about *x*<sub>2</sub>
-
--   Find *Q*<sub>*i**j*</sub><sup>2</sup> for rotation of 30<sup>∘</sup> about *x*<sub>3</sub><sup>′</sup>
-
--   Find *e*<sub>*i*</sub><sup>′′</sup> after both rotations
-
-<span>example</span>
-
-(0,0,0) – (3,0,0) node\[below left\] <span>*x*<sub>1</sub></span>; (0,0,0) – (0,3,0) node\[right\] <span>*x*<sub>2</sub>, *x*<sub>2</sub><sup>′</sup></span>; (0,0,0) – (0,0,3) node\[above\] <span>*x*<sub>3</sub></span>; (0,0,0) – (2.6,0,1.5) node\[above\] <span>*x*<sub>3</sub><sup>′</sup></span>; (0,0,0) – (1.5,0,-2.6) node\[below left\] <span>*x*<sub>1</sub><sup>′</sup></span>; <span>above left</span><span>*θ*<sub>1</sub></span> <span>below left</span><span>*θ*<sub>1</sub></span>
-
-<span>example</span>
-
-(0,0,0) – (3,0,0) node\[below left\] <span>*x*<sub>1</sub></span>; (0,0,0) – (0,3,0) node\[right\] <span>*x*<sub>2</sub>, *x*<sub>2</sub><sup>′</sup></span>; (0,0,0) – (0,0,3) node\[above\] <span>*x*<sub>3</sub></span>; (0,0,0) – (2.6,0,1.5) node\[above\] <span>*x*<sub>3</sub><sup>′</sup>, *x*<sub>3</sub><sup>′′</sup></span>; (0,0,0) – (1.5,0,-2.6) node\[below left\] <span>*x*<sub>1</sub><sup>′</sup></span>; <span>above left</span><span>*θ*<sub>1</sub></span> <span>below left</span><span>*θ*<sub>1</sub></span>; ; (0,0,0) – (2.6,1.5,0) node\[below right\] <span>*x*<sub>1</sub><sup>′′</sup></span>; (0,0,0) – (-1.5,2.6,0) node\[below right\] <span>*x*<sub>2</sub><sup>′′</sup></span>; ; ;
-
-<span>example</span>
-
--   *Q*<sub>*i**j*</sub><sup>1</sup> = cos(*x*<sub>*i*</sub><sup>′</sup>, *x*<sub>*j*</sub>)
-
--   *Q*<sub>*i**j*</sub><sup>2</sup> = cos(*x*<sub>*i*</sub><sup>′′</sup>, *x*<sub>*j*</sub><sup>′</sup>)
-    $$Q\_{ij}^1 = \\begin{bmatrix}
-    \\cos 60 & \\cos 90 & \\cos 150\\\\
-    \\cos 90 & \\cos 0 & \\cos 90\\\\
-    \\cos 30 & \\cos 90 & \\cos 60
-    \\end{bmatrix}$$
-    $$Q\_{ij}^2 = \\begin{bmatrix}
-    \\cos 30 & \\cos 60 & \\cos 90\\\\
-    \\cos 120 & \\cos 30 & \\cos 90\\\\
-    \\cos 90 & \\cos 90 & \\cos 0
-    \\end{bmatrix}$$
-
-<span>example</span>
-
--   We now use *Q*<sub>*i**j*</sub> to find $\\hat{e}\_i^\\prime$ and $\\hat{e}\_i^{\\prime \\prime}$
-
--   First, we need to write $\\hat{e}\_i$ in a manner more consistent with index notation
-
--   We will indicate axis direction with a superscript, e.g. $\\hat{e}\_1 = e\_i^1$
-
--   *e*<sub>*i*</sub><sup>′</sup> = *Q*<sub>*i**j*</sub><sup>1</sup>*e*<sub>*j*</sub>
-
--   *e*<sub>*i*</sub><sup>′′</sup> = *Q*<sub>*i**j*</sub><sup>2</sup>*e*<sub>*j*</sub><sup>′</sup>
-
--   How do we find *e*<sub>*i*</sub><sup>′′</sup> in terms of *e*<sub>*i*</sub>?
-
--   *e*<sub>*i*</sub><sup>′′</sup> = *Q*<sub>*i**j*</sub><sup>2</sup>*Q*<sub>*j**k*</sub><sup>1</sup>*e*<sub>*k*</sub>
-
-Principal Directions
+theoretical strength
 ====================
 
-<span>principal directions</span>
+<span>theoretical strength</span>
 
--   We defined principal directions earlier
-    (*a*<sub>*i**j*</sub> − *λ**δ*<sub>*i**j*</sub>)*n*<sub>*j*</sub> = 0
+-   We can (theoretically) predict the strength of a material from the strength of its atomic bonds
 
--   *λ* are the principal values and *n*<sub>*j*</sub> are the principal directions
+-   As the distance between atoms increases (strain) so does the attractive force between them (stress) until some critical distance when they are no longer attracted to one another (failure)
 
--   For each eigenvalue there will be a principal direction
+<span>cohesive stress</span>
 
--   We find the principal direction by substituting the solution for *λ* back into this equation
+<img src="../Figures/cohesive-force" alt="image" style="width:70.0%" />
 
-<span>example</span>
+<span>theoretical strength</span>
 
--   Find the principal directions for the earlier principal values example
+-   Using a sinusoidal approximation of strength we have
+    $$\\sigma = \\sigma\_c \\sin \\left(\\frac{2\\pi x}{\\lambda}\\right)$$
 
--   Recall *λ* = 0, 5, let us say *λ*<sub>1</sub> = 5, we find *n*<sub>*j*</sub><sup>(1)</sup> by
-    $$\\begin{bmatrix}
-    1-\\lambda\_1 & 2\\\\
-    2 & 4-\\lambda\_1
-    \\end{bmatrix} \\begin{Bmatrix}
-    n\_1 \\\\ n\_2
-    \\end{Bmatrix} = 0$$
+-   For small strains, sin(*x*)≈*x*
 
--   This gives
-    $$\\begin{bmatrix}
-    -4 & 2\\\\
-    2 & -1
-    \\end{bmatrix} \\begin{Bmatrix}
-    n\_1 \\\\ n\_2
-    \\end{Bmatrix} = 0$$
+-   We can also write in terms of the modulus of elasticity, $E = \\frac{\\sigma}{\\epsilon} = \\frac{\\sigma}{x/a\_0}$
 
-<span>example</span>
+-   This means we can write $\\sigma = \\frac{E x}{a\_0}$, substituting into the original equation we find
+    $$\\frac{E x}{a\_0} = \\sigma\_c \\frac{2\\pi x}{\\lambda}$$
 
--   We proceed to solve the equations using row-reduction, but we find
-    $$\\begin{bmatrix}
-    2 & -1\\\\
-    0 & 0
-    \\end{bmatrix} \\begin{Bmatrix}
-    n\_1 \\\\ n\_2
-    \\end{Bmatrix} = 0$$
+-   solving for *σ*<sub>*c*</sub>, we find the theoretical strength as
+    $$\\sigma\_c = \\frac{\\lambda E}{2\\pi a\_0}$$
 
--   This means we cannot uniquely solve for *n*<sub>*j*</sub>
+-   In many materials, *λ* ≈ *a*<sub>0</sub>, in which case $\\sigma\_c = \\frac{E}{2 \\pi}$
 
--   We are only concerned with the direction, magnitude is not important
+<span>energy consideration</span>
 
--   Choose *n*<sub>2</sub> = 1, solve for *n*<sub>1</sub>
+-   Surface energy is the work done to create a new surface when an atomic bond breaks
 
--   $n^{(1)} = \\langle \\frac{1}{2}, 1 \\rangle$
+-   We define *γ* as the surface energy (units of energy/area)
 
-<span>example</span>
+-   We can calcualte this surface energy in terms of the sinusoidal approximation of traction-separation
+    $$2\\gamma = \\int\_0^{\\lambda/2} \\sigma\_c \\sin \\left(\\frac{2\\pi x}{\\lambda}\\right) dx = \\frac{\\lambda \\sigma\_c}{\\pi}$$
 
--   Similarly, for *λ*<sub>2</sub> = 0, we find
-    $$\\begin{bmatrix}
-    1 & 2\\\\
-    2 & 4
-    \\end{bmatrix} \\begin{Bmatrix}
-    n\_1 \\\\ n\_2
-    \\end{Bmatrix} = 0$$
+<span>energy consideration</span>
 
--   Which, after row-reduction, becomes
-    $$\\begin{bmatrix}
-    1 & 2\\\\
-    0 & 0
-    \\end{bmatrix} \\begin{Bmatrix}
-    n\_1 \\\\ n\_2
-    \\end{Bmatrix} = 0$$
+-   re-arranging a previous result, we know that
+    $$\\lambda = \\frac{2\\pi a\_0 \\sigma\_c}{E}$$
 
--   If we choose *n*<sub>2</sub> = 1, we find *n*<sub>1</sub> = −2
+-   from which we find
+    $$\\sigma\_c^2 = \\frac{2\\pi\\gamma E}{2\\pi a\_0} = \\frac{\\gamma E}{a\_0}$$
 
--   This gives *n*<sup>(2)</sup> = ⟨ − 2, 1⟩
+-   For many materials, the surface energy is approximately *γ* = 0.01*E**a*<sub>0</sub>, which gives an approximate theoretical strength of
+    $$\\sigma\_c = \\frac{E}{10}$$
 
-<span>example</span>
+griffith fracture
+=================
 
--   We can assemble a transformation matrix, *Q*<sub>*i**j*</sub>, from the principal directions
+<span>real failure</span>
 
--   First we need to normalize them to unit vectors
+-   In practice, materials fail at loads 10 to 100 times lower than the theoretical “atomic” strength
 
--   $||n^{(1)}|| = \\sqrt{\\frac{5}{4}}$
+-   Griffith studied glass, which by the atomic strength models should be a very strong material, but in practice is often weaker than much less stiff materials
 
--   $\\hat{n}^{(1)} = \\frac{2}{\\sqrt{5}} \\langle \\frac{1}{2}, 1 \\rangle = \\langle \\frac{1}{\\sqrt{5}}, \\frac{2}{\\sqrt{5}} \\rangle$
+-   He hypothesized that there were many micro-cracks which coalesced to cause failure
 
--   $||n^{(2)}|| = \\sqrt{5}$
+<span>elliptic hole</span>
 
--   $\\hat{n}^{(2)} = \\langle \\frac{-2}{\\sqrt{5}}, \\frac{1}{\\sqrt{5}} \\rangle $
+<img src="../Figures/elliptic" alt="image" style="width:70.0%" />
 
-<span>example</span>
+<span>elliptic hole</span>
 
--   This gives
-    $$Q\_{ij} = \\frac{1}{\\sqrt{5}}\\begin{bmatrix}
-    1 & 2\\\\
-    -2 & 1
-    \\end{bmatrix}$$
+-   Inglis solved the problem of an eliptic hole under remote tension, finding that at the edge of the major axis the stress is given by
+    $$\\sigma\_{yy} = \\sigma \\left(1+\\frac{2a}{b}\\right)$$
 
--   And we find
-    *A*<sub>*m**n*</sub><sup>′</sup> = *Q*<sub>*m**i*</sub>*Q*<sub>*n**j*</sub>*A*<sub>*i**j*</sub>
-    $$A\_{ij}^\\prime = \\begin{bmatrix}
-    5 & 0 \\\\
-    0 & 0
-    \\end{bmatrix}$$
+-   For a crack as *b* → 0, we would get the unreasonable prediction that any stress, no matter how small, would produce failure as the stress at the edge of the ellipse would be infinite
 
-Examples
-========
+-   Griffith, thus, chose to take an energy balance view of the fracture problem
 
-<span>example</span>
+<span>surface energy</span>
 
--   Find principal values, principal directions, and invariants for the tensor
-    $$c\_{ij} = \\begin{bmatrix}
-    8 & 0 & 0\\\\
-    0 & 3 & 1\\\\
-    0 & 1 & 3
-    \\end{bmatrix}$$
+-   Griffith proposed that a crack would extend when the incremental release of energy, *d**W* associated with a crack extension of *d**a* in a body is greater than the energy required to create the new surfaces, *d**W*<sub>*s*</sub>
 
-<span>example</span>
+-   For a center crack, there are two crack tips and a total of 4 surfaces, thus
+    *W*<sub>*s*</sub> = 2(2*a**γ*)=4*a**γ*
 
--   Characteristic equation simplifies to
-
--   −*λ*<sup>3</sup> + 14*λ*<sup>2</sup> − 56*λ* + 64 = 0
-
--   Which has the solutions *λ* = 2, 4, 8
-
-<span>example</span>
-
--   To find the principal direction for *λ*<sub>1</sub> = 8
-    $$\\begin{bmatrix}
-    8-8 & 0 & 0\\\\
-    0 & 3-8 & 1\\\\
-    0 & 1 & 3-8
-    \\end{bmatrix}\\begin{Bmatrix}
-    n\_1 \\\\ n\_2 \\\\ n\_3
-    \\end{Bmatrix} = 0$$
-
-<span>example</span>
-
--   After row-reduction, we find
-    $$\\begin{bmatrix}
-            0 & 0 & 0\\\\
-            0 & 0 & -24\\\\
-            0 & 1 & -5
-            \\end{bmatrix}\\begin{Bmatrix}
-            n\_1 \\\\ n\_2 \\\\ n\_3
-            \\end{Bmatrix} = 0$$
-
--   This means that *n*<sub>3</sub> = 0 and, as a result, *n*<sub>2</sub> = 0.
-
--   *n*<sub>1</sub> can be any value, we choose *n*<sub>1</sub> = 1 to give a unit vector.
-
--   *n*<sup>(1)</sup> = ⟨1, 0, 0⟩
-
-<span>example</span>
-
--   To find the principal direction for *λ*<sub>2</sub> = 4
-    $$\\begin{bmatrix}
-            8-4 & 0 & 0\\\\
-            0 & 3-4 & 1\\\\
-            0 & 1 & 3-4
-            \\end{bmatrix}\\begin{Bmatrix}
-            n\_1 \\\\ n\_2 \\\\ n\_3
-            \\end{Bmatrix} = 0$$
-
-<span>example</span>
-
--   After row-reduction, we find
-    $$\\begin{bmatrix}
-            4 & 0 & 0\\\\
-            0 & -1 & 1\\\\
-            0 & 0 & 0
-            \\end{bmatrix}\\begin{Bmatrix}
-            n\_1 \\\\ n\_2 \\\\ n\_3
-            \\end{Bmatrix} = 0$$
-
--   This means that *n*<sub>1</sub> = 0
-
--   We also know that *n*<sub>2</sub> = *n*<sub>3</sub>, so we choose *n*<sub>2</sub> = *n*<sub>1</sub> = 1
-
--   This gives $n^{(2)} = \\frac{1}{\\sqrt{2}}\\langle 0, 1, 1 \\rangle$ after normalization
-
-<span>example</span>
-
--   To find the principal direction for *λ*<sub>3</sub> = 2
-    $$\\begin{bmatrix}
-            8-2 & 0 & 0\\\\
-            0 & 3-2 & 1\\\\
-            0 & 1 & 3-2
-            \\end{bmatrix}\\begin{Bmatrix}
-            n\_1 \\\\ n\_2 \\\\ n\_3
-            \\end{Bmatrix} = 0$$
-
-<span>example</span>
-
--   After row-reduction, we find
-    $$\\begin{bmatrix}
-            6 & 0 & 0\\\\
-            0 & 1 & 1\\\\
-            0 & 0 & 0
-            \\end{bmatrix}\\begin{Bmatrix}
-            n\_1 \\\\ n\_2 \\\\ n\_3
-            \\end{Bmatrix} = 0$$
-
--   This means that *n*<sub>1</sub> = 0
-
--   We also know that *n*<sub>2</sub> = −*n*<sub>3</sub>, so we choose *n*<sub>2</sub> = 1 and *n*<sub>1</sub> = −1
-
--   This gives $n^{(3)} = \\frac{1}{\\sqrt{2}}\\langle 0, 1, -1 \\rangle$ after normalization
-
-<span>example</span>
-
--   In summary, for *c*<sub>*i**j*</sub> we have:
-
--   *λ*<sub>1</sub> = 8 and *n*<sup>(1)</sup> = ⟨1, 0, 0⟩
-
--   *λ*<sub>2</sub> = 4 and $n^{(2)} = \\frac{1}{\\sqrt{2}}\\langle 0, 1, 1 \\rangle$
-
--   *λ*<sub>3</sub> = 2 and $n^{(3)} = \\frac{1}{\\sqrt{2}}\\langle 0, 1, -1 \\rangle$
-
--   We can assemble *n*<sup>(*i*)</sup> into a transformation tensor
-    $$Q\_{ij} = \\frac{1}{\\sqrt{2}}\\begin{bmatrix}
-            \\sqrt{2} & 0 & 0\\\\
-            0 & 1 & 1\\\\
-            0 & 1 & -1
-            \\end{bmatrix}$$
-
-<span>example</span>
-
--   What is *c*<sub>*i**j*</sub><sup>′</sup>?
-
--   *c*<sub>*i**j*</sub><sup>′</sup> = *Q*<sub>*i**m*</sub>*Q*<sub>*j**n*</sub>*c*<sub>*m**n*</sub>
-    $$c\_{ij}^\\prime = \\begin{bmatrix}
-            8 & 0 & 0 \\\\
-            0 & 4 & 0 \\\\
-            0 & 0 & 2
-            \\end{bmatrix}$$
-
-<span>example</span>
-
--   We can also find the invariants for
-    $$c\_{ij} = \\begin{bmatrix}
-            8 & 0 & 0\\\\
-            0 & 3 & 1\\\\
-            0 & 1 & 3
-            \\end{bmatrix}$$
-
--   Recall:
+-   Griffith then used the Inglis solution to calculate the total energy released by a crack extension of *d**a*
     $$\\begin{aligned}
-            I\_\\alpha &= a\_{ii}\\\\
-            II\_\\alpha &= \\frac{1}{2}(a\_{ii} a\_{jj} - a\_{ij}a\_{ij})\\\\
-            III\_\\alpha &= \\det \[ a\_{ij}\]
+                W &= \\frac{\\pi a^2 \\sigma^2 (1-\\nu^2)}{E} &\\qquad \\text{plane strain}\\\\
+                W &= \\frac{\\pi a^2 \\sigma^2} {E} &\\qquad \\text{plane stress}
             \\end{aligned}$$
 
+<span>surface energy</span>
+
+-   We can now substitute to find under what conditions *d**W* ≥ *d**W*<sub>*s*</sub>
+    $$\\begin{aligned}
+                \\frac{2 \\pi a^2 \\sigma\_{cr}^2 (1-\\nu^2)}{E}da &= 4\\gamma da &\\qquad \\text{plane strain}\\\\
+                \\frac{2 \\pi a^2 \\sigma\_{cr}^2} {E} da &= 4\\gamma da&\\qquad \\text{plane stress}
+            \\end{aligned}$$
+
+-   Which gives the critical stress as
+    $$\\begin{aligned}
+                \\sigma\_{cr} &= \\sqrt{\\frac{2 E \\gamma}{\\pi (1-\\nu^2)a}} &\\qquad \\text{plane strain}\\\\
+                \\sigma\_{cr} &= \\sqrt{\\frac{2 E \\gamma}{\\pi a}} &\\qquad \\text{plane stress}
+            \\end{aligned}$$
+
+<span>comparison</span>
+
+-   We can compare this critical stress prediction with previous methods
+
+-   We had found
+    $$\\sigma\_c = \\sqrt{\\frac{\\gamma E}{a\_0}}$$
+
+-   Thus when there is inherent damage in a materal larger than the twice the characteristic distance between atoms (*a*<sub>0</sub>), the fracture strength will be lower than the theoretical strength
+
+energy release rate
+===================
+
+<span>energy release rate</span>
+
+-   We can now define the energy release rate
+
+-   More precisely, “strain energy release rate per crack tip”
+    *d**W* = 2*G**d**a*
+
+-   Which after substitution and integration gives
+    $$\\begin{aligned}
+                G &= \\frac{1}{2} \\frac{dW}{da} = \\frac{\\pi a \\sigma^2 (1-\\nu^2)}{E} &\\text{plane strain}\\\\
+                &= \\frac{\\pi a \\sigma^2}{E} & \\text{plane stress}
+            \\end{aligned}$$
+
+<span>fracture toughness</span>
+
+-   When *G* ≥ 2*γ* the strain energy from the applied load is greater than the energy required to propagate a crack, and thus a crack will propagate
+
+-   The critical strain energy release rate is called *G*<sub>*c*</sub>, and is also referred to as the fracture toughness
+
+-   Note: *K*<sub>*c*</sub> (the critical stress intensity factor) is also referred to as the “fracture toughness,” and although they give equivalent predictions, they have different units and are found baed
+
+-   The *G*<sub>*c*</sub> predicted from the atomic surface energy will be somewhat conservative, since almost all materials will absorb at least some of the strain energy in plastic deformation
+
+relation among energies
+=======================
+
+<span>energy balance</span>
+
+-   Griffith’s theory is founded on the principle of energy balance
+
+-   During crack extension, the external work done, *d**W*<sub>*e*</sub> must equal the increment of surface energy, *d**W*<sub>*s*</sub>, and the increment of elastic strain energy, *d**U*
+    *d**W*<sub>*s*</sub> + *d**U* = *d**W*<sub>*e*</sub>
+
+-   For a conservative field we can write this as
+    $$\\frac{\\partial}{\\partial a} (W\_s + U + V) = 0$$
+
+-   Where a negative potential, *V*, implies positive external work done *d**W*<sub>*e*</sub>
+
 <span>example</span>
 
--   First invariant
-    *I*<sub>*α*</sub> = *a*<sub>*i**i*</sub> = 8 + 3 + 3 = 14
-
--   Second invariant
-    $$II\_\\alpha = \\frac{1}{2}(a\_{ii} a\_{jj} - a\_{ij}a\_{ij})$$
-    *a*<sub>*i**i*</sub>*a*<sub>*j**j*</sub> = 14 × 14
-    *a*<sub>*i**j*</sub>*a*<sub>*i**j*</sub> = *a*<sub>11</sub>*a*<sub>11</sub> + *a*<sub>12</sub>*a*<sub>12</sub> + *a*<sub>13</sub>*a*<sub>13</sub> + ... + *a*<sub>33</sub>*a*<sub>33</sub>
-    $$II\_\\alpha = \\frac{1}{2}(196 - 84) = 56$$
+<img src="../Figures/sent" alt="Single edge crack specimen" style="width:70.0%" />
 
 <span>example</span>
 
--   Third invariant
-    *I**I**I*<sub>*α*</sub> = det\[*a*<sub>*i**j*</sub>\]
-    *I**I**I*<sub>*α*</sub> = 8 × (3 × 3 − 1 × 1)=64
+-   The displacement at the top edge will be proportional to the applied load by some elastic compliance of the specimen
+    *δ* = *S**P*
 
+-   Note that this compliance, *S*, will be a function of the crack length, *a*
 
+-   The strain energy can be expressed as
+    $$U = \\int\_{\\delta=0}^{\\delta=SP} P d\\delta = \\int\_{\\delta=0}^{\\delta=SP} \\frac{\\delta}{S} d\\delta$$
+
+-   After integrating
+    $$U = \\frac{1}{2S}(\\delta^2)|\_0^{SP} = \\frac{1}{2}SP^2$$
+
+<span>example</span>
+
+-   To find the incremental strain energy increase (where both *P* and *S* should be treated as variable), we find
+    $$dU = \\frac{1}{2}P^2 dS + SP dP
+                \\label{eq:du}$$
+
+-   We will now consider two loading cases, one with fixed displacement and the other with fixed loading force
+
+<span>fixed displacement</span>
+
+-   Under constant displacement we have
+    *δ* = *S**P* = constant
+
+-   This means that the derivative of displacement will be zero, hence
+    *d**δ* = *S**d**P* + *P**d**S* = 0
+
+-   and
+    *S**d**P* = −*P**d**S*
+
+<span>fixed displacement</span>
+
+-   Substituting into the \[eq:du\] gives
+    $$dU = -\\frac{1}{2}P^2 dS$$
+
+-   Since *d**δ* = 0, the external work, *d**W*<sub>*e*</sub> = 0 and we find
+    $$dW\_s = -dU = \\frac{1}{2} P^2 dS$$
+
+<span>fixed load</span>
+
+-   If instead of fixing displacement we fix the applied load we have
+    *d**P* = 0
+
+-   Which gives
+    $$dU = \\frac{1}{2}P^2 dS$$
+
+-   The strain energy increases (while under fixed displacement it decreased)
+
+<span>fixed load</span>
+
+-   Further, we can find the external work done as
+    *d**W*<sub>*e*</sub> = *P**d**δ* = *P*<sup>2</sup>*d**S*
+
+-   And thus, from energy balance, we find the surface energy
+    $$dW\_s = \\frac{1}{2}P^2 dS$$
+
+-   In this case the external work is equally split between strain energy and surface energy
+
+<span>comparison</span>
+
+-   In both cases, the energy released is *d**W* = *d**W*<sub>*e*</sub> − *d**U*
+    $$\\begin{aligned}
+                dW &= 0 - (-\\frac{1}{2} P^2 dS) &\\text{fixed displacement}\\\\
+                dW &= P^2 dS - \\frac{1}{2}P^2 dS &\\text{fixed load}
+            \\end{aligned}$$
+
+-   And we see that the energy released is independent of the load type
+
+<span>example - double cantilever beam</span>
+
+<img src="../Figures/dcb" alt="double-cantilever beam" style="width:80.0%" />

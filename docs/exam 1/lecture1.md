@@ -1,16 +1,16 @@
-# AE731
-## Theory of Elasticity
+# AE837
+## Advanced Mechanics of Damage Tolerance
 Dr. Nicholas Smith<br/>
 Wichita State University, Department of Aerospace Engineering
-August 19, 2019
+August 20, 2019
 
 ----
 ## upcoming schedule
 
--   Aug 21 - Intro to Elasticity
--   Aug 23 - Coordinate Transformation
--   Aug 28 - Principal Values
--   Aug 30 - Tensor Calculus
+-   Aug 20 - Syllabus, Elasticity Review
+-   Aug 22 - Elasticity Review
+-   Aug 27 - Griffith Fracture
+-   Aug 29 - Griffith Fracture
 
 ----
 ## outline
@@ -19,8 +19,14 @@ August 19, 2019
 
 * introduction
 * syllabus and schedule
-* Calculus of Tensors
-* Examples
+* fracture introduction
+* elasticity
+* coordinate transformation
+* examples
+* principal values
+* invariants
+* principal directions
+* examples
 
 <!-- vim-markdown-toc -->
 
@@ -30,7 +36,7 @@ August 19, 2019
 ----
 ## about me
 
-![family picture](images\IMG_5266_edit.jpg)
+![family picture](../images/family_photo.jpg)
 
 ----
 ## education
@@ -46,17 +52,17 @@ August 19, 2019
 
 ----
 ## research
-![picture of chopped carbon fiber prepreg](images\Formosa_Chopped_Carbon_Fiber_CSc_bw.jpg)
+![picture of chopped carbon fiber prepreg](..\images\Formosa_Chopped_Carbon_Fiber_CSc_bw.jpg)
 
 ----
 ## research
-![picture of lamborghini symbol made from compression molded chopped carbon fiber](images\lamborghini-chopped-fiber-badges-rough.jpg)
+![picture of lamborghini symbol made from compression molded chopped carbon fiber](..\images\lamborghini-chopped-fiber-badges-rough.jpg)
 
 ----
 ## research
 
   <div class='left'>
-![picture illustrating the fused deposition modeling 3D printing process, where plastic filament is melted and deposited next to other filament, and fuses together](images\3D-printing.png)
+![picture illustrating the fused deposition modeling 3D printing process, where plastic filament is melted and deposited next to other filament, and fuses together](..\images\3D-printing.png)
   </div>
 
   <div class='right'>
@@ -90,11 +96,9 @@ August 19, 2019
 ----
 ## course textbook
 
--   Martin H. Saad, *Elasticity: Theory, Application, and Numerics*
--   Any version is sufficient
+-   Text is available as a pdf on Blackboard, you may purchase any version if you prefer a hard copy
 -   Homework will be given in handouts
--   Textbook will be closely followed in class and is a very highly regarded elasticity text
--   Includes useful MATLAB tutorials, as well as some more specialized topics we will not have time to cover in this course, but may be useful to your research
+-   Supplemental textbooks are listed in the syllabus for further study
 
 ----
 ## office hours
@@ -108,487 +112,657 @@ August 19, 2019
 ----
 ## tentative course outline
 
--   Chapter 1 - Calculus of tensors
-    -   19 Aug - 28 Aug (4 lectures)
--   Chapter 2 - Kinematics
-    -   6 Sep - 13 Sep (3 lectures)
--   Exam 1 (covers Chapter 1-2)
-    -   18 Sep
+-   Section 1 - linear elastic fracture mechanics
+    -   Elasticity Review (Aug 20-22)
+    -   Griffith Fracture (Aug 27-29)
+    -   Elastic Stress Field (Sept 3-12)
+    -   Exam 1 (Sept 19)
 
 ----
 ## tentative course outline
 
--   Chapter 3 - Stress
-
-    -   20 Sep - 27 Sep (3 lectures)
-
--   Chapter 4 - Constitutive equations
-
-    -   2 Oct - 9 Oct (3 lectures)
-
--   Chapter 5 - Solution strategies
-
-    -   11 Oct - 23 Oct (3 lectures)
-
--   Exam 2 (Chapters 3-5)
-
-    -   1 Nov
+-   Section 2 - advanced analytical fracture
+    -   Energy Approach (Sept 24-26)
+    -   Finite Elements (Oct 1-12)
+    -   Plasticity (Oct 17-24)
+    -   Mixed-Mode Fracture (Oct 29-31)
+    -   Exam 2 (Nov 7)
 
 ----
 ## tentative course outline
 
--   Chapter 6 - Energy principles
-
-    -   6 Nov - 13 Nov (3 lectures)
-
--   Chapter 7-8 - Two-dimensional problems
-
-    -   15 Nov - 27 Nov (3 lectures)
-
--   Chapter 10 - Complex variables
-
-    -   1 Dec - 3 Dec
-
--   Special topics
-
-    -   No homework
-
-    -   Not on final exam
-
-    -   Anisotropic elasticity
-
-    -   Heterogeneous materials
-
-    -   Numerical applications (finite elements)
-
-----
-## final exam
-
--   Wednesday 13 December
-
--   3:00 - 4:50 pm
-
--   Cannot take final exam at any other time, make travel plans accordingly
-
--   Comprehensive
+-   Section 3 - computational fracture
+    -   XFEM (Nov 12-14)
+    -   Cohesive Zone Modeling (Nov 19-28)
+    -   Interfacial Cracks (Dec 3-5)
+    -   Final project (due Dec 6)
 
 ----
 ## grades
 
 -   Grade breakdown
-
     -   Homework 15%
-
-    -   Exam 1 25%
-
-    -   Exam 2 25%
-
-    -   Final Exam 35%
-
+    -   Exam 1 30%
+    -   Exam 2 30%
+    -   Final Project 25%
 -   Follow a traditional grading scale
+
+----
+## final project
+
+-   Perform computational fracture analysis on a real-life part (or test specimen) of your choosing
+-   Use the principles developed in this class to provide an analytical validation of your computational methods
+-   Examples: mixed-mode fracture study, progressive failure, adhesive bond failure, etc.
+-   Individual project
+-   More discussion after Exam 1
 
 ----
 ## class expectations
 
 -   Consider the cost (to you or others) of your being in class
-
 -   I ask that you refrain from distracting behaviors during class
-
--   When you have something more important than class to take care of it, please take care of it outside of class
-
-Calculus of Tensors
-===================
+-   When you have something more important than class to take care of, please take care of it outside of class
 
 ----
-## scalars, vectors, matrices
+## software
 
--   Scalar
+-   You will be required to do finite element analysis in this class, we have a class kit license for COMSOL, but you are welcome to use any software package you want
+-   The student version of Abaqus is also free and has a good XFEM module (not all FEA tools have XFEM)
+-   Although we will not use FEA until later in the course, I advise you set up the software as soon as possible
 
-    -   single value (at a point)
-
-    -   e.g. temperature, density
-
--   Vector
-
-    -   expressed in terms of coordinate system
-
-    -   one-dimensional array
-
-    -   e.g. displacement
-
--   Matrix
-
-    -   two-dimensional array
-
-    -   e.g. stress, strain
+---
+# fracture introduction
 
 ----
-## scalars, vectors, matrices
-*ρ* = 25
-**u** = ⟨*x*, *y*⟩
-$$\[\\sigma\] = \\begin{bmatrix}
-\\sigma\_{xx} & \\sigma\_{xy} \\\\
-\\sigma\_{yx} & \\sigma\_{yy}
+## damage
+
+-   In linear elasticity, we generally consider materials in their pristine state
+-   Realities of manufacturing, cyclic loads, and unforeseen loads result in a material which is something other than pristine
+-   When stress is uniform, simple analysis can often predict failure (*σ* &gt; *σ*<sub>*f*</sub>)
+-   When damage or stress concentrations are present, however, failure is more accurately modeled as fracture
+
+----
+## fracture
+
+-   There are two primary approaches to modeling fracture
+-   In the first we examine the elastic stress and displacement fields near a crack tip
+-   A fracture criterion is then defined based on the so-called stress intensity factor
+-   The other approach considers the global energy of a body with a crack
+-   We consider the potential energy of a cracked solid and consider its variation with a virtual crack extension
+-   The energy release rate is then used to quantify failure
+
+----
+## fracture
+
+-   Several other parameters have been used to quantify failure in addition to the stress intensity factor and the energy release rate, with somewhat less success
+-   J-integral
+-   Crack Tip Opening Displacement
+-   Crack Tip Opening Angle
+
+----
+## fracture mechanics
+
+-   In fracture mechanics we consider three different modes
+-   Mode I is known as the “opening mode”
+-   Mode II is known as the “sliding mode”
+-   Mode III is known as the “tearing mode”
+
+----
+## fracture mechanics
+
+![Illustration of fracture modes](../images/Fracture_modes_v2.svg)
+
+---
+# elasticity
+
+----
+## linear elasticity
+
+-   We cannot cover everything from elasticity, and you can get by in this course without it, but we will be using many principles from elasticity in this course
+-   Some of the things we will review are
+    -   Index notation (briefly)
+    -   Coordinate transformation
+    -   Principal values/directions
+    -   Spherical/cylindrical coordinates
+    -   Strain energy
+    -   General solution strategy
+
+----
+## big picture
+
+-   Perhaps more important than the details we will review is to keep in mind the “big picture”
+-   To solve any problem in elasticity, we need to satisfy:
+    1.  The equilibrium equations (in the appropriate coordinate system)
+    2.  The boundary conditions
+    3.  Without violating strain compatibility
+-   Most often, we assume a state of plane stress or plane strain and solve the problem in 2D
+-   Even “3D” problems (i.e. Mode III fracture) have reduced variables
+-   Stress functions are often formulated to automatically satisfy equilibrium, or displacement functions to automatically satisfy compatibility
+
+---
+# coordinate transformation
+
+----
+## coordinate transformation in two dimensions
+
+![2D axes to illustrated coordinate transformation](../images/transform2D.png)
+
+----
+## coordinate transformation in two dimensions
+
+-   The vector, *v*, remains fixed, but we transform our coordinate system
+-   In the new coordinate system, the *x*<sub>2</sub><sup>′</sup> portion of *v* is zero.
+-   To transform the coordinate system, we first define some unit vectors.
+-   $\\hat{e}\_1$ is a unit vector in the direction of *x*<sub>1</sub>, while $\\hat{e}\_1^\\prime$ is a unit vector in the direction of *x*<sub>1</sub><sup>′</sup>
+
+----
+## coordinate transformation in two dimensions
+
+![2D axes with unit direction vectors added](../images/transform2D-unit.png)
+
+----
+## coordinate transformation in two dimensions
+
+-   For this example, let us assume *v* = ⟨2, 2⟩ and *θ* = 45<sup>∘</sup>
+-   We can write the transformed unit vectors, $\\hat{e}\_1^\\prime$ and $\\hat{e}\_2^\\prime$ in terms of $\\hat{e}\_1$, $\\hat{e}\_2$ and the angle of rotation, *θ*.
+$$\\begin{aligned}
+	\\hat{e}\_1^\\prime &= \\langle \\hat{e}\_1 \\cos \\theta , \\hat{e}\_2 \\sin \\theta\\rangle\\\\
+	\\hat{e}\_2^\\prime &= \\langle -\\hat{e}\_1 \\sin \\theta , \\hat{e}\_2 \\cos \\theta \\rangle\\end{aligned}$$
+
+----
+## coordinate transformation in two dimensions
+
+-   We can write the vector, *v*, in terms of the unit vectors describing our axis system
+-   $v = v\_1 \\hat{e}\_1 + v\_2 \\hat{e}\_2$
+-   (note: $\\hat{e}\_1=\\langle 1, 0 \\rangle$ and $\\hat{e}\_2 = \\langle 0,1 \\rangle$)
+-   *v* = ⟨2, 2⟩=2⟨1, 0⟩+2⟨0, 1⟩
+
+----
+## coordinate transformation in two dimensions
+
+-   When expressed in the transformed coordinate system, we refer to *v*<sup>′</sup>
+-   *v*<sup>′</sup> = ⟨*v*<sub>1</sub>cos*θ* + *v*<sub>2</sub>sin*θ*, −*v*<sub>1</sub>sin*θ* + *v*<sub>2</sub>cos*θ*⟩
+-   $v^\\prime = \\langle 2\\sqrt{2}, 0 \\rangle$
+-   We can recover the original vector from the transformed coordinates:
+-   $v = v\_1^\\prime \\hat{e}\_1^\\prime + v\_2^\\prime \\hat{e}\_2^\\prime$
+-   (note: $\\hat{e}\_1^\\prime=\\langle \\frac{\\sqrt{2}}{2},\\frac{\\sqrt{2}}{2} \\rangle$ and $\\hat{e}\_2^\\prime = \\langle -\\frac{\\sqrt{2}}{2},\\frac{\\sqrt{2}}{2} \\rangle$)
+-   $v = 2\\sqrt{2}\\langle \\frac{\\sqrt{2}}{2},\\frac{\\sqrt{2}}{2} \\rangle, 0 \\langle -\\frac{\\sqrt{2}}{2},\\frac{\\sqrt{2}}{2} \\rangle = \\langle 2, 2 \\rangle$
+
+----
+## general coordinate transformation
+
+-   Coordinate transformation can become much more complicated in three dimensions, and with higher-order tensors
+-   It is convenient to define a general form of the coordinate transformation in index notation
+-   We define *Q*<sub>*ij*</sub> as the cosine of the angle between the *x*<sub>*i*</sub><sup>′</sup> axis and the *x*<sub>*j*</sub> axis.
+-   This is also referred to as the “direction cosine”
+    *Q*<sub>*ij*</sub> = cos(*x*<sub>*i*</sub><sup>′</sup>, *x*<sub>*j*</sub>)
+
+----
+## general coordinate transformation
+
+-   We can use this form on our 2D transformation example
+
+$$\\begin{aligned}
+	Q\_{ij} &= \\cos (x\_i^\\prime, x\_j)\\\\ &= \\begin{bmatrix}
+	\\cos (x\_1^\\prime, x\_1) & \\cos (x\_1^\\prime, x\_2)\\\\
+	\\cos (x\_2^\\prime, x\_1) & \\cos (x\_2^\\prime, x\_2)
+\\end{bmatrix}\\\\ &= \\begin{bmatrix}
+	\\cos \\theta & \\cos (90-\\theta)\\\\
+	\\cos (90+\\theta) & \\cos \\theta
+\\end{bmatrix} \\\\ &= \\begin{bmatrix}
+	\\cos \\theta & \\sin \\theta \\\\
+	-\\sin \\theta & \\cos \\theta
+\\end{bmatrix}\\end{aligned}$$
+
+----
+## general coordinate transformation
+
+-   We can transform any-order tensor using *Q*<sub>*ij*</sub>
+-   Vectors (first-order tensors): *v*<sub>*i*</sub><sup>′</sup> = *Q*<sub>*ij*</sub>*v*<sub>*j*</sub>
+-   Matrices (second-order tensors): *σ*<sub>*mn*</sub><sup>′</sup> = *Q*<sub>*mi*</sub>*Q*<sub>*nj*</sub>*σ*<sub>*ij*</sub>
+-   Fourth-order tensors: *C*<sub>*ijkl*</sub><sup>′</sup> = *Q*<sub>*im*</sub>*Q*<sub>*jn*</sub>*Q*<sub>*ko*</sub>*Q*<sub>*lp*</sub>*C*<sub>*mnop*</sub>
+
+----
+## general coordinate transformation
+
+-   We can similarly use *Q*<sub>*ij*</sub> to find tensors in the original coordinate system
+-   Vectors (first-order tensors): *v*<sub>*i*</sub> = *Q*<sub>*ji*</sub>*v*<sub>*j*</sub><sup>′</sup>
+-   Matrices (second-order tensors): *σ*<sub>*mn*</sub> = *Q*<sub>*im*</sub>*Q*<sub>*jn*</sub>*σ*<sub>*ij*</sub><sup>′</sup>
+-   Fourth-order tensors: *C*<sub>*ijkl*</sub> = *Q*<sub>*mi*</sub>*Q*<sub>*nj*</sub>*Q*<sub>*ok*</sub>*Q*<sub>*pl*</sub>*C*<sub>*mnop*</sub><sup>′</sup>
+
+----
+## general coordinate transformation
+
+-   We can derive some interesting properties of the transformation tensor, *Q*<sub>*ij*</sub>
+-   We know that *v*<sub>*i*</sub> = *Q*<sub>*ji*</sub>*v*<sub>*j*</sub><sup>′</sup> and that *v*<sub>*i*</sub><sup>′</sup> = *Q*<sub>*ij*</sub>*v*<sub>*j*</sub>
+-   If we substitute (changing the appropriate indexes) we find:
+-   *v*<sub>*i*</sub> = *Q*<sub>*ji*</sub>*Q*<sub>*jk*</sub>*v*<sub>*k*</sub>
+-   We can now use the Kronecker Delta to substitute *v*<sub>*i*</sub> = *δ*<sub>*ik*</sub>*v*<sub>*k*</sub> which gives
+-   *δ*<sub>*ik*</sub>*v*<sub>*k*</sub> = *Q*<sub>*ji*</sub>*Q*<sub>*jk*</sub>*v*<sub>*k*</sub>
+
+---
+# examples
+
+----
+## example
+
+<div class="left">
+	![empty 3D coordinate system with axes labeled for example problem](../images/example-a.png)
+</div>
+<div class="right">
+  <ul>
+    	<li>Find *Q*<sub>*ij*</sub><sup>1</sup> for rotation of 60<sup>∘</sup> about *x*<sub>2</sub> </li>
+			<li>Find *Q*<sub>*ij*</sub><sup>2</sup> for rotation of 30<sup>∘</sup> about *x*<sub>3</sub><sup>′</sup> </li>
+			<li>Find *e*<sub>*i*</sub><sup>′′</sup> after both rotations </li>
+    </ul>
+</div>
+
+----
+## example
+
+![3d coordinate system after first rotation](../images/example-b.png) <!-- .element width="50%" --> 
+
+----
+## example
+
+![3d coordinate system after second rotation](../images/example-c.png)<!-- .element width="50%" --> 
+
+----
+## example
+
+-   *Q*<sub>*ij*</sub><sup>1</sup> = cos(*x*<sub>*i*</sub><sup>′</sup>, *x*<sub>*j*</sub>)
+-   *Q*<sub>*ij*</sub><sup>2</sup> = cos(*x*<sub>*i*</sub><sup>′′</sup>, *x*<sub>*j*</sub><sup>′</sup>)
+
+$$Q\_{ij}^1 = \\begin{bmatrix}
+\\cos 60 & \\cos 90 & \\cos 150\\\\
+\\cos 90 & \\cos 0 & \\cos 90\\\\
+\\cos 30 & \\cos 90 & \\cos 60
+\\end{bmatrix}$$
+$$Q\_{ij}^2 = \\begin{bmatrix}
+\\cos 30 & \\cos 60 & \\cos 90\\\\
+\\cos 120 & \\cos 30 & \\cos 90\\\\
+\\cos 90 & \\cos 90 & \\cos 0
 \\end{bmatrix}$$
 
 ----
-## scalars, vectors, matrices
+## example
 
--   In two dimensions
+-   We now use *Q*<sub>*ij*</sub> to find $\\hat{e}\_i^\\prime$ and $\\hat{e}\_i^{\\prime \\prime}$
+-   First, we need to write $\\hat{e}\_i$ in a manner more consistent with index notation
+-   We will indicate axis direction with a superscript, e.g. $\\hat{e}\_1 = e\_i^1$
+-   *e*<sub>*i*</sub><sup>′</sup> = *Q*<sub>*ij*</sub><sup>1</sup>*e*<sub>*j*</sub>
+-   *e*<sub>*i*</sub><sup>′′</sup> = *Q*<sub>*ij*</sub><sup>2</sup>*e*<sub>*j*</sub><sup>′</sup>
+-   How do we find *e*<sub>*i*</sub><sup>′′</sup> in terms of *e*<sub>*i*</sub>?
+-   *e*<sub>*i*</sub><sup>′′</sup> = *Q*<sub>*ij*</sub><sup>2</sup>*Q*<sub>*jk*</sub><sup>1</sup>*e*<sub>*k*</sub>
 
-    -   Scalars have 1 term
-
-    -   Vectors have 2 terms
-
-    -   Matrices have 4 terms
-
--   In three dimensions
-
-    -   Scalars have 1 term
-
-    -   Vectors have 3 terms
-
-    -   Matrices have 9 terms
+---
+# principal values
 
 ----
-## tensors
+## principal values
 
--   Formal definition for tensors later in the course
-
--   Scalar = 0-order tensor
-
--   Vector = 1st-order tensor
-
--   Matrix = 2nd-order tensor
-
--   We will also use higher-order tensors in this course
-
--   High-order tensors are difficult to write
-
--   It can even be difficult to distinguish vectors, scalars, and matrices in some notations
-
--   Index notation is used to address these problems
+-   In the 2D coordinate transformation example, we were able to eliminate one value from a vector using coordinate transformation
+-   For second-order tensors, we desire to find the “principal values” where all non-diagonal terms are zero
+-   The direction determined by the unit vector, *n*<sub>*j*</sub>, is said to be the *principal direction* or *eigenvector* of the symmetric second-order tensor, *a*<sub>*ij*</sub> if there exists a parameter, *λ*, such that
+    *a*<sub>*ij*</sub>*n*<sub>*j*</sub> = *λn*<sub>*i*</sub>
+-   Where *λ* is called the *principal value* or *eigenvalue* of the tensor
 
 ----
-## index notation
+## principal values
 
--   Use subscripts to indicate when a variable has multiple values
+-   We can re-write the equation
+    (*a*<sub>*ij*</sub> − *λδ*<sub>*ij*</sub>)*n*<sub>*j*</sub> = 0
 
--   *ρ* has no subscript, and thus it must be a scalar
-
--   *u*<sub>*i*</sub> has one subscript, *i*, indicating it has multiple values
-
--   “Multiple” means the number of coordinate system axes, unless otherwise specified.
-
--   *u*<sub>*i*</sub> = ⟨*u*<sub>1</sub>, *u*<sub>2</sub>, *u*<sub>3</sub>⟩
+-   This system of equations has a non-trivial solution if and only if det[*a*<sub>*ij*</sub> − *λδ*<sub>*ij*</sub>]=0
+-   This equation is known as the characteristic equation, and we solve it to find the principal values of a tensor
 
 ----
-## index notation
+## example
 
--   *σ*<sub>*i**j*</sub> has two subscripts, *i* and *j*, meaning it spans the coordinate system in two directions.
+-   Find the principal values of the tensor
 
--   $\\sigma\_{ij} = \\begin{bmatrix}
-    \\sigma\_{11} & \\sigma\_{12}\\\\
-    \\sigma\_{21} & \\sigma\_{22}
-    \\end{bmatrix}$
+$$A\_{ij} = \\begin{bmatrix}
+	1 & 2\\\\
+	2 & 4
+\\end{bmatrix}$$
 
--   We can use this notation for any order of tensor
+-   From the characteristic equation, we know that det[*A*<sub>*ij*</sub> − *λδ*<sub>*ij*</sub>]=0, or
 
--   In 3D, we need a fourth-order tensor to define material stiffness, we write this in index notation as
-
--   *C*<sub>*i**j**k**l*</sub>
-
-----
-## addition
-
--   We can do arithmetic in index notation
-
--   *a*<sub>*i*</sub> + *b*<sub>*i*</sub> = ⟨*a*<sub>1</sub> + *b*<sub>1</sub>, *a*<sub>2</sub> + *b*<sub>2</sub>⟩
-
--   We can also use a different index in the two variables to create a matrix
-
--   $c\_{ij} = a\_i + b\_j = \\begin{bmatrix}
-    a\_1 + b\_1 & a\_1 + b\_2 \\\\
-    a\_2 + b\_1 & a\_2 + b\_2
-    \\end{bmatrix}$
+$$\\begin{vmatrix}
+	1-\\lambda & 2\\\\
+	2 & 4 - \\lambda
+\\end{vmatrix} = 0$$
 
 ----
-## multiplication
+## example
 
--   We can multiply a scalar by a vector
+-   Calculating the determinant gives
+    (1 − *λ*)(4 − *λ*)−4 = 0
 
--   *λ**a*<sub>*i*</sub> = ⟨*λ**a*<sub>1</sub>, *λ**a*<sub>2</sub>⟩
+-   Multiplying out and simplifying, we find
+    *λ*<sup>2</sup> − 5*λ* = *λ*(*λ* − 5)=0
 
--   Or multiply two vectors
+-   This has the solution *λ* = 0, 5
 
--   $c\_{ij} = a\_i b\_j = \\begin{bmatrix}
-    a\_1 b\_1 & a\_1 b\_2 \\\\
-    a\_2 b\_1 & a\_2 b\_2
-    \\end{bmatrix}$
-
-----
-## math laws
-
--   The usual laws (commutative, associative, distributive) still apply
-
--   *a*<sub>*i*</sub> + *b*<sub>*i*</sub> = *b*<sub>*i*</sub> + *a*<sub>*i*</sub>
-
--   *a*<sub>*i**j*</sub>*b*<sub>*k*</sub> = *b*<sub>*k*</sub>*a*<sub>*i**j*</sub>
-
--   *a*<sub>*i*</sub> + (*b*<sub>*i*</sub> + *c*<sub>*i*</sub>)=(*a*<sub>*i*</sub> + *b*<sub>*i*</sub>)+*c*<sub>*i*</sub>
-
--   *a*<sub>*i*</sub>(*b*<sub>*j**k*</sub>*c*<sub>*l*</sub>)=(*a*<sub>*i*</sub>*b*<sub>*j**k*</sub>)*c*<sub>*l*</sub>
-
--   *a*<sub>*i**j*</sub>(*b*<sub>*k*</sub> + *c*<sub>*k*</sub>)=*a*<sub>*i**j*</sub>*b*<sub>*k*</sub> + *a*<sub>*i**j*</sub>*c*<sub>*k*</sub>
+---
+# invariants
 
 ----
-## equality
+## invariants
 
--   What does this mean?
-
-    -   *a*<sub>*i*</sub> = *b*<sub>*i*</sub>
-
-    -   *a*<sub>1</sub> = *b*<sub>1</sub>, *a*<sub>2</sub> = *b*<sub>2</sub>, etc.
-
--   What about this?
-
-    -   *a*<sub>*i*</sub> = *b*<sub>*j*</sub>
-
-    -   Doesn’t make sense, incorrect use of index notation
+-   Every tensor has some invariants which do not change with coordinate transformation
+-   These are known as *fundamental invariants*
+-   The characteristic equation for a tensor in 3D can be written in terms of the invariants
+    det[*a*<sub>*ij*</sub> − *λδ*<sub>*ij*</sub>]= − *λ*<sup>3</sup> + *I*<sub>*α*</sub>*λ*<sup>2</sup> − *II*<sub>*α*</sub>*λ* + *III*<sub>*α*</sub> = 0
 
 ----
-## dummy index
+## invariants
 
--   When an index is repeated in the same term, it is referred to as a “dummy index”
-
--   The dummy index indicates summation over all axes
-
--   e.g. *a*<sub>*i**i*</sub> = *a*<sub>11</sub> + *a*<sub>22</sub> + *a*<sub>33</sub>
-
--   Note: summation on a matrix will reduce to a scalar, summation on higher order tensors will reduce the order by 2
-
-----
-## dummy index
-
--   The dummy index can be triggered by any repeated index in a .
-
--   Summation or not?
-
-    -   *a*<sub>*i*</sub> + *b*<sub>*i**j*</sub>*c*<sub>*j*</sub>
-
-    -   *a*<sub>*i**j*</sub> + *b*<sub>*i**j*</sub>
-
-    -   *a*<sub>*i**j*</sub> + *b*<sub>*i**j*</sub>*c*<sub>*j*</sub>
-
-----
-## matrix multiplication
-
--   How can we write matrix multiplication in index notation?
-
--   $\\begin{bmatrix}
-    a\_{11} & a\_{12} \\\\
-    a\_{21} & a\_{22}
-    \\end{bmatrix}
-    \\begin{bmatrix}
-    b\_{11} & b\_{12} \\\\
-    b\_{21} & b\_{22}
-    \\end{bmatrix} =
-    \\begin{bmatrix}
-    c\_{11} & c\_{12} \\\\
-    c\_{21} & c\_{22}
-    \\end{bmatrix}$
-
--   *c*<sub>11</sub> = *a*<sub>11</sub>*b*<sub>11</sub> + *a*<sub>12</sub>*b*<sub>21</sub>
-
--   *c*<sub>12</sub> = *a*<sub>11</sub>*b*<sub>21</sub> + *a*<sub>12</sub>*b*<sub>22</sub>
-
--   *c*<sub>*i**j*</sub> = *a*<sub>*i**k*</sub>*b*<sub>*k**j*</sub>
-
-----
-## symmetry
-
--   Symmetry can be a very powerful tool in Elasticity
-
--   Here we define some useful forms of symmetry in index notation
-
--   Symmetric
-
-    -   *a*<sub>*i**j*...*z*</sub> = *a*<sub>*z*...*j**i*</sub>
-
-    -   *a*<sub>*i**j*...*m*...*n*...*z*</sub> = *a*<sub>*i**j*...*n*...*m*...*z*</sub>
-
--   Anti-symmetric (skew symmetric)
-
-    -   *a*<sub>*i**j*...*z*</sub> = −*a*<sub>*z*...*j**i*</sub>
-
-    -   *a*<sub>*i**j*...*m*...*n*...*z*</sub> = −*a*<sub>*i**j*...*n*...*m*...*z*</sub>
-
-----
-## symmetry
-
--   Useful identity
-
-    -   If *a*<sub>*i**j*...*m*...*n*...*k*</sub> is symmetric in *m**n* and *b*<sub>*p**q*...*m*...*n*...*r*</sub> is antisymmetric in *m**n*, then the product is zero
-
-    -   *a*<sub>*i**j*...*m*...*n*...*k*</sub>*b*<sub>*p**q*...*m*...*n*...*r*</sub> = 0
-
--   We can also write any tensor as the sum of its symmetric and anti-symmetric parts
-
-    -   $a\_{ij} = \\frac{1}{2} (a\_{ij} + a\_{ji}) + \\frac{1}{2} (a\_{ij} - a\_{ji})$
-
--   This textbook uses a special shortcut notation for the symmetric and anti-symmetric portions of a tensor
-
-    -   Symmetric: $a\_{(ij)} = \\frac{1}{2}(a\_{ij}+a\_{ji})$
-
-    -   Anti-symmetric: $a\_{\[ij\]} = \\frac{1}{2}(a\_{ij}-a\_{ji})$
-
-----
-## special symbols
-
--   For convenience we define two symbols in index notation
-
--   *Kronecker delta* is a general tensor form of the Identity Matrix
-    $$\\delta\_{ij} = \\left\\{
-    \\begin{array}{ll}
-    1& \\text{if $i=j$}\\\\
-    0& \\text{otherwise}
-    \\end{array}
-    \\right. = \\begin{bmatrix}
-    1 & 0 & 0\\\\
-    0 & 1 & 0 \\\\
-    0 & 0 & 1
-    \\end{bmatrix}$$
-
--   Is also used for higher order tensors
-
--   *δ*<sub>*i**j*</sub> = *δ*<sub>*j**i*</sub>
-
--   *δ*<sub>*i**i*</sub>= 3
-
--   *δ*<sub>*i**j*</sub>*a*<sub>*j*</sub>= *a*<sub>*i*</sub>
-
--   *δ*<sub>*i**j*</sub>*a*<sub>*i**j*</sub>= *a*<sub>*i**i*</sub>
-
-----
-## special symbols
-
--   *alternating symbol* or *permutation symbol*
-    $$\\epsilon\_{ijk} = \\left\\{
-    \\begin{array}{rl}
-    1 & \\text{if $ijk$ is an even permutation of 1,2,3}\\\\
-    -1 & \\text{if $ijk$ is an odd permutation of 1,2,3}\\\\
-    0 & \\text{otherwise}
-    \\end{array}
-    \\right.$$
-
--   This symbol is not used as frequently as the *Kronecker delta*
-
--   For our uses in this course, it is enough to know that 123, 231, and 312 are even permutations
-
--   321, 132, 213 are odd permutations
-
--   all other indexes are zero
-
--   *ϵ*<sub>*i**j**k*</sub>*ϵ*<sub>*i**m**n*</sub> = *δ*<sub>*j**m*</sub>*δ*<sub>*k**n*</sub> − *δ*<sub>*j**n*</sub>*δ*<sub>*m**k*</sub>
-
-----
-## determinant
-
--   We use the alternating symbol for writing determinants and cross-products
-    $$\\det\[a\_{ij}\] = |a\_{ij}| = \\begin{vmatrix}
-    a\_{11} & a\_{12} & a\_{13}\\\\
-    a\_{21} & a\_{22} & a\_{23}\\\\
-    a\_{31} & a\_{32} & a\_{33}
-    \\end{vmatrix}
-    = \\epsilon\_{ijk}a\_{i1} a\_{j2} a\_{k3}$$
-    $$\\det\[a\_{ij}\] = \\frac{1}{6}\\epsilon\_{ijk} \\epsilon\_{pqr}a\_{ip}a\_{jq}a\_{kr}$$
-
-----
-## cross product
-
--   The cross-product can be written as a determinant:
-    $$\\hat{a} \\times \\hat{b} = \\begin{vmatrix}
-    \\hat{e}\_1 & \\hat{e}\_2 & \\hat{e}\_3\\\\
-    a\_1 & a\_2 & a\_3 \\\\
-    b\_1 & b\_2 & b\_3
-    \\end{vmatrix}$$
-
--   Or in index notation
-    $$\\hat{a} \\times \\hat{b} = \\epsilon\_{ijk} a\_j b\_k \\hat{e}\_i$$
-
-----
-## partial derivative
-
--   We indicate (partial) derivatives using a comma
-
--   In three dimensions, we take the partial derivative with respect to each variable (*x*, *y*, *z* or *x*<sub>1</sub>, *x*<sub>2</sub>, *x*<sub>3</sub>)
-
--   For example a scalar property, such as density, can have a different value at any point in space
-
--   *ρ* = *ρ*(*x*<sub>1</sub>, *x*<sub>2</sub>, *x*<sub>3</sub>)
-    $$\\rho\_{,i} = \\frac{\\partial}{\\partial x\_i} \\rho = \\left\\langle \\frac{\\partial \\rho }{\\partial x\_1}, \\frac{\\partial \\rho }{\\partial x\_2}, \\frac{\\partial \\rho }{\\partial x\_3} \\right\\rangle$$
-
-----
-## partial derivative
-
--   Similarly, if we take the partial derivative of a vector, it produces a matrix
-    $$u\_{i,j} = \\frac{\\partial}{\\partial x\_j} u\_i = \\begin{bmatrix}
-    \\frac{\\partial u\_1}{\\partial x\_1} & \\frac{\\partial u\_1}{\\partial x\_2} & \\frac{\\partial u\_1}{\\partial x\_3}\\\\
-    \\frac{\\partial u\_2}{\\partial x\_1} & \\frac{\\partial u\_2}{\\partial x\_2} & \\frac{\\partial u\_2}{\\partial x\_3}\\\\
-    \\frac{\\partial u\_3}{\\partial x\_1} & \\frac{\\partial u\_3}{\\partial x\_2} & \\frac{\\partial u\_3}{\\partial x\_3}
-    \\end{bmatrix}$$
-
-Examples
-========
-
-----
-## example 1
-
--   Write the following in conventional notation
-    *T*<sub>*i**j*, *j*</sub> + *F*<sub>*i*</sub> = 0
-
--   The comma indicates a partial derivative
-
--   The first index, *i*, is not repeated in any terms, so it is a “free index”
-
-    -   This means in a 3D coordinate system, we will have at least three equations
-
--   The second index, *j*, is repeated in the first term, indicating summation.
-
-    -   We will have exactly three equations
-
-----
-## example 1 (solution)
-*T*<sub>*i**j*, *j*</sub> + *F*<sub>*i*</sub> = 0
+-   The invariants can be found by the following equations
 $$\\begin{aligned}
-\\frac{\\partial T\_{11}}{\\partial x\_1} + \\frac{\\partial T\_{12}}{\\partial x\_2} + \\frac{\\partial T\_{13}}{\\partial x\_3} + F\_1= 0\\\\
-\\frac{\\partial T\_{21}}{\\partial x\_1} + \\frac{\\partial T\_{22}}{\\partial x\_2} + \\frac{\\partial T\_{23}}{\\partial x\_3} + F\_2= 0\\\\
-\\frac{\\partial T\_{31}}{\\partial x\_1} + \\frac{\\partial T\_{32}}{\\partial x\_2} + \\frac{\\partial T\_{33}}{\\partial x\_3} + F\_3= 0\\\\\\end{aligned}$$
+	I\_\\alpha &= a\_{ii}\\\\
+	II\_\\alpha &= \\frac{1}{2}(a\_{ii} a\_{jj} - a\_{ij}a\_{ij})\\\\
+	III\_\\alpha &= \\det \[ a\_{ij}\]\\end{aligned}$$
 
 ----
-## example 2
+## invariants
 
--   Identify whether the following expressions represent a scalar, vector, or matrix
+-   In the principal direction, *a*<sub>*ij*</sub><sup>′</sup> will be
 
--   If index notation is used incorrectly, give a reason why
+$$a\_{ij}^\\prime = \\begin{bmatrix}
+	\\lambda\_1 & 0 & 0\\\\
+	0 & \\lambda\_2 & 0\\\\
+	0 & 0 & \\lambda\_3
+\\end{bmatrix}$$
 
--   *A*<sub>*i*</sub> = *B*<sub>*i*</sub>
+-   Since invariants do not change with coordinate systems, we can also write the invariants as
 
--   *A*<sub>*i*</sub> = *B*<sub>*i*</sub> + *C*<sub>*i*</sub>*D*<sub>*i*</sub>
+$$\\begin{aligned}
+	I\_\\alpha &= \\lambda\_1 + \\lambda\_2 + \\lambda\_3\\\\
+	II\_\\alpha &= \\lambda\_1\\lambda\_2 + \\lambda\_2 \\lambda\_3 + \\lambda\_3 \\lambda\_1\\\\
+	III\_\\alpha &= \\lambda\_1 \\lambda\_2 \\lambda\_3\\end{aligned}$$
 
--   *δ*<sub>*i**j*</sub>*A*<sub>*i*</sub>*B*<sub>*j*</sub>
-
--   $\\phi = \\frac{\\partial F\_i}{\\partial x\_i}$
+---
+# principal directions
 
 ----
-## example 2 (solution)
+## principal directions
 
--   Vector equation
+-   We defined principal directions earlier
+    (*a*<sub>*ij*</sub> − *λδ*<sub>*ij*</sub>)*n*<sub>*j*</sub> = 0
 
--   Incorrect use of index notation, *i* used as both free and dummy index
+-   *λ* are the principal values and *n*<sub>*j*</sub> are the principal directions
+-   For each eigenvalue there will be a principal direction
+-   We find the principal direction by substituting the solution for *λ* back into this equation
 
--   Scalar value (both indexes are dummy indexes)
+----
+## example
 
--   Scalar value (could also be written *F*<sub>*i*, *i*</sub>)
+-   Find the principal directions for the earlier principal values example
+-   Recall *λ* = 0, 5, let us say *λ*<sub>1</sub> = 5, we find *n*<sub>*j*</sub><sup>(1)</sup> by
+
+$$\\begin{bmatrix}
+	1-\\lambda\_1 & 2\\\\
+	2 & 4-\\lambda\_1
+\\end{bmatrix} \\begin{Bmatrix}
+	n\_1 \\\\ n\_2
+\\end{Bmatrix} = 0$$
+
+-   This gives
+
+$$\\begin{bmatrix}
+	-4 & 2\\\\
+	2 & -1
+\\end{bmatrix} \\begin{Bmatrix}
+	n\_1 \\\\ n\_2
+\\end{Bmatrix} = 0$$
+
+----
+## example
+
+-   We proceed to solve the equations using row-reduction, but we find
+
+$$\\begin{bmatrix}
+	2 & -1\\\\
+	0 & 0
+\\end{bmatrix} \\begin{Bmatrix}
+	n\_1 \\\\ n\_2
+\\end{Bmatrix} = 0$$
+
+-   This means we cannot uniquely solve for *n*<sub>*j*</sub>
+-   We are only concerned with the direction, magnitude is not important
+-   Choose *n*<sub>2</sub> = 1, solve for *n*<sub>1</sub>
+-   $n^{(1)} = \\langle \\frac{1}{2}, 1 \\rangle$
+
+----
+## example
+
+-   Similarly, for *λ*<sub>2</sub> = 0, we find
+
+$$\\begin{bmatrix}
+	1 & 2\\\\
+	2 & 4
+\\end{bmatrix} \\begin{Bmatrix}
+	n\_1 \\\\ n\_2
+\\end{Bmatrix} = 0$$
+
+-   Which, after row-reduction, becomes
+
+$$\\begin{bmatrix}
+	1 & 2\\\\
+	0 & 0
+\\end{bmatrix} \\begin{Bmatrix}
+	n\_1 \\\\ n\_2
+\\end{Bmatrix} = 0$$
+
+-   If we choose *n*<sub>2</sub> = 1, we find *n*<sub>1</sub> = −2
+-   This gives *n*<sup>(2)</sup> = ⟨ − 2, 1⟩
+
+----
+## example
+
+-   We can assemble a transformation matrix, *Q*<sub>*ij*</sub>, from the principal directions
+-   First we need to normalize them to unit vectors
+-   $||n^{(1)}|| = \\sqrt{\\frac{5}{4}}$
+-   $\\hat{n}^{(1)} = \\frac{2}{\\sqrt{5}} \\langle \\frac{1}{2}, 1 \\rangle = \\langle \\frac{1}{\\sqrt{5}}, \\frac{2}{\\sqrt{5}} \\rangle$
+-   $||n^{(2)}|| = \\sqrt{5}$
+-   $\\hat{n}^{(2)} = \\langle \\frac{-2}{\\sqrt{5}}, \\frac{1}{\\sqrt{5}} \\rangle $
+
+----
+## example
+
+-   This gives
+
+$$Q\_{ij} = \\frac{1}{\\sqrt{5}}\\begin{bmatrix}
+	1 & 2\\\\
+	-2 & 1
+\\end{bmatrix}$$
+
+-   And we find
+    *A*<sub>*mn*</sub><sup>′</sup> = *Q*<sub>*mi*</sub>*Q*<sub>*nj*</sub>*A*<sub>*ij*</sub>
+
+$$A\_{ij}^\\prime = \\begin{bmatrix}
+	5 & 0 \\\\
+	0 & 0
+\\end{bmatrix}$$
+
+---
+# examples
+
+----
+## example
+
+-   Find principal values, principal directions, and invariants for the tensor
+		
+$$c\_{ij} = \\begin{bmatrix}
+	8 & 0 & 0\\\\
+	0 & 3 & 1\\\\
+	0 & 1 & 3
+\\end{bmatrix}$$
+
+----
+## example
+
+-   Characteristic equation simplifies to
+-   −*λ*<sup>3</sup> + 14*λ*<sup>2</sup> − 56*λ* + 64 = 0
+-   Which has the solutions *λ* = 2, 4, 8
+
+----
+## example
+
+-   To find the principal direction for *λ*<sub>1</sub> = 8
+
+$$\\begin{bmatrix}
+	8-8 & 0 & 0\\\\
+	0 & 3-8 & 1\\\\
+	0 & 1 & 3-8
+\\end{bmatrix}\\begin{Bmatrix}
+	n\_1 \\\\ n\_2 \\\\ n\_3
+\\end{Bmatrix} = 0$$
+
+----
+## example
+
+-   After row-reduction, we find
+
+$$\\begin{bmatrix}
+	0 & 0 & 0\\\\
+	0 & 0 & -24\\\\
+	0 & 1 & -5
+\\end{bmatrix}\\begin{Bmatrix}
+	n\_1 \\\\ n\_2 \\\\ n\_3
+\\end{Bmatrix} = 0$$
+
+-   This means that *n*<sub>3</sub> = 0 and, as a result, *n*<sub>2</sub> = 0.
+
+-   *n*<sub>1</sub> can be any value, we choose *n*<sub>1</sub> = 1 to give a unit vector.
+-   *n*<sup>(1)</sup> = ⟨1, 0, 0⟩
+
+----
+## example
+
+-   To find the principal direction for *λ*<sub>2</sub> = 4
+
+$$\\begin{bmatrix}
+	8-4 & 0 & 0\\\\
+	0 & 3-4 & 1\\\\
+	0 & 1 & 3-4
+\\end{bmatrix}\\begin{Bmatrix}
+	n\_1 \\\\ n\_2 \\\\ n\_3
+\\end{Bmatrix} = 0$$
+
+----
+## example
+
+-   After row-reduction, we find
+
+$$\\begin{bmatrix}
+	4 & 0 & 0\\\\
+	0 & -1 & 1\\\\
+	0 & 0 & 0
+\\end{bmatrix}\\begin{Bmatrix}
+	n\_1 \\\\ n\_2 \\\\ n\_3
+\\end{Bmatrix} = 0$$
+
+-   This means that *n*<sub>1</sub> = 0
+-   We also know that *n*<sub>2</sub> = *n*<sub>3</sub>, so we choose *n*<sub>2</sub> = *n*<sub>1</sub> = 1
+-   This gives $n^{(2)} = \\frac{1}{\\sqrt{2}}\\langle 0, 1, 1 \\rangle$ after normalization
+
+----
+## example
+
+-   To find the principal direction for *λ*<sub>3</sub> = 2
+
+$$\\begin{bmatrix}
+	8-2 & 0 & 0\\\\
+	0 & 3-2 & 1\\\\
+	0 & 1 & 3-2
+\\end{bmatrix}\\begin{Bmatrix}
+	n\_1 \\\\ n\_2 \\\\ n\_3
+\\end{Bmatrix} = 0$$
+
+----
+## example
+
+-   After row-reduction, we find
+
+$$\\begin{bmatrix}
+	6 & 0 & 0\\\\
+	0 & 1 & 1\\\\
+	0 & 0 & 0
+\\end{bmatrix}\\begin{Bmatrix}
+	n\_1 \\\\ n\_2 \\\\ n\_3
+\\end{Bmatrix} = 0$$
+
+-   This means that *n*<sub>1</sub> = 0
+-   We also know that *n*<sub>2</sub> = −*n*<sub>3</sub>, so we choose *n*<sub>2</sub> = 1 and *n*<sub>1</sub> = −1
+-   This gives $n^{(3)} = \\frac{1}{\\sqrt{2}}\\langle 0, 1, -1 \\rangle$ after normalization
+
+----
+## example
+
+-   In summary, for *c*<sub>*ij*</sub> we have:
+-   *λ*<sub>1</sub> = 8 and *n*<sup>(1)</sup> = ⟨1, 0, 0⟩
+-   *λ*<sub>2</sub> = 4 and $n^{(2)} = \\frac{1}{\\sqrt{2}}\\langle 0, 1, 1 \\rangle$
+-   *λ*<sub>3</sub> = 2 and $n^{(3)} = \\frac{1}{\\sqrt{2}}\\langle 0, 1, -1 \\rangle$
+-   We can assemble *n*<sup>(*i*)</sup> into a transformation tensor
+
+$$Q\_{ij} = \\frac{1}{\\sqrt{2}}\\begin{bmatrix}
+	\\sqrt{2} & 0 & 0\\\\
+	0 & 1 & 1\\\\
+	0 & 1 & -1
+\\end{bmatrix}$$
+
+----
+## example
+
+-   What is *c*<sub>*ij*</sub><sup>′</sup>?
+-   *c*<sub>*ij*</sub><sup>′</sup> = *Q*<sub>*im*</sub>*Q*<sub>*jn*</sub>*c*<sub>*mn*</sub>
+
+$$c\_{ij}^\\prime = \\begin{bmatrix}
+	8 & 0 & 0 \\\\
+	0 & 4 & 0 \\\\
+	0 & 0 & 2
+\\end{bmatrix}$$
+
+----
+## example
+
+-   We can also find the invariants for
+
+$$c\_{ij} = \\begin{bmatrix}
+	8 & 0 & 0\\\\
+	0 & 3 & 1\\\\
+	0 & 1 & 3
+\\end{bmatrix}$$
+
+-   Recall:
+
+$$\\begin{aligned}
+	I\_\\alpha &= a\_{ii}\\\\
+	II\_\\alpha &= \\frac{1}{2}(a\_{ii} a\_{jj} - a\_{ij}a\_{ij})\\\\
+	III\_\\alpha &= \\det \[ a\_{ij}\]
+\\end{aligned}$$
+
+----
+## example
+
+-   First invariant
+    *I*<sub>*α*</sub> = *a*<sub>*ii*</sub> = 8 + 3 + 3 = 14
+
+-   Second invariant
+
+$$II\_\\alpha = \\frac{1}{2}(a\_{ii} a\_{jj} - a\_{ij}a\_{ij})$$
+    *a*<sub>*ii*</sub>*a*<sub>*jj*</sub> = 14 × 14
+    *a*<sub>*ij*</sub>*a*<sub>*ij*</sub> = *a*<sub>11</sub>*a*<sub>11</sub> + *a*<sub>12</sub>*a*<sub>12</sub> + *a*<sub>13</sub>*a*<sub>13</sub> + ... + *a*<sub>33</sub>*a*<sub>33</sub>
+
+$$II\_\\alpha = \\frac{1}{2}(196 - 84) = 56$$
+
+----
+## example
+
+-   Third invariant
+    *III*<sub>*α*</sub> = det[*a*<sub>*ij*</sub>\]
+    *III*<sub>*α*</sub> = 8 × (3 × 3 − 1 × 1)=64
 
 
