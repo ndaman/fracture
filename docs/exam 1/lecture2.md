@@ -15,6 +15,20 @@ August 22, 2019
 ----
 ## outline
 
+<!-- vim-markdown-toc GFM -->
+
+* tensor calculus
+* other coordinate systems
+* equilibrium equations
+* spherical and cylindrical coordinates
+* field equations
+* boundary conditions
+* stress formulation
+* strain energy
+* example
+* airy stress functions
+
+<!-- vim-markdown-toc -->
 
 ---
 # tensor calculus
@@ -95,7 +109,7 @@ $$\\iint\_S \\left( \\frac{\\partial g}{\\partial x\_1} - \\frac{\\partial f}{\\
 ----
 ## cylindrical coordinates
 
-TODO: Figure
+![cylindrical coordinate system axis](../images/cylindrical-axis.png)
 
 ----
 ## cylindrical coordinates
@@ -119,22 +133,19 @@ $$\\begin{aligned}
 ----
 ## spherical coordinates
 
-TODO: Figure
+![spherical coodrinate system axis](../images/spherical-axis.png)
 
 ----
 ## spherical coordinates
 
 -   We can convert between Cartesian and spherical coordinate systems
-
-$$\\begin{aligned}
+-   $$\\begin{aligned}
   x\_1 &= r\\cos \\theta \\sin \\phi \\\\
   x\_2 &= r\\sin \\theta \\sin \\phi \\\\
   x\_3 &= r\\cos \\phi
 \\end{aligned}$$
-
 -   Or to convert from Cartesian to cylindrical
-
-$$\\begin{aligned}
+-   $$\\begin{aligned}
   r &= \\sqrt{x\_1^2 + x\_2^2 + x\_3^2}\\\\
   \\phi &= \\cos ^{-1} \\left(\\frac{x\_3}{\\sqrt{x\_1^2 + x\_2^2 + x\_3^2}}\\right)\\\\
   \\theta &= \\tan^{-1} \\left(\\frac{x\_2}{x\_1}\\right)
