@@ -406,6 +406,10 @@ $$Q\_{ij}^2 = \\begin{bmatrix}
 
 -   In the 2D coordinate transformation example, we were able to eliminate one value from a vector using coordinate transformation
 -   For second-order tensors, we desire to find the “principal values” where all non-diagonal terms are zero
+
+----
+## principal directions
+
 -   The direction determined by the unit vector, *n*<sub>*j*</sub>, is said to be the *principal direction* or *eigenvector* of the symmetric second-order tensor, *a*<sub>*ij*</sub> if there exists a parameter, *λ*, such that
     *a*<sub>*ij*</sub>*n*<sub>*j*</sub> = *λn*<sub>*i*</sub>
 -   Where *λ* is called the *principal value* or *eigenvalue* of the tensor
