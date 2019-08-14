@@ -72,6 +72,20 @@ August 20, 2019
   <li> Sometimes composites hurt more than they help when not utilized properly </li>
   </div>
 
+----
+## research
+
+<div class="left">
+	<ul>
+		<li>Thermoplastic composites offer many advantages over thermoset</li>
+		<li>Production speed, recyclability</li>
+		<li>Also have challenges, such as bonding/welding</li>
+	</ul>
+</div>
+<div class="right">
+	![thermoplastic welding](../images/Welding-thermoplastic-composites.jpg)
+</div>
+ 
 
 ----
 ## classes
@@ -96,8 +110,8 @@ August 20, 2019
 ----
 ## course textbook
 
--   Text is available as a pdf on Blackboard, you may purchase any version if you prefer a hard copy
--   Homework will be given in handouts
+-   Text is available as a pdf on Blackboard and the [class website](https://ndaman.github.io/fracture/), you may purchase any version if you prefer a hard copy
+-   Homework will be given in handouts provided online
 -   Supplemental textbooks are listed in the syllabus for further study
 
 ----
@@ -333,6 +347,12 @@ $$\\begin{aligned}
 -   Matrices (second-order tensors): *σ*<sub>*mn*</sub> = *Q*<sub>*im*</sub>*Q*<sub>*jn*</sub>*σ*<sub>*ij*</sub><sup>′</sup>
 -   Fourth-order tensors: *C*<sub>*ijkl*</sub> = *Q*<sub>*mi*</sub>*Q*<sub>*nj*</sub>*Q*<sub>*ok*</sub>*Q*<sub>*pl*</sub>*C*<sub>*mnop*</sub><sup>′</sup>
 
+----
+## mental/emotional health warning
+
+-		Some texts flip the definition of *Q*<sub>*ij*</sub>, and then flip their transformation law accordingly
+-		Any time you use tensor transformation, make sure you are following a consistent set of transformation laws
+ 
 ----
 ## general
 

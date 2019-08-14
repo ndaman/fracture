@@ -109,7 +109,7 @@ $$\\iint\_S \\left( \\frac{\\partial g}{\\partial x\_1} - \\frac{\\partial f}{\\
 ----
 ## cylindrical coordinates
 
-![cylindrical coordinate system axis](../images/cylindrical-axis.png)
+![cylindrical coordinate system axis](../images/cylindrical-axis.png) <!-- .element width="75%" -->
 
 ----
 ## cylindrical coordinates
@@ -133,19 +133,19 @@ $$\\begin{aligned}
 ----
 ## spherical coordinates
 
-![spherical coodrinate system axis](../images/spherical-axis.png)
+![spherical coodrinate system axis](../images/spherical-axis.png) <!-- .element width="75" -->
 
 ----
 ## spherical coordinates
 
 -   We can convert between Cartesian and spherical coordinate systems
--   $$\\begin{aligned}
+-  <!-- .element style="list-style-type:none" --> $$\\begin{aligned}
   x\_1 &= r\\cos \\theta \\sin \\phi \\\\
   x\_2 &= r\\sin \\theta \\sin \\phi \\\\
   x\_3 &= r\\cos \\phi
 \\end{aligned}$$
 -   Or to convert from Cartesian to cylindrical
--   $$\\begin{aligned}
+-  <!-- .element style="list-style-type:none" --> $$\\begin{aligned}
   r &= \\sqrt{x\_1^2 + x\_2^2 + x\_3^2}\\\\
   \\phi &= \\cos ^{-1} \\left(\\frac{x\_3}{\\sqrt{x\_1^2 + x\_2^2 + x\_3^2}}\\right)\\\\
   \\theta &= \\tan^{-1} \\left(\\frac{x\_2}{x\_1}\\right)
@@ -250,20 +250,21 @@ $$\\begin{aligned}
 
 -   Under what circumstances is the following stress field in static equilibrium?
 
--   *σ*<sub>11</sub> = 3*x*<sub>1</sub> + *k*<sub>1</sub>*x*<sub>2</sub><sup>2</sup>, *σ*<sub>22</sub> = 2*x*<sub>1</sub> + 4*x*<sub>2</sub>, *σ*<sub>12</sub> = *σ*<sub>21</sub> = *a* + *b**x*<sub>1</sub> + *c**x*<sub>1</sub><sup>2</sup> + *d**x*<sub>2</sub> + *e**x*<sub>2</sub><sup>2</sup> + *f**x*<sub>1</sub>*x*<sub>2</sub>
+-  <!-- .element style="list-style-type:none" --> *σ*<sub>11</sub> = 3*x*<sub>1</sub> + *k*<sub>1</sub>*x*<sub>2</sub><sup>2</sup>, *σ*<sub>22</sub> = 2*x*<sub>1</sub> + 4*x*<sub>2</sub>, *σ*<sub>12</sub> = *σ*<sub>21</sub> = *a* + *bx*<sub>1</sub> + *cx*<sub>1</sub><sup>2</sup> + *dx*<sub>2</sub> + *ex*<sub>2</sub><sup>2</sup> + *fx*<sub>1</sub>*x*<sub>2</sub>
 
 -   We are only examining the stress field, so we neglect any internal body forces
 
--   The first equilibrium equation gives
-    $$\\frac{\\partial \\sigma\_{11}}{\\partial x\_1} + \\frac{\\partial \\sigma\_{12}}{\\partial x\_2} = 0$$
-    3 + *d* + 2*e**x*<sub>2</sub> + *f**x*<sub>1</sub> = 0
 
 ----
 ## example
 
+-   The first equilibrium equation gives
+    $$\\frac{\\partial \\sigma\_{11}}{\\partial x\_1} + \\frac{\\partial \\sigma\_{12}}{\\partial x\_2} = 0$$
+    3 + *d* + 2*ex*<sub>2</sub> + *fx*<sub>1</sub> = 0
+ 
 -   The second equilibrium equation gives
     $$\\frac{\\partial \\sigma\_{12}}{\\partial x\_1} + \\frac{\\partial \\sigma\_{22}}{\\partial x\_2} = 0$$
-    *b* + 2*c**x*<sub>1</sub> + *f**x*<sub>2</sub> + 4 = 0
+    *b* + 2*cx*<sub>1</sub> + *fx*<sub>2</sub> + 4 = 0
 
 ---
 # spherical and cylindrical coordinates
@@ -271,14 +272,14 @@ $$\\begin{aligned}
 ----
 ## cylindrical coordinates
 
-![the axis used in cylindrical coordinates](../images/cylindrical-axis.png)
+![the axis used in cylindrical coordinates](../images/cylindrical-axis.png) <!-- .element width="75%" -->
 
 ----
 ## stress in cylindrical coordinates
 
 -   We can also define stress in a cylindrical coordinate system
 
-![An illustration of what stress tensor terms represent in cylindrical coordinate](../images/cylindrical.PNG)
+![An illustration of what stress tensor terms represent in cylindrical coordinate](../images/cylindrical.PNG) <!-- .element width="75%" -->
 
 
 ----
@@ -308,7 +309,7 @@ $$\\begin{aligned}
 
 -   We can do the same thing in spherical coordinates
 
-![The axis used to define spherical coordinates](../images/spherical.PNG)
+![The axis used to define spherical coordinates](../images/spherical.PNG) <!-- .element width="75%" -->
 
 ----
 ## spherical coordinates
@@ -322,9 +323,7 @@ $$\\sigma\_{ij} = \\begin{bmatrix}
 \\end{bmatrix}$$
 
 ----
-## equilibrium in spherical coordinates
-
--   Using the derivative relationships developed in Chapter 1, we can express the equilibrium equations as
+## spherical equilibrium
 
 $$\\begin{aligned}
   \\frac{\\partial \\sigma\_r}{\\partial r} + \\frac{1}{r} \\frac{\\partial \\tau\_{r \\phi}}{\\partial \\phi} + \\frac{1}{r \\sin \\phi}\\frac{\\partial \\tau\_{r\\theta}}{\\partial \\theta} + \\frac{1}{r}(2\\sigma\_r - \\sigma\_\\phi - \\sigma\_\\theta + \\tau\_{r\\phi}\\cot \\phi) + F\_r &= 0\\\\
@@ -368,7 +367,7 @@ $$\\begin{aligned}
 -   There are cases where we can integrate a strain field to find a set of discontinuous displacements
 
 ----
-## compatibility equations
+## compatibility 
 
 -   The compatibility equations enforce continuity of displacements to prevent this from occurring
 -   To enforce this condition we consider the strain-displacement relations:
@@ -383,7 +382,7 @@ $$\\epsilon\_{ij,kl} = \\frac{1}{2}(u\_{i,jkl} + u\_{j,ikl})$$
     2*ϵ*<sub>*ij*, *kl*</sub> = *u*<sub>*i*, *jkl*</sub> + *u*<sub>*j*, *ikl*</sub>
 
 ----
-## compatibility equations
+## compatibility 
 
 -   We can eliminate the displacement terms from the equation by interchanging the indexes to generate new equations
 
@@ -400,7 +399,7 @@ $$\\begin{aligned}
 \\end{aligned}$$
 
 ----
-## compatibility equations
+## compatibility 
 
 -   Substituting these values into the equations gives
     2*ϵ*<sub>*ij*, *kl*</sub> = 2*ϵ*<sub>*ik*, *jl*</sub> − *u*<sub>*k*, *ijl*</sub> + 2*ϵ*<sub>*jl*, *ik*</sub> − *u*<sub>*l*, *ijk*</sub>
@@ -418,8 +417,10 @@ $$\\begin{aligned}
 ## compatibility equations
 
 -   The so-called *Saint-Venant compatibility equations* in full are a system of 81 equations, but only six are useful (although even these six are not entirely linearly independent)
+-   These six are found by setting *k* = *l*
 
--   These six are found by setting *k* = *l*, or in expanded form
+----
+## compatibility
 
 $$\\begin{aligned}
   \\frac{\\partial^2 \\epsilon\_x}{\\partial y^2} + \\frac{\\partial^2 \\epsilon\_y}{\\partial x^2} &= 2\\frac{\\partial^2 \\epsilon\_{xy}}{\\partial x \\partial y}\\\\
@@ -431,7 +432,7 @@ $$\\begin{aligned}
 \\end{aligned}$$
 
 ----
-## compatibility equations
+## compatibility 
 
 -   The compatibility equations are necessary to ensure that the strain field is valid and will produce a continuous displacement field
 -   While these equations are important and necessary in solving elasticity problems, they are not sufficient
@@ -467,7 +468,7 @@ $$\\begin{aligned}
 
 -   In many systems, the boundaries are parallel to the coordinate system, but this is not always the case
 
-![boundary conditions which do not align with the coordinate system](../images/noncoordinate.PNG)
+![boundary conditions which do not align with the coordinate system](../images/noncoordinate.PNG) <!-- .element width="60%" -->
 
 ----
 ## boundaries
@@ -476,6 +477,10 @@ $$\\begin{aligned}
 -   When the condition is on a face parallel to the coordinate system, this gives a zero-stress condition
     *t*<sub>*j*</sub> = *σ*<sub>*ij*</sub>*n*<sub>*i*</sub>
 -   This results in *σ*<sub>*xy*</sub> = *σ*<sub>*yy*</sub> = 0
+
+----
+## boundaries
+
 -   When the boundary is not parallel to the coordinate system, we do not necessarily have any zero-stress conditions
 
 $$\\begin{aligned}
@@ -505,13 +510,11 @@ $$\\begin{aligned}
 ## stress formulation
 
 -   We start by using Hooke’s law for each of the strain terms
-
-$$\\epsilon\_{ij} = \\frac{1+\\nu}{E}\\sigma\_{ij} - \\frac{\\nu}{E}\\sigma\_{kk} \\delta\_{ij}$$
-
+-   <!-- .element style="list-style-type:none" -->$$\\epsilon\_{ij} = \\frac{1+\\nu}{E}\\sigma\_{ij} - \\frac{\\nu}{E}\\sigma\_{kk} \\delta\_{ij}$$
 -   After some tedious algebra, we find
 
 $$\\hspace{-1cm}
-  \\sigma\_{ij,kk} + \\sigma\_{kk,ij} - \\sigma\_{ik,jk} - \\sigma\_{jk,ik} = \\frac{\\nu}{1+\\nu} (\\sigma\_{mm,kk}\\delta\_{ij} + \\sigma\_{mm,ij}\\delta\_{kk} - \\sigma\_{mm,jk}\\delta\_{ik} - \\sigma\_{mm,ik}\\delta\_{jk})$$
+  \\tiny{\\sigma\_{ij,kk} + \\sigma\_{kk,ij} - \\sigma\_{ik,jk} - \\sigma\_{jk,ik} = \\frac{\\nu}{1+\\nu} (\\sigma\_{mm,kk}\\delta\_{ij} + \\sigma\_{mm,ij}\\delta\_{kk} - \\sigma\_{mm,jk}\\delta\_{ik} - \\sigma\_{mm,ik}\\delta\_{jk})}$$
 
 ----
 ## stress formulation
@@ -524,6 +527,9 @@ $$\\sigma\_{ij,kk} + \\frac{1}{1+\\nu}\\sigma\_{kk,ij} = \\frac{\\nu}{1+\\nu}\\s
 
 $$\\sigma\_{ii,kk} = -\\frac{1+\\nu}{1-\\nu}F\_{i,i}$$
 
+----
+## stress formulation
+
 -   Which we can substitute into the equation to find
 
 $$\\sigma\_{ij,kk} + \\frac{1}{1+\\nu}\\sigma\_{kk,ij} = -\\frac{\\nu}{1+\\nu}\\delta\_{ij}F\_{k,k} - F\_{i,j} - F\_{j,i}$$
@@ -532,7 +538,10 @@ $$\\sigma\_{ij,kk} + \\frac{1}{1+\\nu}\\sigma\_{kk,ij} = -\\frac{\\nu}{1+\\nu}\\
 ## beltrami-michell compatibility
 
 -   The compatibility equations in terms of stress are commonly known as the *Beltrami-Michell compatibility equations*
--   When there are no body forces, we can write the six expanded form equations as
+-   When there are no body forces, we can write the six expanded form equations 
+
+----
+## beltrami-michell
 
 $$\\begin{aligned}
   (1+\\nu) \\nabla^2 \\sigma\_x + \\frac{\\partial^2}{\\partial x^2} (\\sigma\_x + \\sigma\_y + \\sigma\_z) &= 0\\\\
@@ -560,6 +569,10 @@ $$\\begin{aligned}
     -   Choose a basic form for the solution based on our knowledge of the problem
     -   Solve for coefficients
     -   Usually we know the answer before we know the problem, it can be difficult to find useful problems for our solution
+
+----
+## solution methods
+
 -   Semi-inverse method
     -   Only part of the solution is assumed
     -   Use direct integration to find the rest
@@ -663,6 +676,9 @@ $$\\begin{aligned}
 -   This method reduces the governing equations for a planar problem to a single unknown function
 -   We assume first that body forces are derivable from a *potential function*, *V*
 
+----
+## airy stress function
+
 $$\\begin{aligned}
   F\_x &= -\\frac{\\partial V}{\\partial x}\\\\
   F\_y &= -\\frac{\\partial V}{\\partial y}
@@ -683,7 +699,7 @@ $$\\begin{aligned}
 \\end{aligned}$$
 
 -   The function *ϕ* = *ϕ*(*x*, *y*) is known as the Airy stress function
--   When constructed in this way, equilibrium is automatically satisfied
+-   Equilibrium is automatically satisfied
 
 ----
 ## compatibility
@@ -691,9 +707,12 @@ $$\\begin{aligned}
 -   Substituting the Airy Stress function and potential function into the relationships, we find
 
 $$\\begin{aligned}
-  \\frac{\\partial^4 \\phi}{\\partial x^4} + 2\\frac{\\partial^4 \\phi}{\\partial x^2 \\partial y^2} + \\frac{\\partial^4 \\phi}{\\partial y^4} &= - \\frac{1-2\\nu}{1-\\nu}\\left(\\frac{\\partial^2 V}{\\partial x^2} + \\frac{\\partial^2 V}{\\partial y^2}\\right) &\\text{plane strain}\\\\
-  \\frac{\\partial^4 \\phi}{\\partial x^4} + 2\\frac{\\partial^4 \\phi}{\\partial x^2 \\partial y^2} + \\frac{\\partial^4 \\phi}{\\partial y^4} &= - (1-\\nu)\\left(\\frac{\\partial^2 V}{\\partial x^2} + \\frac{\\partial^2 V}{\\partial y^2}\\right) &\\text{plane stress}
+  \\tiny{\\frac{\\partial^4 \\phi}{\\partial x^4} + 2\\frac{\\partial^4 \\phi}{\\partial x^2 \\partial y^2} + \\frac{\\partial^4 \\phi}{\\partial y^4} &= - \\frac{1-2\\nu}{1-\\nu}\\left(\\frac{\\partial^2 V}{\\partial x^2} + \\frac{\\partial^2 V}{\\partial y^2}\\right) &\\text{plane strain}}\\\\
+  \\tiny{\\frac{\\partial^4 \\phi}{\\partial x^4} + 2\\frac{\\partial^4 \\phi}{\\partial x^2 \\partial y^2} + \\frac{\\partial^4 \\phi}{\\partial y^4} &= - (1-\\nu)\\left(\\frac{\\partial^2 V}{\\partial x^2} + \\frac{\\partial^2 V}{\\partial y^2}\\right) &\\text{plane stress}}
 \\end{aligned}$$
+
+----
+## compatibility
 
 -   If there are no body forces, or the potential function satisfies Laplace’s Equation
     ∇<sup>2</sup>*V* = 0
@@ -708,8 +727,11 @@ $$\\frac{\\partial^4 \\phi}{\\partial x^4} + 2\\frac{\\partial^4 \\phi}{\\partia
 
 $$\\nabla^4 \\phi = \\left(\\frac{\\partial ^2}{\\partial r^2} + \\frac{1}{r} \\frac{\\partial}{\\partial r} + \\frac{1}{r^2}\\frac{\\partial ^2}{\\partial \\theta^2}\\right)^2\\phi = 0$$
 
--   One method which gives several useful solutions assumes that the Airy Stress function has the form *ϕ*(*r*, *θ*)=*f*(*r*)*e*<sup>*b**θ*</sup>
--   Substituting this into the compatibility equations (and canceling the common *e*<sup>*b**θ*</sup>) term gives
+----
+## polar coordinates
+
+-   One method which gives several useful solutions assumes that the Airy Stress function has the form *ϕ*(*r*, *θ*)=*f*(*r*)*e*<sup>*bθ*</sup>
+-   Substituting this into the compatibility equations (and canceling the common *e*<sup>*bθ*</sup>) term gives
 
 $$f^{\\prime \\prime \\prime \\prime} + \\frac{2}{r} f^{\\prime \\prime \\prime} - \\frac{1-2b^2}{r^2}f^{\\prime \\prime} + \\frac{1-2b^2}{r^3}f^{\\prime} + \\frac{b^2(4+b^2)}{r^4}f = 0$$
 
@@ -717,12 +739,14 @@ $$f^{\\prime \\prime \\prime \\prime} + \\frac{2}{r} f^{\\prime \\prime \\prime}
 ## polar coordinates
 
 -   To solve this, we perform a change of variables, letting *r* = *e*<sup>*ξ*</sup>, which gives
-    *f*<sup>′′′′</sup> − 4*f*<sup>′′′</sup> + (4 + 2*b*<sup>2</sup>)*f*<sup>′′</sup> − 4*b*<sup>2</sup>*f*<sup>′</sup> + *b*<sup>2</sup>(4 + *b*<sup>2</sup>)*f* = 0
+- <!-- .element style="list-style-type:none" -->   *f*<sup>′′′′</sup> − 4*f*<sup>′′′</sup> + (4 + 2*b*<sup>2</sup>)*f*<sup>′′</sup> − 4*b*<sup>2</sup>*f*<sup>′</sup> + *b*<sup>2</sup>(4 + *b*<sup>2</sup>)*f* = 0
+-   We know consider *f* to have the form *f* = *e*<sup>*aξ*</sup> which generates the characteristic equation
+- <!-- .element style="list-style-type:none" -->  (*a*<sup>2</sup> + *b*<sup>2</sup>)(*a*<sup>2</sup> − 4*a* + 4 + *b*<sup>2</sup>)=0
 
--   We know consider *f* to have the form *f* = *e*<sup>*a**ξ*</sup> which generates the characteristic equation
-    (*a*<sup>2</sup> + *b*<sup>2</sup>)(*a*<sup>2</sup> − 4*a* + 4 + *b*<sup>2</sup>)=0
+----
+## polar coordinates
 
--   And has solutions
+-   This has solutions
 
 $$\\begin{aligned}
   a &= \\pm ib, \\pm 2ib\\\\
