@@ -352,7 +352,7 @@ $$\\begin{aligned}
 
 -		Some texts flip the definition of *Q*<sub>*ij*</sub>, and then flip their transformation law accordingly
 -		Any time you use tensor transformation, make sure you are following a consistent set of transformation laws
- 
+
 ----
 ## general
 
