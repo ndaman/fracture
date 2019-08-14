@@ -109,7 +109,7 @@ $$\\iint\_S \\left( \\frac{\\partial g}{\\partial x\_1} - \\frac{\\partial f}{\\
 ----
 ## cylindrical coordinates
 
-![cylindrical coordinate system axis](../images/cylindrical-axis.png) <!-- .element width="75%" -->
+![cylindrical coordinate system axis](../images/cylindrical-axis.png) <!-- .element width="60%" -->
 
 ----
 ## cylindrical coordinates
@@ -122,6 +122,9 @@ $$\\begin{aligned}
   x\_3 &= z
 \\end{aligned}$$
 
+----
+## cylindrical coordinates
+
 -   Or to convert from Cartesian to cylindrical
 
 $$\\begin{aligned}
@@ -132,8 +135,8 @@ $$\\begin{aligned}
 
 ----
 ## spherical coordinates
-
-![spherical coodrinate system axis](../images/spherical-axis.png) <!-- .element width="75" -->
+                                                                       
+![spherical coodrinate system axis](../images/spherical-axis.png) <!-- .element width="60%" -->
 
 ----
 ## spherical coordinates
@@ -144,6 +147,10 @@ $$\\begin{aligned}
   x\_2 &= r\\sin \\theta \\sin \\phi \\\\
   x\_3 &= r\\cos \\phi
 \\end{aligned}$$
+
+----
+## spherical coordinates
+
 -   Or to convert from Cartesian to cylindrical
 -  <!-- .element style="list-style-type:none" --> $$\\begin{aligned}
   r &= \\sqrt{x\_1^2 + x\_2^2 + x\_3^2}\\\\
@@ -272,14 +279,12 @@ $$\\begin{aligned}
 ----
 ## cylindrical coordinates
 
-![the axis used in cylindrical coordinates](../images/cylindrical-axis.png) <!-- .element width="75%" -->
+![the axis used in cylindrical coordinates](../images/cylindrical-axis.png) <!-- .element width="60%" -->
 
 ----
-## stress in cylindrical coordinates
+## stress
 
--   We can also define stress in a cylindrical coordinate system
-
-![An illustration of what stress tensor terms represent in cylindrical coordinate](../images/cylindrical.PNG) <!-- .element width="75%" -->
+![An illustration of what stress tensor terms represent in cylindrical coordinate](../images/cylindrical.PNG) <!-- .element width="60%" -->
 
 
 ----
@@ -307,9 +312,7 @@ $$\\begin{aligned}
 ----
 ## spherical coordinates
 
--   We can do the same thing in spherical coordinates
-
-![The axis used to define spherical coordinates](../images/spherical.PNG) <!-- .element width="75%" -->
+![The axis used to define spherical coordinates](../images/spherical.PNG) <!-- .element width="60%" -->
 
 ----
 ## spherical coordinates
@@ -514,7 +517,7 @@ $$\\begin{aligned}
 -   After some tedious algebra, we find
 
 $$\\hspace{-1cm}
-  \\tiny{\\sigma\_{ij,kk} + \\sigma\_{kk,ij} - \\sigma\_{ik,jk} - \\sigma\_{jk,ik} = \\frac{\\nu}{1+\\nu} (\\sigma\_{mm,kk}\\delta\_{ij} + \\sigma\_{mm,ij}\\delta\_{kk} - \\sigma\_{mm,jk}\\delta\_{ik} - \\sigma\_{mm,ik}\\delta\_{jk})}$$
+  \\sigma\_{ij,kk} + \\sigma\_{kk,ij} - \\sigma\_{ik,jk} - \\sigma\_{jk,ik} = \\frac{\\nu}{1+\\nu} (\\sigma\_{mm,kk}\\delta\_{ij} + \\sigma\_{mm,ij}\\delta\_{kk} - \\sigma\_{mm,jk}\\delta\_{ik} - \\sigma\_{mm,ik}\\delta\_{jk})$$
 
 ----
 ## stress formulation
@@ -707,8 +710,8 @@ $$\\begin{aligned}
 -   Substituting the Airy Stress function and potential function into the relationships, we find
 
 $$\\begin{aligned}
-  \\tiny{\\frac{\\partial^4 \\phi}{\\partial x^4} + 2\\frac{\\partial^4 \\phi}{\\partial x^2 \\partial y^2} + \\frac{\\partial^4 \\phi}{\\partial y^4} &= - \\frac{1-2\\nu}{1-\\nu}\\left(\\frac{\\partial^2 V}{\\partial x^2} + \\frac{\\partial^2 V}{\\partial y^2}\\right) &\\text{plane strain}}\\\\
-  \\tiny{\\frac{\\partial^4 \\phi}{\\partial x^4} + 2\\frac{\\partial^4 \\phi}{\\partial x^2 \\partial y^2} + \\frac{\\partial^4 \\phi}{\\partial y^4} &= - (1-\\nu)\\left(\\frac{\\partial^2 V}{\\partial x^2} + \\frac{\\partial^2 V}{\\partial y^2}\\right) &\\text{plane stress}}
+  \\frac{\\partial^4 \\phi}{\\partial x^4} + 2\\frac{\\partial^4 \\phi}{\\partial x^2 \\partial y^2} + \\frac{\\partial^4 \\phi}{\\partial y^4} &= - \\frac{1-2\\nu}{1-\\nu}\\left(\\frac{\\partial^2 V}{\\partial x^2} + \\frac{\\partial^2 V}{\\partial y^2}\\right) &\\text{plane strain}\\\\
+  \\frac{\\partial^4 \\phi}{\\partial x^4} + 2\\frac{\\partial^4 \\phi}{\\partial x^2 \\partial y^2} + \\frac{\\partial^4 \\phi}{\\partial y^4} &= - (1-\\nu)\\left(\\frac{\\partial^2 V}{\\partial x^2} + \\frac{\\partial^2 V}{\\partial y^2}\\right) &\\text{plane stress}
 \\end{aligned}$$
 
 ----
