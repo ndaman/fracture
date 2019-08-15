@@ -30,6 +30,10 @@ August 29, 2019
 -   Griffith’s theory is founded on the principle of energy balance
 -   During crack extension, the external work done, *dW*<sub>*e*</sub> must equal the increment of surface energy, *dW*<sub>*s*</sub>, and the increment of elastic strain energy, *dU*
 - <!-- .element style="list-style-type:none" -->   *dW*<sub>*s*</sub> + *dU* = *dW*<sub>*e*</sub>
+
+----
+## energy balance
+
 -   For a conservative field we can write this as
 - <!-- .element style="list-style-type:none" -->   $$\\frac{\\partial}{\\partial a} (W\_s + U + V) = 0$$
 -   Where a negative potential, *V*, implies positive external work done *dW*<sub>*e*</sub>
@@ -47,6 +51,10 @@ August 29, 2019
 -   Note that this compliance, *S*, will be a function of the crack length, *a*
 -   The strain energy can be expressed as
 - <!-- .element style="list-style-type:none" -->   $$U = \\int\_{\\delta=0}^{\\delta=SP} P d\\delta = \\int\_{\\delta=0}^{\\delta=SP} \\frac{\\delta}{S} d\\delta$$
+
+----
+## example
+
 -   After integrating
 - <!-- .element style="list-style-type:none" -->   $$U = \\frac{1}{2S}(\\delta^2)|\_0^{SP} = \\frac{1}{2}SP^2$$
 
@@ -106,7 +114,7 @@ $$\\begin{aligned}
 -   And we see that the energy released is independent of the load type
 
 ----
-## example - stable crack growth
+## example - stable crack 
 
 -   During experimental characterization, it is often desirable to measure crack growth
 -   To do this accurately, the crack growth must be stable
@@ -115,12 +123,16 @@ $$\\begin{aligned}
 - <!-- .element style="list-style-type:none" -->   $$G = \\frac{P^2a^2}{bEI}$$
 
 ----
-## example - stable crack growth
+## example - stable crack 
 
 -   Under fixed-load conditions, we find
 - <!-- .element style="list-style-type:none" -->   $$\\frac{dG}{da} = \\frac{2P^2a}{bEI}$$
 -   This is always positive, and thus results in unstable crack growth
 -   Under fixed-displacement conditions, we substitute for *P* in terms of displacement using *P* = *δ*/*S*
+
+----
+## example - stable crack
+
 -   From beam theory we can express *S* more precisely as
 - <!-- .element style="list-style-type:none" -->   $$S = \\frac{2a^3}{3EI}$$
 - <!-- .element style="list-style-type:none" -->    $$\\frac{dG}{da} = -\\frac{9\\delta^2EI}{ba^5}$$
