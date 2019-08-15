@@ -11,7 +11,7 @@ August 27, 2019
 -   Aug 29 - Griffith Fracture
 -		Sep 3 - Elastic Stress Field, Homework 1 Due
 -		Sep 5 - Elastic Stress Field
- 
+
 ----
 ## outline
 
@@ -104,9 +104,7 @@ $$\\sigma\_c = \\frac{E}{10}$$
 ## elliptic hole
 
 -   Inglis solved the problem of an eliptic hole under remote tension, finding that at the edge of the major axis the stress is given by
-
-$$\\sigma\_{yy} = \\sigma \\left(1+\\frac{2a}{b}\\right)$$
-
+- <!-- .element style="list-style-type:none" -->$$\\sigma\_{yy} = \\sigma \\left(1+\\frac{2a}{b}\\right)$$
 -   For a crack as *b* → 0, we would get the unreasonable prediction that any stress, no matter how small, would produce failure as the stress at the edge of the ellipse would be infinite
 -   Griffith, thus, chose to take an energy balance view of the fracture problem
 
@@ -116,6 +114,10 @@ $$\\sigma\_{yy} = \\sigma \\left(1+\\frac{2a}{b}\\right)$$
 -   Griffith proposed that a crack would extend when the incremental release of energy, *dW* associated with a crack extension of *da* in a body is greater than the energy required to create the new surfaces, *dW*<sub>*s*</sub>
 -   For a center crack, there are two crack tips and a total of 4 surfaces, thus
     *W*<sub>*s*</sub> = 2(2*aγ*)=4*aγ*
+
+----
+## surface energy
+
 -   Griffith then used the Inglis solution to calculate the total energy released by a crack extension of *da*
 
 $$\\begin{aligned}
@@ -132,6 +134,9 @@ $$\\begin{aligned}
     \\frac{2 \\pi a^2 \\sigma\_{cr}^2 (1-\\nu^2)}{E}da &= 4\\gamma da &\\qquad \\text{plane strain}\\\\
     \\frac{2 \\pi a^2 \\sigma\_{cr}^2} {E} da &= 4\\gamma da&\\qquad \\text{plane stress}
 \\end{aligned}$$
+
+----
+## surface energy
 
 -   Which gives the critical stress as
 
@@ -171,6 +176,10 @@ $$\\begin{aligned}
 
 -   When *G* ≥ 2*γ* the strain energy from the applied load is greater than the energy required to propagate a crack, and thus a crack will propagate
 -   The critical strain energy release rate is called *G*<sub>*c*</sub>, and is also referred to as the fracture toughness
+
+----
+## fracture toughness
+
 -   Note: *K*<sub>*c*</sub> (the critical stress intensity factor) is also referred to as the “fracture toughness,” and although they give equivalent predictions, they have different units 
 -   The *G*<sub>*c*</sub> predicted from the atomic surface energy will be somewhat conservative, since almost all materials will absorb at least some of the strain energy in plastic deformation
 
@@ -183,6 +192,10 @@ $$\\begin{aligned}
 -   Griffith’s theory is founded on the principle of energy balance
 -   During crack extension, the external work done, *dW*<sub>*e*</sub> must equal the increment of surface energy, *dW*<sub>*s*</sub>, and the increment of elastic strain energy, *dU*
 - <!-- .element style="list-style-type:none" -->    *dW*<sub>*s*</sub> + *dU* = *dW*<sub>*e*</sub>
+
+----
+## energy balance
+
 -   For a conservative field we can write this as
 - <!-- .element style="list-style-type:none" -->    $$\\frac{\\partial}{\\partial a} (W\_s + U + V) = 0$$
 -   Where a negative potential, *V*, implies positive external work done *dW*<sub>*e*</sub>
@@ -200,6 +213,10 @@ $$\\begin{aligned}
 -   Note that this compliance, *S*, will be a function of the crack length, *a*
 -   The strain energy can be expressed as
 - <!-- .element style="list-style-type:none" -->   $$U = \\int\_{\\delta=0}^{\\delta=SP} P d\\delta = \\int\_{\\delta=0}^{\\delta=SP} \\frac{\\delta}{S} d\\delta$$
+
+----
+## example
+
 -   After integrating
 - <!-- .element style="list-style-type:none" -->   $$U = \\frac{1}{2S}(\\delta^2)|\_0^{SP} = \\frac{1}{2}SP^2$$
 
