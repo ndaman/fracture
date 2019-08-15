@@ -52,13 +52,9 @@ $$\\sigma = \\sigma\_c \\sin \\left(\\frac{2\\pi x}{\\lambda}\\right)$$
 ## theoretical strength
 
 -   This means we can write $\\sigma = \\frac{E x}{a\_0}$, substituting into the original equation we find
-
-$$\\frac{E x}{a\_0} = \\sigma\_c \\frac{2\\pi x}{\\lambda}$$
-
+- <!-- .element style="list-style-type:none" -->$$\\frac{E x}{a\_0} = \\sigma\_c \\frac{2\\pi x}{\\lambda}$$
 -   solving for *σ*<sub>*c*</sub>, we find the theoretical strength as
-
-$$\\sigma\_c = \\frac{\\lambda E}{2\\pi a\_0}$$
-
+- <!-- .element style="list-style-type:none" -->$$\\sigma\_c = \\frac{\\lambda E}{2\\pi a\_0}$$
 -   In many materials, *λ* ≈ *a*<sub>0</sub>, in which case $\\sigma\_c = \\frac{E}{2 \\pi}$
 
 ----
@@ -74,16 +70,11 @@ $$2\\gamma = \\int\_0^{\\lambda/2} \\sigma\_c \\sin \\left(\\frac{2\\pi x}{\\lam
 ## energy consideration
 
 -   re-arranging a previous result, we know that
-
-$$\\lambda = \\frac{2\\pi a\_0 \\sigma\_c}{E}$$
-
+- <!-- .element style="list-style-type:none" -->$$\\lambda = \\frac{2\\pi a\_0 \\sigma\_c}{E}$$
 -   from which we find
-
-$$\\sigma\_c^2 = \\frac{2\\pi\\gamma E}{2\\pi a\_0} = \\frac{\\gamma E}{a\_0}$$
-
+- <!-- .element style="list-style-type:none" -->$$\\sigma\_c^2 = \\frac{2\\pi\\gamma E}{2\\pi a\_0} = \\frac{\\gamma E}{a\_0}$$
 -   For many materials, the surface energy is approximately *γ* = 0.01*Ea*<sub>0</sub>, which gives an approximate theoretical strength of
-
-$$\\sigma\_c = \\frac{E}{10}$$
+- <!-- .element style="list-style-type:none" -->$$\\sigma\_c = \\frac{E}{10}$$
 
 ---
 # griffith fracture
@@ -106,14 +97,14 @@ $$\\sigma\_c = \\frac{E}{10}$$
 -   Inglis solved the problem of an eliptic hole under remote tension, finding that at the edge of the major axis the stress is given by
 - <!-- .element style="list-style-type:none" -->$$\\sigma\_{yy} = \\sigma \\left(1+\\frac{2a}{b}\\right)$$
 -   For a crack as *b* → 0, we would get the unreasonable prediction that any stress, no matter how small, would produce failure as the stress at the edge of the ellipse would be infinite
--   Griffith, thus, chose to take an energy balance view of the fracture problem
+-   Griffith took an energy balance approach
 
 ----
 ## surface energy
 
 -   Griffith proposed that a crack would extend when the incremental release of energy, *dW* associated with a crack extension of *da* in a body is greater than the energy required to create the new surfaces, *dW*<sub>*s*</sub>
 -   For a center crack, there are two crack tips and a total of 4 surfaces, thus
-    *W*<sub>*s*</sub> = 2(2*aγ*)=4*aγ*
+- <!-- .element style="list-style-type:none" -->    *W*<sub>*s*</sub> = 2(2*aγ*)=4*aγ*
 
 ----
 ## surface energy
