@@ -21,7 +21,7 @@ September 3, 2019
 * review
 * complex airy stress
 * westergaard function method
-* solutions using Westergaard
+* solutions using westergaard
 
 <!-- vim-markdown-toc -->
 
@@ -49,6 +49,10 @@ $$\\begin{aligned}
 
 -   A stress function technique that can be used to solve many planar problems is known as the *Airy stress function*
 -   This method reduces the governing equations for a planar problem to a single unknown function
+
+----
+## airy stress function
+
 -   We assume first that body forces are derivable from a *potential function*, *V*
 
 $$\\begin{aligned}
@@ -71,7 +75,7 @@ $$\\begin{aligned}
 \\end{aligned}$$
 
 -   The function *ϕ* = *ϕ*(*x*, *y*) is known as the Airy stress function
--   When constructed in this way, equilibrium is automatically satisfied
+-   Equilibrium is automatically satisfied
 
 ----
 ## compatibility
@@ -82,6 +86,9 @@ $$\\begin{aligned}
 	\\frac{\\partial^4 \\phi}{\\partial x^4} + 2\\frac{\\partial^4 \\phi}{\\partial x^2 \\partial y^2} + \\frac{\\partial^4 \\phi}{\\partial y^4} &= - \\frac{1-2\\nu}{1-\\nu}\\left(\\frac{\\partial^2 V}{\\partial x^2} + \\frac{\\partial^2 V}{\\partial y^2}\\right) &\\text{plane strain}\\\\
 	\\frac{\\partial^4 \\phi}{\\partial x^4} + 2\\frac{\\partial^4 \\phi}{\\partial x^2 \\partial y^2} + \\frac{\\partial^4 \\phi}{\\partial y^4} &= - (1-\\nu)\\left(\\frac{\\partial^2 V}{\\partial x^2} + \\frac{\\partial^2 V}{\\partial y^2}\\right) &\\text{plane stress}
 \\end{aligned}$$
+
+----
+## compatibility
 
 -   If there are no body forces, or the potential function satisfies Laplace’s Equation
 - <!-- .element style="list-style-type:none" -->   ∇<sup>2</sup>*V* = 0
@@ -119,7 +126,7 @@ $$\\begin{aligned}
 - <!-- .element style="list-style-type:none" -->   $$\\frac{\\partial}{\\partial y} f(z) = f^\\prime(z) \\frac{\\partial z}{\\partial y} = i f^\\prime(z)$$
 
 ----
-## Cauchy-Riemann Equations
+## Cauchy-Riemann
 
 -   This means that
 
@@ -127,6 +134,9 @@ $$\\begin{aligned}
     \\frac{\\partial}{\\partial x} f(z) &= -i \\frac{\\partial}{\\partial y} f(z)\\\\
     \\frac{\\partial u}{\\partial x} + i \\frac{\\partial v}{\\partial x} &= \\frac{\\partial v}{\\partial y} - i \\frac{\\partial u}{\\partial y}
 \\end{aligned}$$
+
+----
+## Cauchy-Riemann
 
 -   From this we obtain the Cauchy-Riemann equations
 - <!-- .element style="list-style-type:none" -->   $$\\frac{\\partial u}{\\partial x} = \\frac{\\partial v}{\\partial y} \\qquad \\frac{\\partial v}{\\partial x} = - i \\frac{\\partial u}{\\partial y}$$
@@ -146,7 +156,7 @@ $$\\begin{aligned}
 ## airy stress functions
 
 -   We can say that *P* is the real part of a complex function
-- <!-- .element style="list-style-type:none" -->   *P* = *Re*{*f*(*z*)}  wher  *f*(*z*)=*P* + *iQ*
+- <!-- .element style="list-style-type:none" -->   *P* = *Re*{*f*(*z*)}  where  *f*(*z*)=*P* + *iQ*
 -   Now we let
 - <!-- .element style="list-style-type:none" -->   $$\\psi(z) = \\frac{1}{4} \\int f(z) dz = p + iq$$
 -   *ψ* will also be analytic, thus
@@ -171,7 +181,7 @@ $$\\begin{aligned}
 - <!-- .element style="list-style-type:none" -->   $$xp + yq = \\text{Re}\\{ \\bar{z}\\psi(z) \\}$$
 
 ----
-## complex airy stress function
+## complex airy stress 
 
 -   The complex representation of the Airy stress function can now be written as
 
@@ -232,9 +242,9 @@ $$\\begin{aligned}
 ## mode I
 
 -   If we consider an infinite plate with cracks along the x-axis, and external loads are symmetric with respect to the x-axis, then *σ*<sub>*xy*</sub> = 0 along *y* = 0
-- <!-- .element style="list-style-type:none" -->   $$\\text{Im}\\{ \\bar{z} \\psi^{\\prime\\prime}(z) + \\chi^{\\prime \\prime}(z) \\} = 0 \\qquad \\text{at} y=0$$
+- <!-- .element style="list-style-type:none" -->   $$\\text{Im}\\{ \\bar{z} \\psi^{\\prime\\prime}(z) + \\chi^{\\prime \\prime}(z) \\} = 0 \\qquad \\text{at} \\ y=0$$
 -   At *y* = 0, $z=\\bar{z}$, therefore we have (for all *y*)
-- <!-- .element style="list-style-type:none" -->   *χ*<sup>′′</sup>(*z*)+*zψ*<sup>′′</sup>(*z*)+*A* = 0
+- <!-- .element style="list-style-type:none; text-align:center;" -->   *χ*<sup>′′</sup>(*z*)+*zψ*<sup>′′</sup>(*z*)+*A* = 0
 -   Where *A* is some real constant
 
 ----
@@ -268,13 +278,13 @@ $$\\begin{aligned}
 $$\\begin{aligned}
     \\sigma\_{xx} &= \\text{Re}\\{Z\_I\\} - y \\text{Im}\\{Z\_I^\\prime\\} + 2A\\\\
     \\sigma\_{yy} &= \\text{Re}\\{Z\_I\\} + y \\text{Im}\\{Z\_I^\\prime\\}\\\\
-    \\sigma\_{xy} &= -y\\text{Re}\\{Z\_I^prime\\}
+    \\sigma\_{xy} &= -y\\text{Re}\\{Z\_I^\\prime\\}
 \\end{aligned}$$
 
 -   and *Z*<sub>*I*</sub> is the so-called Westergaard function
 
 ---
-# solutions using Westergaard
+# solutions using westergaard
 
 ----
 ## mode I crack
