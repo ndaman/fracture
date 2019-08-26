@@ -118,7 +118,7 @@ September 5, 2019
 ----
 ## mode iii
 
-![anti-plane deformation for a mode iii crack](..\images\west-iii.png) <!-- .element width="50%" -->
+![anti-plane deformation for a mode iii crack](..\images\west-iii.png) <!-- .element width="40%" -->
 
 ----
 ## mode iii
