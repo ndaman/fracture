@@ -115,7 +115,7 @@ September 5, 2019
 -   This gives the stresses as
 -   <!-- .element style="list-style-type:none" --> `$$ \sigma_{xz} - i \sigma_{yz} = -iZ^\prime_{III}(z)$$`
 
------
+----
 ## mode iii
 
 ![anti-plane deformation for a mode iii crack](..\images\west-iii.png) <!-- .element width="50%" -->
@@ -133,5 +133,5 @@ September 5, 2019
 -   We choose
 -   <!-- .element style="list-style-type:none" --> `$$ Z_{III} = S\sqrt{z^2 - a^2} $$`
 -   and find
--   <!-- .element style="list-style-type:none" --> `$$ \sigma_{yz} = \frac{Sr}{\sqrt{r_1 r_2}} \cos \left( \theta - \frac{1}{2} \theta_1 - \frac{1}{2} \theta_2 \right )`
--   <!-- .element style="list-style-type:none" --> `$$ \sigma_{xz} = \frac{Sr}{\sqrt{r_1 r_2}} \sin \left( \theta - \frac{1}{2} \theta_1 - \frac{1}{2} \theta_2 \right )`
+-   <!-- .element style="list-style-type:none" --> `$$ \sigma_{yz} = \frac{Sr}{\sqrt{r_1 r_2}} \cos \left( \theta - \frac{1}{2} \theta_1 - \frac{1}{2} \theta_2 \right ) $$`
+-   <!-- .element style="list-style-type:none" --> `$$ \sigma_{xz} = \frac{Sr}{\sqrt{r_1 r_2}} \sin \left( \theta - \frac{1}{2} \theta_1 - \frac{1}{2} \theta_2 \right ) $$`
