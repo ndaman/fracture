@@ -47,7 +47,7 @@ September 5, 2019
 ----
 ## mode ii
 
-![illustration of mode ii problem](..\images\west-ii.png)
+![illustration of mode ii problem](..\images\west-ii.png) <!-- .element width="50%" -->
 
 ----
 ## mode ii
@@ -62,7 +62,7 @@ September 5, 2019
 ## mode ii
 
 -   Consider the Westergaard function
--   <!-- .element style="list-style-type:none" --> $$ Z_{II}(z) = \frac{\tau_0 z}{\sqrt{z^2-a^2}}
+-   <!-- .element style="list-style-type:none" --> `$$ Z_{II}(z) = \frac{\tau_0 z}{\sqrt{z^2-a^2}} $$`
 
 ----
 ## mode ii stress
@@ -91,23 +91,47 @@ September 5, 2019
 # westergaard mode iii
 
 ----
-## mode iii
+## antiplane
 
-![anti-plane deformation for a mode iii crack](..\images\west-iii.png)
-
-----
-## mode iii
-
--   In this case, the problem is most easily expressed in terms of displacements, with all displacements taking the form
+-   For antiplane problems, we can formulate in terms of displacement
 -   <!-- .element style="list-style-type:none" --> `$$ u_x = u_y = 0 \qquad u_z = w(x,y) $$`
 -   This yields the strains
 -   <!-- .element style="list-style-type:none" --> `$$ e_{xz} = \frac{1}{2} \frac{\partial w}{\partial x} \qquad e_{yz} = \frac{1}{2}\frac{\partial w}{\partial y} $$`
 
 ----
-## mode iii
+## antiplane
 
 -   The stresses can be found with Hooke's Law
 -   <!-- .element style="list-style-type:none" --> `$$ \sigma_{xz} = 2\mu e_{xz} \qquad \sigma_{yz} = 2 \mu e_{yz} $$`
 -   The equlibrium equations then reduce to
 -   <!-- .element style="list-style-type:none" --> `$$ \frac{\partial \sigma_{xz}}{\partial x} + \frac{\partial \sigma_{yz}}{y} = 0 $$`
 -   Which, in terms of displacement, reduces to $ \nabla^2 w = 0 $
+
+----
+## antiplane
+
+-   Therefore $w$ must be a harmonic function, let
+-   <!-- .element style="list-style-type:none" --> `$$ w = \frac{1}{\mu} \text{Im}{Z_{III}(z)}$$`
+-   This gives the stresses as
+-   <!-- .element style="list-style-type:none" --> `$$ \sigma_{xz} - i \sigma_{yz} = -iZ^\prime_{III}(z)$$`
+
+-----
+## mode iii
+
+![anti-plane deformation for a mode iii crack](..\images\west-iii.png) <!-- .element width="50%" -->
+
+----
+## mode iii
+
+-   The boundary conditions for a Mode III crack are
+-   <!-- .element style="list-style-type:none" -->`$$ \sigma_{yz} = 0 \qquad \text{at} \qquad |x| < a| \text{ and } y = 0 $$`
+-   <!-- .element style="list-style-type:none" -->`$$ \sigma_{yz} = S \qquad \text{at} \qquad |y| \to \infty $$`
+
+----
+## mode iii
+
+-   We choose
+-   <!-- .element style="list-style-type:none" --> `$$ Z_{III} = S\sqrt{z^2 - a^2} $$`
+-   and find
+-   <!-- .element style="list-style-type:none" --> `$$ \sigma_{yz} = \frac{Sr}{\sqrt{r_1 r_2}} \cos \left( \theta - \frac{1}{2} \theta_1 - \frac{1}{2} \theta_2 \right )`
+-   <!-- .element style="list-style-type:none" --> `$$ \sigma_{xz} = \frac{Sr}{\sqrt{r_1 r_2}} \sin \left( \theta - \frac{1}{2} \theta_1 - \frac{1}{2} \theta_2 \right )`
