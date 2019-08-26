@@ -24,6 +24,13 @@ August 27, 2019
 
 <!-- vim-markdown-toc -->
 
+----
+## office hours
+
+-   The votes are in and we will hold office hours on Wednesdays from 3:00 - 4:00
+-   Office Hours for Elasticity theory will be Mondays from 3:00 - 4:00
+-   If neither time works, just send me an e-mail and we can work out an alternate time to meet
+
 ---
 # theoretical strength
 

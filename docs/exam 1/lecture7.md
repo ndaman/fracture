@@ -1,3 +1,17 @@
+# AE837
+## Advanced Mechanics of Damage Tolerance
+Dr. Nicholas Smith<br/>
+Wichita State University, Department of Aerospace Engineering
+September 3, 2019
+
+----
+## upcoming schedule
+
+-		Sep 3 - Elastic Stress Field, Homework 1 Due
+-		Sep 5 - Elastic Stress Field
+-		Sep 10 - Elastic Stress Field
+-   Sep 12 - Elastic Stress Field
+
 <span>upcoming schedule</span>
 
 -   Sep 12 - Modes II & III Westergaard Functions
