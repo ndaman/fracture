@@ -8,9 +8,11 @@ August 29, 2019
 ## upcoming schedule
 
 -   Aug 29 - Griffith Fracture
--		Sep 3 - Elastic Stress Field, Homework 1 Due
--		Sep 5 - Elastic Stress Field
--		Sep 10 - Elastic Stress Field
+-		Sep 3 - Complex Airy Stress
+-		Sep 5 - Mode II and III Westergaard, Homework 1 Due
+-		Sep 10 - Stress Intensity Solutions
+-   Sep 12 - Finite Size Effects, K-Dominance, HW 2 Due
+
 
 ----
 ## outline
@@ -112,6 +114,11 @@ $$\\begin{aligned}
 \\end{aligned}$$
 
 -   And we see that the energy released is independent of the load type
+
+----
+## example - double cantilever beam
+
+![double cantilever beam](..\images\dcb.png) <!-- .element width="80%" -->
 
 ----
 ## example - stable crack 

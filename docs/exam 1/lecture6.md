@@ -1,4 +1,4 @@
- # AE837
+# AE837
 ## Advanced Mechanics of Damage Tolerance
 Dr. Nicholas Smith<br/>
 Wichita State University, Department of Aerospace Engineering
