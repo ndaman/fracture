@@ -191,6 +191,9 @@ $$\\begin{aligned}
     2\\phi(x,y) &= \\bar{z}\\psi(z) + z\\bar{\\psi(z)} + \\chi(z) + \\bar{\\chi(z)}
 \\end{aligned}$$
 
+----
+## complex airy stress
+
 -   And from the definition of the Airy stress function we obtain
 
 $$\\begin{aligned}
@@ -199,7 +202,7 @@ $$\\begin{aligned}
 \\end{aligned}$$
 
 ----
-## properties of analytic functions and conjugates
+## analytic functions and conjugates
 
 $$\\begin{aligned}
     \\frac{\\partial f(z)}{\\partial x} &= f^\\prime \\frac{\\partial z}{\\partial x} &= f^\\prime(z)\\\\
@@ -209,7 +212,7 @@ $$\\begin{aligned}
 \\end{aligned}$$
 
 ----
-## complex airy stress functions
+## complex airy stress
 
 -   The above properties allow us to write
 - <!-- .element style="list-style-type:none; text-align:center;" -->   $${\\frac{\\partial \\phi}{\\partial x}} + i{\\frac{\\partial \\phi}{\\partial y}} = \\psi(z) + z\\bar{\\psi^\\prime(z)} + \\bar{\\chi^\\prime(z)}$$
@@ -219,6 +222,9 @@ $$\\begin{aligned}
     \\sigma\_{xx} + i\\sigma\_{xy} &= \\psi^\\prime(z) + \\bar{\\psi^\\prime(z)} - z\\bar{\\psi^{\\prime\\prime}(z)} - \\bar{\\chi^{\\prime \\prime}(z)}\\\\
     \\sigma\_{yy} - i\\sigma\_{xy} &= \\psi^\\prime(z) + \\bar{\\psi^\\prime(z)} + z\\bar{\\psi^{\\prime\\prime}(z)} + \\bar{\\chi^{\\prime \\prime}(z)}
 \\end{aligned}$$
+
+----
+## complex airy stress 
 
 -   We can add the two equations to find
 - <!-- .element style="list-style-type:none; text-align:center;" -->   $$\\sigma\_{xx} + \\sigma\_{yy} = 2 (\\psi^\\prime(z) + \\bar{\\psi^\\prime(z)}) = 4 \\text{Re}\\{\\psi^\\prime(z)\\}$$
