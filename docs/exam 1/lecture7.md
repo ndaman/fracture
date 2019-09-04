@@ -75,9 +75,9 @@ September 10, 2019
 -   This gives boundary conditions of:
 -   <!-- .element style="list-style-type:none" --> `$$\begin{align}
 	\sigma_{xy} &= 0 \qquad \text{at} \qquad |x| \le a, x \ne b, \text{ and } y=0\\
-	\int_{-a}^a \sigma_{xy} dx = -Q \qquad \text{at} \qquad y=0^{+} \text{ and } y=0^{-}\\
-	\sigma_{yy} = 0 \qquad \text{at} \qquad |x| \le a, \text{ and } y=0\\
-\sigma_{xx} = \sigma_{yy} = \sigma_{xy} \to 0 \qquad \text{at} \qquad x^2 + y^2 \to \infty \end{align}$$`
+	\int_{-a}^a \sigma_{xy} dx &= -Q \qquad \text{at} \qquad y=0^{+} \text{ and } y=0^{-}\\
+	\sigma_{yy} &= 0 \qquad \text{at} \qquad |x| \le a, \text{ and } y=0\\
+\sigma_{xx} &= \sigma_{yy} = \sigma_{xy} \to 0 \qquad \text{at} \qquad x^2 + y^2 \to \infty \end{align}$$`
 
 ----
 ## concentrated shear
