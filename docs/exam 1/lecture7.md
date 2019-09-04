@@ -108,7 +108,7 @@ September 10, 2019
 ----
 ## arbitrary face load
 
--   We can find the total stress intensity factor by integrating from `$ξ = -a to a$`
+-   We can find the total stress intensity factor by integrating from `$ξ = -a \to a$`
 -   The same procedure can be used to find the stress intensity for arbitrary shear loading along the crack face
 
 ---
