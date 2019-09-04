@@ -44,6 +44,10 @@ September 10, 2019
 ## splitting forces
 
 -   Consider the case shown on the previous slide, with concentrated splitting forces of magnitude *P* acting some distance *x=b* from the center of a centered crack in an infinite plate
+
+----
+## boundary conditions
+
 -   The boundary conditions for this problem are
 -   <!-- .element style="list-style-type:none" --> `$$\begin{align}
 	\sigma_{yy} &= 0 \qquad \text{at} \qquad |x| \le a, x \ne b, \text{ and } y=0\\
@@ -56,6 +60,9 @@ September 10, 2019
 
 -   Consider the Westergaard function
 -   <!-- .element style="list-style-type:none" --> `$$ Z_I = \frac{P}{\pi(z-b)}\sqrt{\frac{a^2-b^2}{z^2-a^2}}$$`
+
+----
+## splitting forces
 -   We find that the boundary conditions are satisfied and the stress intensity factor at the right tip is
 -   <!-- .element style="list-style-type:none" --> `$$ K_I = \frac{P}{\sqrt{\pi a}}\sqrt{\frac{a+b}{a-b}} $$`
 -   And the left tip:
