@@ -38,23 +38,18 @@
             // - https://github.com/hakimel/reveal.js#configuration
             // - https://github.com/hakimel/reveal.js#dependencies
             Reveal.initialize({
-                    dependencies: [
-                            { src: '../plugin/markdown/marked.js' },
-                            { src: '../plugin/markdown/markdown.js' },
-                            { src: '../plugin/notes/notes.js', async: true },
-                            { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                            { src: '../plugin/math/math.js', async: true }
-                    ]
+							math: {
+								mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+								config: 'TeX-AMS_HTML-full'
+							},
+              dependencies: [
+                { src: '../plugin/markdown/marked.js' },
+                { src: '../plugin/markdown/markdown.js' },
+                { src: '../plugin/notes/notes.js', async: true },
+                { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: '../plugin/math/math.js', async: true }
+              ]
             });
         </script>
-
-        <script type="text/x-mathjax-config">
-           MathJax.Hub.Config({
-             extensions: ["tex2jax.js"],
-             jax: ["input/TeX","output/SVG"],
-             tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
-             TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]}
-           });
-        </script>
-    </body>
+	</body>
 </html>
