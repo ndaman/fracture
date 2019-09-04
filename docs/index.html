@@ -2,18 +2,22 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>AE837 Advanced Mechanics of Damage Tolerance</title>
         <link rel="stylesheet" href="./css/reveal.css">
         <link rel="stylesheet" href="./css/theme/shocker.css" id="theme">
         <link rel="stylesheet" href="./css/highlight/zenburn.css">
-        <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print">
-
-
+				<!--  <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print"> -->
+				<script>
+					var link = document.createElement( 'link' );
+					link.rel = 'stylesheet';
+					link.type = 'text/css';
+					link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+					document.getElementsByTagName( 'head' )[0].appendChild( link );
+				</script>
     </head>
     <body>
-
         <div class="reveal">
             <div class="slides"><section  data-markdown data-separator="^\n---$"
 data-separator-vertical="^\n----$"><script type="text/template">
