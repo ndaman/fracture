@@ -50,6 +50,11 @@
                 { src: '../plugin/math/math.js', async: true }
               ]
             });
+						Reveal.configure({
+							keyboard: {
+								80: function() { window.location.search += '?print-pdf' }
+							}
+						});
         </script>
 	</body>
 </html>
