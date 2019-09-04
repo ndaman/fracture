@@ -137,7 +137,7 @@ September 10, 2019
 -   The Westergaard function to solve this problem is given by:
 -   <!-- .element style="list-style-type:none" --> `$$ Z_{I} = \frac{P}{\pi(z+b)}\sqrt{\frac{b}{z}}$$`
 -   Which gives a stress intensity factor of
--   <!-- .element style="list-style-type:none" --> `$$ K_I = P \sqrt{\frac{2}{\pi b}}`
+-   <!-- .element style="list-style-type:none" --> `$$ K_I = P \sqrt{\frac{2}{\pi b}} $$`
 
 ---
 # finite specimen effects
