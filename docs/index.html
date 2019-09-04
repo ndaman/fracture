@@ -126,7 +126,8 @@ data-separator-vertical="^\n----$"><script type="text/template">
 
             var options = {
 							markdown: {
-								smartypants: false 
+								smartypants: true,
+								gfm: true
 							}
 						};
             options = extend(defaultOptions, options, queryOptions);
