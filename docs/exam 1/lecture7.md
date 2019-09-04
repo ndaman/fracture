@@ -127,9 +127,9 @@ September 10, 2019
 -   The boundary conditions for this problem are:
 -   <!-- .element style="list-style-type:none" --> `$$\begin{align}
 	\sigma_{yy} &= 0 \qquad \text{at} \qquad -\infty < x < 0, x \ne b, \text{ and } y=0\\
-	\int_{-a}^a \sigma_{yy} dx = -P \qquad \text{at} \qquad y=0^{+} \text{ and } y=0^{-}\\
-	\sigma_{xy} = 0 \qquad \text{at} -\infty < x < 0 \text{ and } y=0\\
-\sigma_{xx} = \sigma_{yy} = \sigma_{xy} \to 0 \qquad \text{at} \qquad x^2 + y^2 \to \infty \end{align}$$`
+	\int_{-a}^a \sigma_{yy} dx &= -P \qquad \text{at} \qquad y=0^{+} \text{ and } y=0^{-}\\
+	\sigma_{xy} &= 0 \qquad \text{at} -\infty < x < 0 \text{ and } y=0\\
+\sigma_{xx} &= \sigma_{yy} = \sigma_{xy} \to 0 \qquad \text{at} \qquad x^2 + y^2 \to \infty \end{align}$$`
 
 ----
 ## edge crack
