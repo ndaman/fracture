@@ -117,14 +117,18 @@ data-separator-vertical="^\n----$"><script type="text/template">
               progress: true,
               history: true,
               center: true,
-              transition: 'default', // none/fade/slide/convex/concave/zoom
+              transition: 'slide', // none/fade/slide/convex/concave/zoom
               dependencies: deps
             };
 
             // options from URL query string
             var queryOptions = Reveal.getQueryHash() || {};
 
-            var options = {"transition":"fade"};
+            var options = {
+							markdown: {
+								smartypants: true
+							}
+						};
             options = extend(defaultOptions, options, queryOptions);
         </script>
 
