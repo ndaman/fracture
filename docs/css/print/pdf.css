@@ -8,22 +8,62 @@
 * {
 	-webkit-print-color-adjust: exact;
 }
+/* old version html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+} */
 
-body {
+html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+}
+
+/* old version body {
 	margin: 0 auto !important;
 	border: 0;
 	padding: 0;
 	float: none !important;
 	overflow: visible;
+}*/
+/* copied for paper.css */
+body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
 }
 
-html {
-	width: 100%;
-	height: 100%;
-	overflow: visible;
+/* SECTION 2: Remove any elements not needed in print.
+   This would include navigation, ads, sidebars, etc. */
+.nestedarrow,
+.controls,
+.fork-reveal,
+.share-reveal,
+.state-background,
+.reveal .progress,
+.reveal .backgrounds,
+.reveal .slide-number {
+	display: none !important;
+}
+
+/* SECTION 3: Set body font face, size, and color.
+   Consider using a serif font for readability. */
+body, p, td, li, div {
+	font-size: 18pt!important;
+	font-family: Georgia, "Times New Roman", Times, serif !important;
+	color: #000;
 }
 
 /* Remove any elements not needed in print. */
+/* old vals
 .nestedarrow,
 .reveal .controls,
 .reveal .progress,
@@ -33,7 +73,7 @@ html {
 .share-reveal,
 .state-background {
 	display: none !important;
-}
+}*/
 
 h1, h2, h3, h4, h5, h6 {
 	text-shadow: 0 0 0 #000 !important;
