@@ -860,6 +860,11 @@
 					vslide.setAttribute( 'data-index-v', v );
 				} );
 			}
+		// Compute slide numbers now, before we start duplicating slides
+		var doingSlideNumbers = config.slideNumber && /all|print/i.test( config.showSlideNumber );
+			toArray( dom.wrapper.querySelectorAll( SLIDES_SELECTOR ) ).forEach( function( slide ) {
+				slide.getAttribute( 'data-slide-number', getSlideNumber( slide ) );
+			} )
 		} );
 
 		// Slide and slide background layout
@@ -930,14 +935,15 @@
 				}
 
 				// Inject slide numbers if `slideNumbers` are enabled
-				if( config.slideNumber && /all|print/i.test( config.showSlideNumber ) ) {
-					var slideNumberH = parseInt( slide.getAttribute( 'data-index-h' ), 10 ) + 1,
-						slideNumberV = parseInt( slide.getAttribute( 'data-index-v' ), 10 ) + 1;
-
+//				if( config.slideNumber && /all|print/i.test( config.showSlideNumber ) ) {
+//					var slideNumberH = parseInt( slide.getAttribute( 'data-index-h' ), 10 ) + 1,
+//						slideNumberV = parseInt( slide.getAttribute( 'data-index-v' ), 10 ) + 1;
+				if( doingSlideNumbers ) {
 					var numberElement = document.createElement( 'div' );
 					numberElement.classList.add( 'slide-number' );
 					numberElement.classList.add( 'slide-number-pdf' );
-					numberElement.innerHTML = formatSlideNumber( slideNumberH, '.', slideNumberV );
+//					numberElement.innerHTML = formatSlideNumber( slideNumberH, '.', slideNumberV );
+					numberElement.innerHTML = slide.getAttribute( 'data-slide-number' );
 					page.appendChild( numberElement );
 				}
 
@@ -2623,35 +2629,46 @@
 	}
 
 	/**
-	 * Return a hash URL that will resolve to the current slide location.
+	 * Return a hash URL that will resolve to the given slide location.
+	 *
+	 * @param {HTMLElement} [slide=currentSlide] The slide link to
 	 */
-	function locationHash() {
+	function locationHash( slide ) {
 
 		var url = '/';
 
 		// Attempt to create a named link based on the slide's ID
-		var id = currentSlide ? currentSlide.getAttribute( 'id' ) : null;
+//		var id = currentSlide ? currentSlide.getAttribute( 'id' ) : null;
+		var s = slide || currentSlide;
+		var id = s ? s.getAttribute( 'id' ) : null;
 		if( id ) {
 			id = encodeURIComponent( id );
 		}
 
-		var indexf;
-		if( config.fragmentInURL ) {
-			indexf = getIndices().f;
+//		var indexf;
+//		if( config.fragmentInURL ) {
+//			indexf = getIndices().f;
+		var index = getIndices( slide );
+		if( !config.fragmentInURL ) {
+			index.f = undefined;
 		}
 
 		// If the current slide has an ID, use that as a named link,
 		// but we don't support named links with a fragment index
-		if( typeof id === 'string' && id.length && indexf === undefined ) {
+//		if( typeof id === 'string' && id.length && indexf === undefined ) {
+		if( typeof id === 'string' && id.length && index.f === undefined ) {
 			url = '/' + id;
 		}
 		// Otherwise use the /h/v index
 		else {
 			var hashIndexBase = config.hashOneBasedIndex ? 1 : 0;
-			if( indexh > 0 || indexv > 0 || indexf !== undefined ) url += indexh + hashIndexBase;
-			if( indexv > 0 || indexf !== undefined ) url += '/' + (indexv + hashIndexBase );
-			if( indexf !== undefined ) url += '/' + indexf;
-		}
+//			if( indexh > 0 || indexv > 0 || indexf !== undefined ) url += indexh + hashIndexBase;
+//			if( indexv > 0 || indexf !== undefined ) url += '/' + (indexv + hashIndexBase );
+//			if( indexf !== undefined ) url += '/' + indexf;
+			if( index.h > 0 || index.v > 0 || index.f !== undefined ) url += index.h + hashIndexBase;
+			if( index.v > 0 || index.f !== undefined ) url += '/' + (index.v + hashIndexBase );
+			if( index.f !== undefined ) url += '/' + index.f;
+	}
 
 		return url;
 
@@ -3394,45 +3411,80 @@
 		// Update slide number if enabled
 		if( config.slideNumber && dom.slideNumber ) {
 
-			var value;
-			var format = 'h.v';
+			dom.slideNumber.innerHTML = getSlideNumber();
+		}
 
+//			var value;
+//			var format = 'h.v';
+	}
+//			if( typeof config.slideNumber === 'function' ) {
+//				value = config.slideNumber();
+//			}
+//			else {
+//				// Check if a custom number format is available
+//				if( typeof config.slideNumber === 'string' ) {
+//					format = config.slideNumber;
+//				}
+//
+function getSlideNumber( slide ) {
+				// If there are ONLY vertical slides in this deck, always use
+				// a flattened slide number
+//				if( !/c/.test( format ) && dom.wrapper.querySelectorAll( HORIZONTAL_SLIDES_SELECTOR ).length === 1 ) {
+//					format = 'c';
+//				}
+				var value;
+				var format = 'h.v';
+				if( slide === undefined ) {
+					slide = currentSlide;
+				}
+//				value = [];
+//				switch( format ) {
+//					case 'c':
+//						value.push( getSlidePastCount() + 1 );
+//						break;
+//					case 'c/t':
+//						value.push( getSlidePastCount() + 1, '/', getTotalSlides() );
+//						break;
+//					case 'h/v':
+//						value.push( indexh + 1 );
+//						if( isVerticalSlide() ) value.push( '/', indexv + 1 );
+//						break;
+//					default:
+//						value.push( indexh + 1 );
+//						if( isVerticalSlide() ) value.push( '.', indexv + 1 );
+//				}
+//			}
 			if( typeof config.slideNumber === 'function' ) {
-				value = config.slideNumber();
-			}
-			else {
-				// Check if a custom number format is available
+				value = config.slideNumber( slide );
+			} else {
+				//check if custom number format is available
 				if( typeof config.slideNumber === 'string' ) {
 					format = config.slideNumber;
 				}
-
-				// If there are ONLY vertical slides in this deck, always use
-				// a flattened slide number
+				//if there are only vertical slides use a flattened number
 				if( !/c/.test( format ) && dom.wrapper.querySelectorAll( HORIZONTAL_SLIDES_SELECTOR ).length === 1 ) {
 					format = 'c';
 				}
-
-				value = [];
-				switch( format ) {
-					case 'c':
-						value.push( getSlidePastCount() + 1 );
-						break;
-					case 'c/t':
-						value.push( getSlidePastCount() + 1, '/', getTotalSlides() );
-						break;
-					case 'h/v':
-						value.push( indexh + 1 );
-						if( isVerticalSlide() ) value.push( '/', indexv + 1 );
-						break;
-					default:
-						value.push( indexh + 1 );
-						if( isVerticalSlide() ) value.push( '.', indexv + 1 );
-				}
 			}
-
-			dom.slideNumber.innerHTML = formatSlideNumber( value[0], value[1], value[2] );
-		}
-
+//			dom.slideNumber.innerHTML = formatSlideNumber( value[0], value[1], value[2] );
+			value = [];
+			switch( format ) {
+				case 'c':
+					value.push( getSlidePastCount() + 1 );
+					break;
+				case 'c/t':
+					value.push( getSlidePastCount() + 1, '/', getTotalSlides() );
+					break;
+				case 'h/v':
+					value.push( indexh + 1 );
+					if( isVerticalSlide() ) value.push( '/', indexv + 1 );
+					break;
+				default:
+					value.push( indexh + 1 );
+					if( isVerticalSlide() ) value.push( '.', indexv + 1 );
+			}
+		var url = '#' + locationHash( slide );
+		return formatSlideNumber(value[0], value[1], value[2], url);
 	}
 
 	/**
@@ -3442,11 +3494,16 @@
 	 * @param {number} a Current slide
 	 * @param {string} delimiter Character to separate slide numbers
 	 * @param {(number|*)} b Total slides
+	 * @param {HTMLElement} [url='#'+locationHash()] The url to link to
 	 * @return {string} HTML string fragment
 	 */
-	function formatSlideNumber( a, delimiter, b ) {
+	//function formatSlideNumber( a, delimiter, b ) {
+	function formatSlideNumber( a, delimiter, b, url ) {
 
-		var url = '#' + locationHash();
+//		var url = '#' + locationHash();
+		if( url === undefined ) {
+			url = '#' + locationHash();
+		}
 		if( typeof b === 'number' && !isNaN( b ) ) {
 			return  '<a href="' + url + '">' +
 					'<span class="slide-number-a">'+ a +'</span>' +
@@ -4185,10 +4242,15 @@
 	 * Returns the number of past slides. This can be used as a global
 	 * flattened index for slides.
 	 *
+	 * @param {HTMLElement} [slide=currentSlide] The slides we're counting before
 	 * @return {number} Past slide count
 	 */
-	function getSlidePastCount() {
+//	function getSlidePastCount() {
+	function getSlidePastCount( slide ) {
 
+		if ( slide === undefined ) {
+			slide = currentSlide;
+		}
 		var horizontalSlides = toArray( dom.wrapper.querySelectorAll( HORIZONTAL_SLIDES_SELECTOR ) );
 
 		// The number of past slides
@@ -4203,7 +4265,8 @@
 			for( var j = 0; j < verticalSlides.length; j++ ) {
 
 				// Stop as soon as we arrive at the present
-				if( verticalSlides[j].classList.contains( 'present' ) ) {
+//				if( verticalSlides[j].classList.contains( 'present' ) ) {
+				if( verticalSlides[j] === slide ) {
 					break mainLoop;
 				}
 
@@ -4212,7 +4275,8 @@
 			}
 
 			// Stop as soon as we arrive at the present
-			if( horizontalSlide.classList.contains( 'present' ) ) {
+//			if( horizontalSlide.classList.contains( 'present' ) ) {
+			if( horizontalSlide === slide ) {
 				break;
 			}
 
