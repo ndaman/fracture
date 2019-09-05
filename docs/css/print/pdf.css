@@ -174,4 +174,6 @@ ul, ol, div, p {
 	display: block;
 	position: absolute;
 	font-size: 12px;
+	background: #fff;
+	color: #000;
 }

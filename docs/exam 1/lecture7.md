@@ -33,6 +33,9 @@ September 10, 2019
 -   In general, we will not have infinite plates with uniform loading
 -   We can combine previous results with superposition and general elasticity solution techniques to find more useful cases
 
+----
+## fundamental stress intensity solutions
+
 ![an illustration of the principle of superposition as used in fracture mechanics](../images/superposition.png)
 
 ----
