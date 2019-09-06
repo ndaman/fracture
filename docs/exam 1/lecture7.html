@@ -40,7 +40,8 @@
             Reveal.initialize({
 							math: {
 								mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js',
-								config: 'TeX-MML-AM_CHTML'
+								config: 'TeX-MML-AM_CHTML',
+								CommonHTML: { scale: 130 }
 							},
               dependencies: [
                 { src: '../reveal.js/plugin/markdown/marked.js' },
@@ -58,9 +59,7 @@
 						Reveal.configure({slideNumber: 'c/t'});
 						Reveal.configure({showSlideNumber: 'all'});
 						MathJax.Hub.Config({
-							CommonHTML: {
-								scale: 130
-							}
+							
 						});
         </script>
 	</body>
