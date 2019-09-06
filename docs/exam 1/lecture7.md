@@ -41,7 +41,7 @@ September 10, 2019
 ----
 ## concentrated splitting forces
 
-![a pair of splitting forces acting inside the crack](..\images\splitting-forces.png)
+![a pair of splitting forces acting inside the crack](../images/splitting-forces.png)
 
 ----
 ## splitting forces
@@ -122,7 +122,7 @@ September 10, 2019
 
 -   We can also consider the case of splitting forces on an edge crack
 
-![an edge cracked specimen with splitting forces applied a distance of b from the crack tip](..\images\single-edge.png)
+![an edge cracked specimen with splitting forces applied a distance of b from the crack tip](../images/single-edge.png)
 
 ----
 ## edge crack
