@@ -116,7 +116,7 @@ $$ \begin{align}
 
 $$\begin{align}
 	\frac{K_I}{\sqrt{2\pi x}} &= \frac{\sigma_0 \sqrt{\pi a}}{\sqrt{2\pi x}} = \frac{\sigma_0}{\sqrt{2}\sqrt{x/a}} \\\\
-	\Lambda &= \frac{K_I/\sqrt{2\pi x}}{\sigma_{yy}} = \frac{\sigma_0}{\sqrt{2} \sqrt{x/a}} \frac{a \sqrt{\x/a} \sqrt{x/a+2}}{a(x/a+1)\sigma_0} \\\\
+	\Lambda &= \frac{K_I/\sqrt{2\pi x}}{\sigma_{yy}} = \frac{\sigma_0}{\sqrt{2} \sqrt{x/a}} \frac{a \sqrt{x/a} \sqrt{x/a+2}}{a(x/a+1)\sigma_0} \\\\
 	\Lambda &= \frac{\sqrt{x/a+2}}{\sqrt{2}(x/a+1)}
 \end{align}$$
 
