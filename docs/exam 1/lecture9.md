@@ -1,19 +1,14 @@
-<span>upcoming schedule</span>
+# AE837
+## Advanced Mechanics of Damage Tolerance
+Dr. Nicholas Smith<br/>
+Wichita State University, Department of Aerospace Engineering
+September 17, 2019
 
--   Sep 19 - K-Dominance
+----
+## upcoming schedule
 
--   Sep 21 - Fracture Criterion, H/W 3 due
-
--   Sep 26 - Exam 1 Review
-
--   Sep 28 - Exam 1
-
-<span>william’s crack tip fields</span>
-
--   pp 56-65
-
-<span>K-dominance</span>
-
--   pp 66-68
+-   Sep 17 - Fracture Criterion 
+-   Sep 19 - Exam Review, HW 3 Due
+-   Sep 24 - Exam 1
 
 
