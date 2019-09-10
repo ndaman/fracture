@@ -27,7 +27,7 @@ September 12, 2019
 # finite specimen effects
 
 ----
-## finite specimen effects
+## finite effects
 
 -   Up to this point, we have considered infinitely large panels
 -   In general, the effect of finite size is modeled using numerical techniques, such as finite elements
