@@ -142,21 +142,23 @@ $$\\begin{aligned}
 ## spherical coordinates
 
 -   We can convert between Cartesian and spherical coordinate systems
--  <!-- .element style="list-style-type:none" --> `$$\begin{aligned}
-  x_1 &= r\cos \theta \sin \phi \\
-  x_2 &= r\sin \theta \sin \phi \\
-  x_3 &= r\cos \phi
-\end{aligned}$$`
+
+$$\\begin{aligned}
+  x\_1 &= r\\cos \\theta \\sin \\phi \\\\
+  x\_2 &= r\\sin \\theta \\sin \\phi \\\\
+  x\_3 &= r\\cos \\phi
+\\end{aligned}$$
 
 ----
 ## spherical coordinates
 
 -   Or to convert from Cartesian to cylindrical
--  <!-- .element style="list-style-type:none" --> `$$\begin{aligned}
-  r &= \sqrt{x\_1^2 + x\_2^2 + x\_3^2}\\
-  \phi &= \cos ^{-1} \left(\frac{x\_3}{\sqrt{x_1^2 + x_2^2 + x_3^2}}\right)\\
-  \theta &= \tan^{-1} \left(\frac{x\_2}{x_1}\right)
-\end{aligned}$$`
+
+$$\\begin{aligned}
+  r &= \\sqrt{x\_1^2 + x\_2^2 + x\_3^2}\\\\
+  \\phi &= \\cos ^{-1} \\left(\\frac{x\_3}{\\sqrt{x_1^2 + x_2^2 + x_3^2}}\\right)\\\\
+  \\theta &= \\tan^{-1} \\left(\\frac{x\_2}{x_1}\\right)
+\\end{aligned}$$
 
 ----
 ## calculus in cylindrical coordinates
@@ -247,7 +249,6 @@ $$\\begin{aligned}
 
 -   Using the same argument as before (arbitrary volume) the integrand must vanish
     *ϵ*<sub>*ijk*</sub>*σ*<sub>*jk*</sub> = 0
-
 -   Since the alternating symbol is antisymmetric in *jk*, *σ*<sub>*jk*</sub> must be symmetric in *jk* for this to vanish
 -   And thus we have proved that the stress tensor is symmetric, thus equilibrium and angular momentum equations are satisfied when
     *σ*<sub>*ji*, *j*</sub> + *F*<sub>*i*</sub> = 0
@@ -257,8 +258,11 @@ $$\\begin{aligned}
 
 -   Under what circumstances is the following stress field in static equilibrium?
 
--  <!-- .element style="list-style-type:none" --> *σ*<sub>11</sub> = 3*x*<sub>1</sub> + *k*<sub>1</sub>*x*<sub>2</sub><sup>2</sup>, *σ*<sub>22</sub> = 2*x*<sub>1</sub> + 4*x*<sub>2</sub>, *σ*<sub>12</sub> = *σ*<sub>21</sub> = *a* + *bx*<sub>1</sub> + *cx*<sub>1</sub><sup>2</sup> + *dx*<sub>2</sub> + *ex*<sub>2</sub><sup>2</sup> + *fx*<sub>1</sub>*x*<sub>2</sub>
+`\[ \sigma_{11} = 3x_1 + k_1 x_2^2
+	\sigma_{22} = 2x_1 + 4x_2
+	\sigma_{12} = \sigma_{21} = a + bx_1 + cx_1^2 + dx_2 + e_x_2^2 + fx_1x_2\]`
 
+*σ*<sub>11</sub> = 3*x*<sub>1</sub> + *k*<sub>1</sub>*x*<sub>2</sub><sup>2</sup>, *σ*<sub>22</sub> = 2*x*<sub>1</sub> + 4*x*<sub>2</sub>, *σ*<sub>12</sub> = *σ*<sub>21</sub> = *a* + *bx*<sub>1</sub> + *cx*<sub>1</sub><sup>2</sup> + *dx*<sub>2</sub> + *ex*<sub>2</sub><sup>2</sup> + *fx*<sub>1</sub>*x*<sub>2</sub>
 -   We are only examining the stress field, so we neglect any internal body forces
 
 
