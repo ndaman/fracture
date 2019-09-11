@@ -30,15 +30,15 @@ September 5, 2019
 ## complex notation
 
 -   it is often convenient to use complex notation to combine Modes I and II
--   <!-- .element style="list-style-type:none" --> `$$K = K_I + iK_{II}$$`
+-   <!-- .element style="list-style-type:none" --> $$K = K_I + iK_{II}$$
 -   in terms of the Westergaard functions, we find
--   <!-- .element style="list-style-type:none" --> `$$K \sqrt {2\pi} \lim_{z \to a} (\sqrt{z-a}(Z_I-iZ_{II}))$$`
+-   <!-- .element style="list-style-type:none" --> $$K \sqrt {2\pi} \lim_{z \to a} (\sqrt{z-a}(Z_I-iZ_{II}))$$
 
 ----
 ## mode iii
 
 -   for mode iii we find, in terms of the westergaard function
--   <!-- .element style="list-style-type:none" --> `$$ K_{III} = \sqrt{2\pi} \lim_{z \to a} (\sqrt{z-a}Z^\prime_{III}(z)) $$`
+-   <!-- .element style="list-style-type:none" --> $$ K_{III} = \sqrt{2\pi} \lim_{z \to a} (\sqrt{z-a}Z^\prime_{III}(z)) $$
 -   a full derivation is found in Ch 3, pp 48-50
 
 ---
