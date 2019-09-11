@@ -258,6 +258,8 @@ $$\\begin{aligned}
 
 -   Under what circumstances is the following stress field in static equilibrium?
 
+$$ \sigma_1 = \text{ test equation } $$
+
 $$\begin{aligned}
 	\sigma_{11} &= 3x_1 + k_1 x_2^2 \\\\
 	\sigma_{22} &= 2x_1 + 4x_2 \\\\
