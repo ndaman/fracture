@@ -751,9 +751,11 @@ $$f^{\\prime \\prime \\prime \\prime} + \\frac{2}{r} f^{\\prime \\prime \\prime}
 ## polar coordinates
 
 -   To solve this, we perform a change of variables, letting *r* = *e*<sup>*ξ*</sup>, which gives
-- <!-- .element style="list-style-type:none" -->   *f*<sup>′′′′</sup> − 4*f*<sup>′′′</sup> + (4 + 2*b*<sup>2</sup>)*f*<sup>′′</sup> − 4*b*<sup>2</sup>*f*<sup>′</sup> + *b*<sup>2</sup>(4 + *b*<sup>2</sup>)*f* = 0
--   We know consider *f* to have the form *f* = *e*<sup>*aξ*</sup> which generates the characteristic equation
-- <!-- .element style="list-style-type:none" -->  (*a*<sup>2</sup> + *b*<sup>2</sup>)(*a*<sup>2</sup> − 4*a* + 4 + *b*<sup>2</sup>)=0
+- <!-- .element style="list-style-type:none" -->
+*f*<sup>′′′′</sup> − 4*f*<sup>′′′</sup> + (4 + 2*b*<sup>2</sup>)*f*<sup>′′</sup> − 4*b*<sup>2</sup>*f*<sup>′</sup> + *b*<sup>2</sup>(4 + *b*<sup>2</sup>)*f* = 0
+-   We now consider *f* to have the form *f* = *e*<sup>*aξ*</sup> which generates the characteristic equation
+- <!-- .element style="list-style-type:none" -->
+(*a*<sup>2</sup> + *b*<sup>2</sup>)(*a*<sup>2</sup> − 4*a* + 4 + *b*<sup>2</sup>)=0
 
 ----
 ## polar coordinates
