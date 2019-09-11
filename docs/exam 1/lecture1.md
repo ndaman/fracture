@@ -375,17 +375,11 @@ $$\\begin{aligned}
 
 </div>
 <div class="right">
-  <ul>
-    	<li>
-Find *Q*<sub>*ij*</sub><sup>1</sup> for rotation of 60<sup>∘</sup> about *x*<sub>2</sub> 
-			</li>
-			<li>
-Find *Q*<sub>*ij*</sub><sup>2</sup> for rotation of 30<sup>∘</sup> about *x*<sub>3</sub><sup>′</sup> 
-			</li>
-			<li>
-Find *e*<sub>*i*</sub><sup>′′</sup> after both rotations 
-			</li>
-    </ul>
+
+-   Find *Q*<sub>*ij*</sub><sup>1</sup> for rotation of 60<sup>∘</sup> about *x*<sub>2</sub> 
+-   Find *Q*<sub>*ij*</sub><sup>2</sup> for rotation of 30<sup>∘</sup> about *x*<sub>3</sub><sup>′</sup> 
+-   Find *e*<sub>*i*</sub><sup>′′</sup> after both rotations 
+
 </div>
 
 ----
