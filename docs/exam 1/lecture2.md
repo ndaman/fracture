@@ -259,7 +259,7 @@ $$\\begin{aligned}
 -   Under what circumstances is the following stress field in static equilibrium?
 
 \\[ \begin{aligned}
-	\sigma_{1} &= a \\
+	\sigma_{1} &= a \\\\
 	\sigma_{2} &= b
 \end{aligned} \\]
 
