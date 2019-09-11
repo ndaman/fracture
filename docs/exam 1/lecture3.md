@@ -61,7 +61,7 @@ $$\\sigma = \\sigma\_c \\sin \\left(\\frac{2\\pi x}{\\lambda}\\right)$$
 -   This means we can write $\\sigma = \\frac{E x}{a\_0}$, substituting into the original equation we find
 - <!-- .element style="list-style-type:none" --> $$\frac{E x}{a_0} = \sigma_c \frac{2\pi x}{\lambda}$$
 -   solving for *σ*<sub>*c*</sub>, we find the theoretical strength as
-- <!-- .element style="list-style-type:none" --> $$\\sigma\_c = \\frac{\\lambda E}{2\\pi a\_0}$$
+- <!-- .element style="list-style-type:none" --> $$\sigma_c = \frac{\lambda E}{2\pi a_0}$$
 -   In many materials, *λ* ≈ *a*<sub>0</sub>, in which case $\\sigma\_c = \\frac{E}{2 \\pi}$
 
 ----
@@ -77,11 +77,11 @@ $$2\\gamma = \\int\_0^{\\lambda/2} \\sigma\_c \\sin \\left(\\frac{2\\pi x}{\\lam
 ## energy consideration
 
 -   re-arranging a previous result, we know that
-- <!-- .element style="list-style-type:none" -->$$\\lambda = \\frac{2\\pi a\_0 \\sigma\_c}{E}$$
+- <!-- .element style="list-style-type:none" --> $$\lambda = \frac{2\pi a_0 \sigma_c}{E}$$
 -   from which we find
-- <!-- .element style="list-style-type:none" -->$$\\sigma\_c^2 = \\frac{2\\pi\\gamma E}{2\\pi a\_0} = \\frac{\\gamma E}{a\_0}$$
+- <!-- .element style="list-style-type:none" --> $$\sigma_c^2 = \frac{2\pi\gamma E}{2\pi a_0} = \frac{\gamma E}{a_0}$$
 -   For many materials, the surface energy is approximately *γ* = 0.01*Ea*<sub>0</sub>, which gives an approximate theoretical strength of
-- <!-- .element style="list-style-type:none" -->$$\\sigma\_c = \\frac{E}{10}$$
+- <!-- .element style="list-style-type:none" --> $$\sigma_c = \frac{E}{10}$$
 
 ---
 # griffith fracture
