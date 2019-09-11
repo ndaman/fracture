@@ -59,9 +59,11 @@ $$\\sigma = \\sigma\_c \\sin \\left(\\frac{2\\pi x}{\\lambda}\\right)$$
 ## theoretical strength
 
 -   This means we can write $\\sigma = \\frac{E x}{a\_0}$, substituting into the original equation we find
-- <!-- .element style="list-style-type:none" --> $$\frac{E x}{a_0} = \sigma_c \frac{2\pi x}{\lambda}$$
+- <!-- .element style="list-style-type:none" --> 
+$$\frac{E x}{a_0} = \sigma_c \frac{2\pi x}{\lambda}$$
 -   solving for *σ*<sub>*c*</sub>, we find the theoretical strength as
-- <!-- .element style="list-style-type:none" --> $$\sigma_c = \frac{\lambda E}{2\pi a_0}$$
+- <!-- .element style="list-style-type:none" --> 
+$$\sigma_c = \frac{\lambda E}{2\pi a_0}$$
 -   In many materials, *λ* ≈ *a*<sub>0</sub>, in which case $\\sigma\_c = \\frac{E}{2 \\pi}$
 
 ----
@@ -77,11 +79,14 @@ $$2\\gamma = \\int\_0^{\\lambda/2} \\sigma\_c \\sin \\left(\\frac{2\\pi x}{\\lam
 ## energy consideration
 
 -   re-arranging a previous result, we know that
-- <!-- .element style="list-style-type:none" --> $$\lambda = \frac{2\pi a_0 \sigma_c}{E}$$
+- <!-- .element style="list-style-type:none" --> 
+$$\lambda = \frac{2\pi a_0 \sigma_c}{E}$$
 -   from which we find
-- <!-- .element style="list-style-type:none" --> $$\sigma_c^2 = \frac{2\pi\gamma E}{2\pi a_0} = \frac{\gamma E}{a_0}$$
+- <!-- .element style="list-style-type:none" --> 
+$$\sigma_c^2 = \frac{2\pi\gamma E}{2\pi a_0} = \frac{\gamma E}{a_0}$$
 -   For many materials, the surface energy is approximately *γ* = 0.01*Ea*<sub>0</sub>, which gives an approximate theoretical strength of
-- <!-- .element style="list-style-type:none" --> $$\sigma_c = \frac{E}{10}$$
+- <!-- .element style="list-style-type:none" --> 
+$$\sigma_c = \frac{E}{10}$$
 
 ---
 # griffith fracture
@@ -102,7 +107,8 @@ $$2\\gamma = \\int\_0^{\\lambda/2} \\sigma\_c \\sin \\left(\\frac{2\\pi x}{\\lam
 ## elliptic hole
 
 -   Inglis solved the problem of an eliptic hole under remote tension, finding that at the edge of the major axis the stress is given by
-- <!-- .element style="list-style-type:none" --> $$\\sigma\_{yy} = \\sigma \\left(1+\\frac{2a}{b}\\right)$$
+- <!-- .element style="list-style-type:none" --> 
+$$\\sigma\_{yy} = \\sigma \\left(1+\\frac{2a}{b}\\right)$$
 -   For a crack as *b* → 0, we would get the unreasonable prediction that any stress, no matter how small, would produce failure as the stress at the edge of the ellipse would be infinite
 -   Griffith took an energy balance approach
 
@@ -111,7 +117,8 @@ $$2\\gamma = \\int\_0^{\\lambda/2} \\sigma\_c \\sin \\left(\\frac{2\\pi x}{\\lam
 
 -   Griffith proposed that a crack would extend when the incremental release of energy, *dW* associated with a crack extension of *da* in a body is greater than the energy required to create the new surfaces, *dW*<sub>*s*</sub>
 -   For a center crack, there are two crack tips and a total of 4 surfaces, thus
-- <!-- .element style="list-style-type:none" --> *W*<sub>*s*</sub> = 2(2*aγ*)=4*aγ*
+- <!-- .element style="list-style-type:none" --> 
+W<sub>*s*</sub> = 2(2*aγ*)=4*aγ*
 
 ----
 ## surface energy
@@ -161,7 +168,8 @@ $$\\sigma\_c = \\sqrt{\\frac{\\gamma E}{a\_0}}$$
 
 -   We can now define the energy release rate
 -   More precisely, “strain energy release rate per crack tip”
-- <!-- .element style="list-style-type:none" --> *dW* = 2*Gda*
+- <!-- .element style="list-style-type:none" --> 
+*dW* = 2*Gda*
 -   Which after substitution and integration gives
 
 $$\\begin{aligned}
@@ -189,13 +197,15 @@ $$\\begin{aligned}
 
 -   Griffith’s theory is founded on the principle of energy balance
 -   During crack extension, the external work done, *dW*<sub>*e*</sub> must equal the increment of surface energy, *dW*<sub>*s*</sub>, and the increment of elastic strain energy, *dU*
-- <!-- .element style="list-style-type:none" --> *dW*<sub>*s*</sub> + *dU* = *dW*<sub>*e*</sub>
+- <!-- .element style="list-style-type:none" --> 
+dW<sub>*s*</sub> + *dU* = *dW*<sub>*e*</sub>
 
 ----
 ## energy balance
 
 -   For a conservative field we can write this as
-- <!-- .element style="list-style-type:none" --> $$\\frac{\\partial}{\\partial a} (W\_s + U + V) = 0$$
+- <!-- .element style="list-style-type:none" --> 
+$$\\frac{\\partial}{\\partial a} (W\_s + U + V) = 0$$
 -   Where a negative potential, *V*, implies positive external work done *dW*<sub>*e*</sub>
 
 ----
@@ -207,58 +217,71 @@ $$\\begin{aligned}
 ## example
 
 -   The displacement at the top edge will be proportional to the applied load by some elastic compliance of the specimen
-- <!-- .element style="list-style-type:none" --> *δ* = *SP*
+- <!-- .element style="list-style-type:none" --> 
+*δ* = *SP*
 -   Note that this compliance, *S*, will be a function of the crack length, *a*
 -   The strain energy can be expressed as
-- <!-- .element style="list-style-type:none" --> $$U = \\int\_{\\delta=0}^{\\delta=SP} P d\\delta = \\int\_{\\delta=0}^{\\delta=SP} \\frac{\\delta}{S} d\\delta$$
+- <!-- .element style="list-style-type:none" --> 
+$$U = \\int\_{\\delta=0}^{\\delta=SP} P d\\delta = \\int\_{\\delta=0}^{\\delta=SP} \\frac{\\delta}{S} d\\delta$$
 
 ----
 ## example
 
 -   After integrating
-- <!-- .element style="list-style-type:none" --> $$U = \\frac{1}{2S}(\\delta^2)|\_0^{SP} = \\frac{1}{2}SP^2$$
+- <!-- .element style="list-style-type:none" --> 
+$$U = \\frac{1}{2S}(\\delta^2)|\_0^{SP} = \\frac{1}{2}SP^2$$
 
 ----
 ## example
 
 -   To find the incremental strain energy increase (where both *P* and *S* should be treated as variable), we find
-- <!-- .element style="list-style-type:none" --> $$dU = \\frac{1}{2}P^2 dS + SP dP$$
+- <!-- .element style="list-style-type:none" --> 
+$$dU = \\frac{1}{2}P^2 dS + SP dP$$
 -   We will now consider two loading cases, one with fixed displacement and the other with fixed loading force
 
 ----
 ## fixed displacement
 
 -   Under constant displacement we have
-- <!-- .element style="list-style-type:none" --> *δ* = *SP* = constant
+- <!-- .element style="list-style-type:none" --> 
+*δ* = *SP* = constant
 -   This means that the derivative of displacement will be zero, hence
-- <!-- .element style="list-style-type:none" --> *dδ* = *SdP* + *PdS* = 0
+- <!-- .element style="list-style-type:none" --> 
+*dδ* = *SdP* + *PdS* = 0
 -   and
-- <!-- .element style="list-style-type:none" --> *SdP* = −*PdS*
+- <!-- .element style="list-style-type:none" --> 
+*SdP* = −*PdS*
 
 ----
 ## fixed displacement
 
 -   Substituting into the previous equation gives
-- <!-- .element style="list-style-type:none" --> $$dU = -\\frac{1}{2}P^2 dS$$
+- <!-- .element style="list-style-type:none" --> 
+$$dU = -\\frac{1}{2}P^2 dS$$
 -   Since *dδ* = 0, the external work, *dW*<sub>*e*</sub> = 0 and we find
-- <!-- .element style="list-style-type:none" --> $$dW\_s = -dU = \\frac{1}{2} P^2 dS$$
+- <!-- .element style="list-style-type:none" --> 
+$$dW\_s = -dU = \\frac{1}{2} P^2 dS$$
 
 ----
 ## fixed load
 
 -   If instead of fixing displacement we fix the applied load we have
-- <!-- .element style="list-style-type:none" -->   *dP* = 0
+- <!-- .element style="list-style-type:none" -->   
+*dP* = 0
 -   Which gives
-- <!-- .element style="list-style-type:none" -->   $$dU = \\frac{1}{2}P^2 dS$$
+- <!-- .element style="list-style-type:none" -->   
+$$dU = \\frac{1}{2}P^2 dS$$
 -   The strain energy increases (while under fixed displacement it decreased)
 
 ----
 ## fixed load
 
 -   Further, we can find the external work done as
-- <!-- .element style="list-style-type:none" -->   *dW*<sub>*e*</sub> = *Pdδ* = *P*<sup>2</sup>*dS*
+- <!-- .element style="list-style-type:none" -->   
+*dW*<sub>*e*</sub> = *Pdδ* = *P*<sup>2</sup>*dS*
 -   And thus, from energy balance, we find the surface energy
-- <!-- .element style="list-style-type:none" -->   $$dW\_s = \\frac{1}{2}P^2 dS$$
+- <!-- .element style="list-style-type:none" -->   
+$$dW\_s = \\frac{1}{2}P^2 dS$$
 -   In this case the external work is equally split between strain energy and surface energy
 
 ----
