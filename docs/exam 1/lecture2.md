@@ -142,21 +142,21 @@ $$\\begin{aligned}
 ## spherical coordinates
 
 -   We can convert between Cartesian and spherical coordinate systems
--  <!-- .element style="list-style-type:none" --> $$\begin{aligned}
-  x_1 &= r\cos \theta \sin \phi \\\\
-  x_2 &= r\sin \theta \sin \phi \\\\
+-  <!-- .element style="list-style-type:none" --> `$$\begin{aligned}
+  x_1 &= r\cos \theta \sin \phi \\
+  x_2 &= r\sin \theta \sin \phi \\
   x_3 &= r\cos \phi
-\end{aligned}$$
+\end{aligned}$$`
 
 ----
 ## spherical coordinates
 
 -   Or to convert from Cartesian to cylindrical
--  <!-- .element style="list-style-type:none" --> $$\begin{aligned}
-  r &= \sqrt{x\_1^2 + x\_2^2 + x\_3^2}\\\\
-  \phi &= \cos ^{-1} \left(\frac{x\_3}{\sqrt{x_1^2 + x_2^2 + x_3^2}}\right)\\\\
+-  <!-- .element style="list-style-type:none" --> `$$\begin{aligned}
+  r &= \sqrt{x\_1^2 + x\_2^2 + x\_3^2}\\
+  \phi &= \cos ^{-1} \left(\frac{x\_3}{\sqrt{x_1^2 + x_2^2 + x_3^2}}\right)\\
   \theta &= \tan^{-1} \left(\frac{x\_2}{x_1}\right)
-\end{aligned}$$
+\end{aligned}$$`
 
 ----
 ## calculus in cylindrical coordinates
