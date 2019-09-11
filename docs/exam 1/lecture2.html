@@ -43,7 +43,11 @@
 								config: 'TeX-MML-AM_CHTML',
 								CommonHTML: { minScaleAdjust: 95 }
 							},
-              dependencies: [
+  						markdown: {
+								smartypants: true,
+								gfm: true
+							},
+             dependencies: [
                 { src: '../reveal.js/plugin/markdown/marked.js' },
                 { src: '../reveal.js/plugin/markdown/markdown.js' },
                 { src: '../reveal.js/plugin/notes/notes.js', async: true },
