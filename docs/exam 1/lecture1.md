@@ -61,29 +61,33 @@ August 20, 2019
 ----
 ## research
 
-  <div class='left'>
-![picture illustrating the fused deposition modeling 3D printing process, where plastic filament is melted and deposited next to other filament, and fuses together](../images/3D-printing.png)
-  </div>
+<div class='left'>
 
-  <div class='right'>
-  <ul>
-  <li> Composites are being used in 3D printing now </li>
-  <li> Printing patterns are optimized for isotropic materials </li>
-  <li> Sometimes composites hurt more than they help when not utilized properly </li>
-  </div>
+![picture illustrating the fused deposition modeling 3D printing process, where plastic filament is melted and deposited next to other filament, and fuses together](../images/3D-printing.png)
+
+</div>
+<div class='right'>
+
+-  Composites are being used in 3D printing now 
+-  Printing patterns are optimized for isotropic materials 
+-  Sometimes composites hurt more than they help when not utilized properly 
+
+</div>
 
 ----
 ## research
 
 <div class="left">
-	<ul>
-		<li>Thermoplastic composites offer many advantages over thermoset</li>
-		<li>Production speed, recyclability</li>
-		<li>Also have challenges, such as bonding/welding</li>
-	</ul>
+
+-   Thermoplastic composites offer many advantages over thermoset
+-   Production speed, recyclability
+-   Also have challenges, such as bonding/welding
+
 </div>
 <div class="right">
-	![thermoplastic welding](../images/Welding-thermoplastic-composites.jpg)
+
+![thermoplastic welding](../images/Welding-thermoplastic-composites.jpg)
+
 </div>
  
 
@@ -782,16 +786,17 @@ $$\\begin{aligned}
 -   Second invariant
 
 $$II\_\\alpha = \\frac{1}{2}(a\_{ii} a\_{jj} - a\_{ij}a\_{ij})$$
-    *a*<sub>*ii*</sub>*a*<sub>*jj*</sub> = 14 × 14
-    *a*<sub>*ij*</sub>*a*<sub>*ij*</sub> = *a*<sub>11</sub>*a*<sub>11</sub> + *a*<sub>12</sub>*a*<sub>12</sub> + *a*<sub>13</sub>*a*<sub>13</sub> + ... + *a*<sub>33</sub>*a*<sub>33</sub>
-
+$$a\_{ii} a\_{jj}=14 \\times 14$$
+$$a\_{ij} a\_{ij}=a\_{11}a\_{11} + a\_{12}a\_{12} + a\_{13}a\_{13} + ... + a\_{33}a\_{33}$$
 $$II\_\\alpha = \\frac{1}{2}(196 - 84) = 56$$
 
 ----
 ## example
 
 -   Third invariant
-    *III*<sub>*α*</sub> = det[*a*<sub>*ij*</sub>\]
-    *III*<sub>*α*</sub> = 8 × (3 × 3 − 1 × 1)=64
+
+*III*<sub>*α*</sub> = det[*a*<sub>*ij*</sub>\]
+
+*III*<sub>*α*</sub> = 8 × (3 × 3 − 1 × 1)=64
 
 
