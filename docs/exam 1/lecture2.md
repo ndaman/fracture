@@ -259,9 +259,11 @@ $$\\begin{aligned}
 -   Under what circumstances is the following stress field in static equilibrium?
 
 <div>
-\[ \sigma_{11} = 3x_1 + k_1 x_2^2
-	\sigma_{22} = 2x_1 + 4x_2
-\sigma_{12} = \sigma_{21} = a + bx_1 + cx_1^2 + dx_2 + e_x_2^2 + fx_1x_2\]
+\[ \begin{align}
+	\sigma_{11} &= 3x_1 + k_1 x_2^2
+	\sigma_{22} &= 2x_1 + 4x_2
+	\sigma_{12} &= \sigma_{21} = a + bx_1 + cx_1^2 + dx_2 + e_x_2^2 + fx_1x_2
+\end{align} \]
 </div>
 
 *σ*<sub>11</sub> = 3*x*<sub>1</sub> + *k*<sub>1</sub>*x*<sub>2</sub><sup>2</sup>, *σ*<sub>22</sub> = 2*x*<sub>1</sub> + 4*x*<sub>2</sub>, *σ*<sub>12</sub> = *σ*<sub>21</sub> = *a* + *bx*<sub>1</sub> + *cx*<sub>1</sub><sup>2</sup> + *dx*<sub>2</sub> + *ex*<sub>2</sub><sup>2</sup> + *fx*<sub>1</sub>*x*<sub>2</sub>
