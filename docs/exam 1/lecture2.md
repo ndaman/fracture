@@ -258,11 +258,11 @@ $$\\begin{aligned}
 
 -   Under what circumstances is the following stress field in static equilibrium?
 
-\\[ \begin{aligned}
+$$ \begin{aligned}
 	\sigma_{11} &= 3x_1 + k_1 x_2^2 \\
 	\sigma_{22} &= 2x_1 + 4x_2 \\
 	\sigma_{12} &= \sigma_{21} = a + bx_1 + cx_1^2 + dx_2 + e_x_2^2 + fx_1x_2 
-\end{aligned} \\]
+\end{aligned} $$
 
 -   We are only examining the stress field, so we neglect any internal body forces
 
