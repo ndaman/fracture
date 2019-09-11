@@ -59,9 +59,9 @@ $$\\sigma = \\sigma\_c \\sin \\left(\\frac{2\\pi x}{\\lambda}\\right)$$
 ## theoretical strength
 
 -   This means we can write $\\sigma = \\frac{E x}{a\_0}$, substituting into the original equation we find
-- <!-- .element style="list-style-type:none" -->$$\\frac{E x}{a\_0} = \\sigma\_c \\frac{2\\pi x}{\\lambda}$$
+- <!-- .element style="list-style-type:none" --> $$\frac{E x}{a_0} = \sigma_c \frac{2\pi x}{\lambda}$$
 -   solving for *σ*<sub>*c*</sub>, we find the theoretical strength as
-- <!-- .element style="list-style-type:none" -->$$\\sigma\_c = \\frac{\\lambda E}{2\\pi a\_0}$$
+- <!-- .element style="list-style-type:none" --> $$\\sigma\_c = \\frac{\\lambda E}{2\\pi a\_0}$$
 -   In many materials, *λ* ≈ *a*<sub>0</sub>, in which case $\\sigma\_c = \\frac{E}{2 \\pi}$
 
 ----
