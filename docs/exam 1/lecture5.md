@@ -32,7 +32,7 @@ September 3, 2019
 ----
 ## fracture modes
 
-![illustration of the three fracture modes](..\images\Fracture_modes_v2.svg)
+![illustration of the three fracture modes](../images/Fracture_modes_v2.svg)
 
 ----
 ## stress field
@@ -296,9 +296,9 @@ $$\\begin{aligned}
 ----
 ## mode I crack
 
-![mode I under biaxial tension](..\images\west-i.png)
+![mode I under biaxial tension](../images/west-i.png)
 
 ----
 ## mode I crack
 
-![polar coordinate system near crack tip](..\images\polar.png)
+![polar coordinate system near crack tip](../images/polar.png)

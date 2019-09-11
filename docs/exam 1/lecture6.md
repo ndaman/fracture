@@ -47,7 +47,7 @@ September 5, 2019
 ----
 ## mode ii
 
-![illustration of mode ii problem](..\images\west-ii.png) <!-- .element width="50%" -->
+![illustration of mode ii problem](../images/west-ii.png) <!-- .element width="50%" -->
 
 ----
 ## mode ii
@@ -118,7 +118,7 @@ September 5, 2019
 ----
 ## mode iii
 
-![anti-plane deformation for a mode iii crack](..\images\west-iii.png) <!-- .element width="40%" -->
+![anti-plane deformation for a mode iii crack](../images/west-iii.png) <!-- .element width="40%" -->
 
 ----
 ## mode iii

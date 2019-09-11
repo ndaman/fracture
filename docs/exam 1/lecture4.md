@@ -43,7 +43,7 @@ August 29, 2019
 ----
 ## example
 
-![single edge notched tension specimen](..\images\sent.png) <!-- .element width="70%" -->
+![single edge notched tension specimen](../images/sent.png) <!-- .element width="70%" -->
 
 ----
 ## example
@@ -118,7 +118,7 @@ $$\\begin{aligned}
 ----
 ## example - double cantilever beam
 
-![double cantilever beam](..\images\dcb.png) <!-- .element width="80%" -->
+![double cantilever beam](../images/dcb.png) <!-- .element width="80%" -->
 
 ----
 ## example - stable crack 
@@ -148,4 +148,4 @@ $$\\begin{aligned}
 ----
 ## example - peel of thin film
 
-![example problem demonstrating peeling of a thin film](..\images\film-peel.png) <!-- .element width="70%" -->
+![example problem demonstrating peeling of a thin film](../images/film-peel.png) <!-- .element width="70%" -->

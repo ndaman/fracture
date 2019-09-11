@@ -43,7 +43,7 @@ August 27, 2019
 ----
 ## cohesive stress
 
-![plot of the cohesive force between atoms vs distance between atoms](..\images\cohesive-force.png) <!-- .element width="70%" -->
+![plot of the cohesive force between atoms vs distance between atoms](../images/cohesive-force.png) <!-- .element width="70%" -->
 
 ----
 ## theoretical strength
@@ -96,7 +96,7 @@ $$2\\gamma = \\int\_0^{\\lambda/2} \\sigma\_c \\sin \\left(\\frac{2\\pi x}{\\lam
 ----
 ## elliptic hole
 
-![elliptic hole](..\images\elliptic.png) <!-- .element width="70%" -->
+![elliptic hole](../images/elliptic.png) <!-- .element width="70%" -->
 
 ----
 ## elliptic hole
@@ -201,7 +201,7 @@ $$\\begin{aligned}
 ----
 ## example
 
-![single edge notched tensile specimen](..\images\sent.png) <!-- .element width="70%" -->
+![single edge notched tensile specimen](../images/sent.png) <!-- .element width="70%" -->
 
 ----
 ## example
@@ -276,4 +276,4 @@ $$\\begin{aligned}
 ----
 ## example - double cantilever beam
 
-![double cantilever beam](..\images\dcb.png) <!-- .element width="80%" -->
+![double cantilever beam](../images/dcb.png) <!-- .element width="80%" -->
