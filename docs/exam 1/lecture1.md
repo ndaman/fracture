@@ -369,16 +369,18 @@ $$\\begin{aligned}
 ----
 ## example
 
-<div class="left">
-	![empty 3D coordinate system with axes labeled for example problem](../images/example-a.png)
-</div>
-<div class="right">
-  <ul>
-    	<li>Find *Q*<sub>*ij*</sub><sup>1</sup> for rotation of 60<sup>∘</sup> about *x*<sub>2</sub> </li>
-			<li>Find *Q*<sub>*ij*</sub><sup>2</sup> for rotation of 30<sup>∘</sup> about *x*<sub>3</sub><sup>′</sup> </li>
-			<li>Find *e*<sub>*i*</sub><sup>′′</sup> after both rotations </li>
-    </ul>
-</div>
+<script type="text/template">
+	<div class="left">
+		![empty 3D coordinate system with axes labeled for example problem](../images/example-a.png)
+	</div>
+	<div class="right">
+	  <ul>
+	    	<li>Find *Q*<sub>*ij*</sub><sup>1</sup> for rotation of 60<sup>∘</sup> about *x*<sub>2</sub> </li>
+				<li>Find *Q*<sub>*ij*</sub><sup>2</sup> for rotation of 30<sup>∘</sup> about *x*<sub>3</sub><sup>′</sup> </li>
+				<li>Find *e*<sub>*i*</sub><sup>′′</sup> after both rotations </li>
+	    </ul>
+	</div>
+</script>
 
 ----
 ## example
