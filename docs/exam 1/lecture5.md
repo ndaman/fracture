@@ -92,9 +92,11 @@ $$\\begin{aligned}
 ## compatibility
 
 -   If there are no body forces, or the potential function satisfies Laplace’s Equation
-- <!-- .element style="list-style-type:none; text-align:center;" -->   ∇<sup>2</sup>*V* = 0
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+∇<sup>2</sup>*V* = 0
 -    Then both plane stress and plane strain reduce to
-- <!-- .element style="list-style-type:none; text-align:center;" -->   $$\\frac{\\partial^4 \\phi}{\\partial x^4} + 2\\frac{\\partial^4 \\phi}{\\partial x^2 \\partial y^2} + \\frac{\\partial^4 \\phi}{\\partial y^4} = 0$$
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+$$\\frac{\\partial^4 \\phi}{\\partial x^4} + 2\\frac{\\partial^4 \\phi}{\\partial x^2 \\partial y^2} + \\frac{\\partial^4 \\phi}{\\partial y^4} = 0$$
 
 ---
 # complex airy stress
@@ -120,11 +122,14 @@ $$\\begin{aligned}
 ## analytic functions
 
 -   A complex function can be written as
-- <!-- .element style="list-style-type:none; text-align:center;" -->   *f*(*z*)=*u*(*x*, *y*)+*iv*(*x*, *y*)
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+_f_(*z*)=*u*(*x*, *y*)+*iv*(*x*, *y*)
 -   A complex function is said to be analytic if
-- <!-- .element style="list-style-type:none; text-align:center;" -->   $$\\frac{\\partial}{\\partial x} f(z) = f^\\prime(z) \\frac{\\partial z}{\\partial x} = f^\\prime(z)$$
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+$$\\frac{\\partial}{\\partial x} f(z) = f^\\prime(z) \\frac{\\partial z}{\\partial x} = f^\\prime(z)$$
 -    and
-- <!-- .element style="list-style-type:none; text-align:center;" -->   $$\\frac{\\partial}{\\partial y} f(z) = f^\\prime(z) \\frac{\\partial z}{\\partial y} = i f^\\prime(z)$$
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+$$\\frac{\\partial}{\\partial y} f(z) = f^\\prime(z) \\frac{\\partial z}{\\partial y} = i f^\\prime(z)$$
 
 ----
 ## Cauchy-Riemann
@@ -140,46 +145,58 @@ $$\\begin{aligned}
 ## Cauchy-Riemann
 
 -   From this we obtain the Cauchy-Riemann equations
-- <!-- .element style="list-style-type:none; text-align:center;" -->   $$\\frac{\\partial u}{\\partial x} = \\frac{\\partial v}{\\partial y} \\qquad \\frac{\\partial v}{\\partial x} = - i \\frac{\\partial u}{\\partial y}$$
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+$$\\frac{\\partial u}{\\partial x} = \\frac{\\partial v}{\\partial y} \\qquad \\frac{\\partial v}{\\partial x} = - i \\frac{\\partial u}{\\partial y}$$
 -   From which we can easily derive the following
-- <!-- .element style="list-style-type:none; text-align:center;" -->   ∇<sup>2</sup>*u* = ∇<sup>2</sup>*v* = 0
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+∇<sup>2</sup>*u* = ∇<sup>2</sup>*v* = 0
 
 ----
 ## airy stress functions
 
 -   The Airy stress function is biharmonic, we can write the following
-- <!-- .element style="list-style-type:none; text-align:center;" -->   ∇<sup>2</sup>*ϕ* = *P*
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+∇<sup>2</sup>*ϕ* = *P*
 -   From which we have
-- <!-- .element style="list-style-type:none; text-align:center;" -->   ∇<sup>2</sup>*P* = ∇<sup>2</sup>∇<sup>2</sup>*ϕ* = 0
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+∇<sup>2</sup>*P* = ∇<sup>2</sup>∇<sup>2</sup>*ϕ* = 0
 -   And thus *P* will satisfy the compatibility equations
 
 ----
 ## airy stress functions
 
 -   We can say that *P* is the real part of a complex function
-- <!-- .element style="list-style-type:none; text-align:center;" -->   *P* = *Re*{*f*(*z*)}  where  *f*(*z*)=*P* + *iQ*
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+_P_ = *Re*{*f*(*z*)}  where  *f*(*z*)=*P* + *iQ*
 -   Now we let
-- <!-- .element style="list-style-type:none; text-align:center;" -->   $$\\psi(z) = \\frac{1}{4} \\int f(z) dz = p + iq$$
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+$$\\psi(z) = \\frac{1}{4} \\int f(z) dz = p + iq$$
 -   *ψ* will also be analytic, thus
-- <!-- .element style="list-style-type:none; text-align:center;" -->   $$\\psi^\\prime(z) = \\frac{1}{4}f(z)$$
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+$$\\psi^\\prime(z) = \\frac{1}{4}f(z)$$
 
 ----
 ## airy stress functions
 
 -   According to the Cauchy-Riemann equations we now have
-- <!-- .element style="list-style-type:none; text-align:center;" -->   $$\\psi^\\prime(z) = \\frac{\\partial p}{\\partial x} + i \\frac{\\partial q}{\\partial x} = \\frac{\\partial q}{\\partial y} - i \\frac{\\partial p}{\\partial y}$$
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+$$\\psi^\\prime(z) = \\frac{\\partial p}{\\partial x} + i \\frac{\\partial q}{\\partial x} = \\frac{\\partial q}{\\partial y} - i \\frac{\\partial p}{\\partial y}$$
 -   And we find that
-- <!-- .element style="list-style-type:none; text-align:center;" -->   $$P = 4 \\frac{\\partial p}{\\partial x} = 4 \\frac{\\partial q}{\\partial y}$$
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+$$P = 4 \\frac{\\partial p}{\\partial x} = 4 \\frac{\\partial q}{\\partial y}$$
 
 ----
 ## airy stress functions
 
 -   If we now consider *ϕ* − (*xp* + *yq*), we can show that
-- <!-- .element style="list-style-type:none; text-align:center;" -->   ∇<sup>2</sup>\[*ϕ* − (*xp* + *yq*)\] = 0
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+∇<sup>2</sup>\[*ϕ* − (*xp* + *yq*)\] = 0
 -   This means that *ϕ* − (*xp* + *yq*) is harmonic, and can be taken as either the real or imaginary portion of some analytic function, *χ*(*z*)
-- <!-- .element style="list-style-type:none; text-align:center;" -->   *ϕ* − (*xp* + *yq*)=Re{*χ*(*z*)}
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+_ϕ_ − (*xp* + *yq*)=Re{*χ*(*z*)}
 -   We can now say that
-- <!-- .element style="list-style-type:none; text-align:center;" -->   $$xp + yq = \\text{Re}\\{ \\bar{z}\\psi(z) \\}$$
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+$$xp + yq = \\text{Re}\\{ \\bar{z}\\psi(z) \\}$$
 
 ----
 ## complex airy stress 
@@ -215,7 +232,8 @@ $$\\begin{aligned}
 ## complex airy stress
 
 -   The above properties allow us to write
-- <!-- .element style="list-style-type:none; text-align:center;" -->   $${\\frac{\\partial \\phi}{\\partial x}} + i{\\frac{\\partial \\phi}{\\partial y}} = \\psi(z) + z\\bar{\\psi^\\prime(z)} + \\bar{\\chi^\\prime(z)}$$
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+$${\\frac{\\partial \\phi}{\\partial x}} + i{\\frac{\\partial \\phi}{\\partial y}} = \\psi(z) + z\\bar{\\psi^\\prime(z)} + \\bar{\\chi^\\prime(z)}$$
 -   Which gives
 
 $$\\begin{aligned}
@@ -227,20 +245,25 @@ $$\\begin{aligned}
 ## complex airy stress 
 
 -   We can add the two equations to find
-- <!-- .element style="list-style-type:none; text-align:center;" -->   $$\\sigma\_{xx} + \\sigma\_{yy} = 2 (\\psi^\\prime(z) + \\bar{\\psi^\\prime(z)}) = 4 \\text{Re}\\{\\psi^\\prime(z)\\}$$
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+$$\\sigma\_{xx} + \\sigma\_{yy} = 2 (\\psi^\\prime(z) + \\bar{\\psi^\\prime(z)}) = 4 \\text{Re}\\{\\psi^\\prime(z)\\}$$
 -   Similarly we can subtract the equations to find
-- <!-- .element style="list-style-type:none; text-align:center;" -->   $$\\sigma\_{yy} - \\sigma\_{xx} - 2i\\sigma\_{xy} = 2(z\\bar{\\psi^{\\prime\\prime}(z)} + \\bar{\\chi^{\\prime \\prime}(z)})$$
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+$$\\sigma\_{yy} - \\sigma\_{xx} - 2i\\sigma\_{xy} = 2(z\\bar{\\psi^{\\prime\\prime}(z)} + \\bar{\\chi^{\\prime \\prime}(z)})$$
 -   We can re-write using the complex conjugate
-- <!-- .element style="list-style-type:none; text-align:center;" -->   $$\\sigma\_{yy} - \\sigma\_{xx} + 2i\\sigma\_{xy} = 2(\\bar{z} \\psi^{\\prime\\prime}(z) + \\chi^{\\prime \\prime}(z))$$
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+$$\\sigma\_{yy} - \\sigma\_{xx} + 2i\\sigma\_{xy} = 2(\\bar{z} \\psi^{\\prime\\prime}(z) + \\chi^{\\prime \\prime}(z))$$
 
 ----
 ## displacement
 
 -   We can use Hooke’s law to find displacements in terms of the complex functions
 -   After some algebra, we find
-- <!-- .element style="list-style-type:none; text-align:center;" -->   $$2\\mu (u\_x + iu\_y) = \\kappa \\psi(z) - z\\bar{\\psi^\\prime(z)} - \\bar{\\chi^\\prime(z)}$$
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+$$2\\mu (u\_x + iu\_y) = \\kappa \\psi(z) - z\\bar{\\psi^\\prime(z)} - \\bar{\\chi^\\prime(z)}$$
 -   Where
-- <!-- .element style="list-style-type:none; text-align:center;" -->   $$\\kappa = \\frac{\\lambda^\* + 3\\mu}{\\lambda^\* + \\mu}$$
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+$$\\kappa = \\frac{\\lambda^\* + 3\\mu}{\\lambda^\* + \\mu}$$
 
 ---
 # westergaard function method
@@ -249,9 +272,11 @@ $$\\begin{aligned}
 ## mode I
 
 -   If we consider an infinite plate with cracks along the x-axis, and external loads are symmetric with respect to the x-axis, then *σ*<sub>*xy*</sub> = 0 along *y* = 0
-- <!-- .element style="list-style-type:none; text-align:center;" -->   $$\\text{Im}\\{ \\bar{z} \\psi^{\\prime\\prime}(z) + \\chi^{\\prime \\prime}(z) \\} = 0 \\qquad \\text{at} \\ y=0$$
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+$$\\text{Im}\\{ \\bar{z} \\psi^{\\prime\\prime}(z) + \\chi^{\\prime \\prime}(z) \\} = 0 \\qquad \\text{at} \\ y=0$$
 -   At *y* = 0, $z=\\bar{z}$, therefore we have (for all *y*)
-- <!-- .element style="list-style-type:none; text-align:center;" -->   *χ*<sup>′′</sup>(*z*)+*zψ*<sup>′′</sup>(*z*)+*A* = 0
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+_χ_<sup>′′</sup>(*z*)+*zψ*<sup>′′</sup>(*z*)+*A* = 0
 -   Where *A* is some real constant
 
 ----
@@ -269,7 +294,8 @@ $$\\begin{aligned}
 ## mode I
 
 -   We now define
-- <!-- .element style="list-style-type:none; text-align:center;" -->   $$\\psi^\\prime = \\frac{1}{2}(Z\_I + A)$$
+- <!-- .element style="list-style-type:none; text-align:center;" -->   
+$$\\psi^\\prime = \\frac{1}{2}(Z\_I + A)$$
 -   where $\\hat{Z\_I^\\prime} \\equiv Z\_I$ and thus
 
 $$\\begin{aligned}
