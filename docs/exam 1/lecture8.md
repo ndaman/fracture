@@ -13,6 +13,13 @@ September 12, 2019
 -   Sep 24 - Exam 1
 
 ----
+## ae research colloquium
+
+-   Hooman Shahverdi
+-   Anisotropic Hyperelastic Constitutive Modeling
+-   Friday Sep 20, 2:30, WH 215
+
+----
 ## outline
 
 <!-- vim-markdown-toc GFM -->
