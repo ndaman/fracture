@@ -93,7 +93,7 @@ $$ G_I = \frac{\kappa + 1}{8\mu}K_I^2 $$
 ----
 ## kappa
 
--   The parameter $kappa$ helps convert between plane strain and plane stress
+-   The parameter $\kappa$ helps convert between plane strain and plane stress
 -   In plane strain, $\kappa = 3 - 4\nu$
 -   In plane stress, $\kappa = (3-\nu)/(1+\nu)$
 
