@@ -10,7 +10,7 @@ September 26, 2019
 -   Sep 26 - Exam return, Direct Method
 -   Oct 1 - Virtual Crack Closure, J-integral
 -   Oct 3 - J-Integral, Cohesive Zone
--   Oct 8 - eXtended Finite Element Method
+-   Oct 8 - eXtended Finite Element Method (XFEM)
 -   Oct 10 - XFEM, Homework 4 Due
 
 ----
