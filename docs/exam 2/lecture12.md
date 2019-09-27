@@ -74,10 +74,17 @@ $$ \begin{aligned}
 ----
 ## screencast
 
-![a recorded screencast of me using COMSOL with the Direct Method to find stress intensity](../images/direct-method.mp4)
+<section>
+	<video id="directmethod" src="../images/direct-method.mp4" type="video/mp4" style="height: 50%; width: 50%;" />
+</section>
 
 ---
 # virtual crack closure
+
+----
+## vcct
+
+-   
 
 ---
 # j-integral
