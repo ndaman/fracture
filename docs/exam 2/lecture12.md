@@ -75,11 +75,23 @@ $$ \begin{aligned}
 ## screencast
 
 <section>
-	<video id="directmethod" src="../images/direct-method.mp4" type="video/mp4" style="height: 50%; width: 50%;" />
+	<video controls id="directmethod" src="../images/direct-method.mp4" type="video/mp4" style="height: 50%; width: 50%;" />
 </section>
 
 ---
 # virtual crack closure
+
+----
+## vcct
+
+-   As can be seen from the results previously found, the direct method leaves something to be desired, and is very mesh-dependent
+-   An alternative approach is to use the same energy method (virtual crack closure) that we used to relate $G_I$ to $K_I$ in finite elements
+-   We consider two cases, one before and one after some crack extension, $da$
+
+----
+## vcct illustration
+
+![illustration of the vcct method](../images/vcct.png)
 
 ----
 ## vcct
