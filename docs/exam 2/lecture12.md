@@ -59,7 +59,7 @@ $$ K_I = (1.122 - 0.231 \frac{a}{W} + 10.55 \left(\frac{a}{W}\right)^2 - 21.71 \
 -   And $K_I$ in terms of stress and displacement is
 
 $$ \begin{aligned}
-	K_I &= \sigma_{yy}\sqrt{2\pi x}\\
+	K_I &= \sigma_{yy}\sqrt{2\pi x}\\\\
 	K_I &= \frac{2\mu u_y}{\kappa + 1} \frac{2\pi x}{x}
 \end{aligned}$$
 
@@ -96,7 +96,32 @@ $$ \begin{aligned}
 ----
 ## vcct
 
--   
+-   Since this is an energy approach, we will be directly finding $G_I$, but for elastic materials we can easily convert this to $K_I$
+
+$$ G_I = \frac{1}{2 da} F_y^{(c)}\left( u_y^{(c)} - u_y^{(d)}\right ) $$
+
+-   Where the force at $c$ is taken before extension (or after closure) and the displacement is taken after extension (or before closure)
+
+----
+## modified version
+
+-   It is a little bit cumbersome to work with two finite element solutions for some $da$
+-   It has been shown that with no loss of accuracy, for small $da$ ($da/a \le 0.05$), we can use the nodes right in front of and behind the crack tip, eliminating the need for a two-step model
+-   Note: for this method to work, the mesh near the crack tip must be uniform
+
+----
+## demo
+
+-   We will add to the previous model, however in this case we need to partition the line of symmetry a second time to enforce a uniform mesh both directions around the crack tip
+-   To compare $G_I$ and $K_I$ we will want to convert one or the other, since we had found $K_I$ previously, we will convert $G_I$ to $K_I$
+
+$$ \begin{aligned}
+	K_I &= \sqrt{\frac{E G_I}{1-\nu^2}} \qquad \text{plane strain}\\\\
+	K_I &= \sqrt{E G_I} \qquad \text{plane stress}
+\end{aligned} $$
+
+----
+## screencast
 
 ---
 # j-integral

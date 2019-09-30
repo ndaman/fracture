@@ -106,7 +106,7 @@ $$ G_I = \frac{\kappa + 1}{8\mu}K_I^2 $$
 -   As we discussed previously, since we know both $\sigma_{yy}$ and $u_y$ as functions of $K_I$, we should be able to use those in finite element analysis to find $K_I$
 
 $$ \begin{aligned}
-	\sigma_{yy} &= \frac{K_I}{\sqrt{2\pi x}}\\
+	\sigma_{yy} &= \frac{K_I}{\sqrt{2\pi x}}\\\\
 	u_y &= \frac{K_I(\kappa+1)}{4 \mu \pi} \sqrt{2 \pi x}
 \end{aligned}$$
 
@@ -116,7 +116,7 @@ $$ \begin{aligned}
 -   This results in 
 
 $$ \begin{aligned}
-	K_I &= \sigma_{yy}\sqrt{2\pi x}\\
+	K_I &= \sigma_{yy}\sqrt{2\pi x}\\\\
 	K_I &= \frac{2\mu u_y}{\kappa + 1} \frac{2\pi x}{x}
 \end{aligned}$$
 
