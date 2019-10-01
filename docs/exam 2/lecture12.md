@@ -60,7 +60,7 @@ $$ K_I = (1.122 - 0.231 \frac{a}{W} + 10.55 \left(\frac{a}{W}\right)^2 - 21.71 \
 
 $$ \begin{aligned}
 	K_I &= \sigma_{yy}\sqrt{2\pi x}\\\\
-	K_I &= \frac{2\mu u_y}{\kappa + 1} \frac{2\pi x}{x}
+	K_I &= \frac{2\mu u_y}{\kappa + 1} \sqrt{\frac{2\pi}{x}}
 \end{aligned}$$
 
 ----
