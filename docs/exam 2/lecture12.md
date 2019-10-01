@@ -138,7 +138,7 @@ $$ \int_\Lambda \left( W dy - T_i \frac{\partial u_i}{\partial x} d\Lambda \righ
 ----
 ## j-integral
 
-![illustration of path choice of J-integral](..\images\j-integral.png)
+![illustration of path choice of J-integral](../images/j-integral.png)
 
 ----
 ## j-integral
@@ -155,7 +155,7 @@ $$ \begin{aligned}
 ----
 ## j-integral
 
-![example countour for j-integral](..\images\j-integral-example.png)
+![example countour for j-integral](../images/j-integral-example.png)
 
 ----
 ## j-integral
@@ -170,5 +170,5 @@ $$ \iint_{A_0} W dX dY - \int_{\Lambda_t} T_i u_i d\Lambda $$
 ----
 ## examples
 
-![example j-integral calculation](..\images\example-4-1.png)
+![example j-integral calculation](../images/example-4-1.png)
 
