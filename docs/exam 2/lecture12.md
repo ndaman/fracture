@@ -125,3 +125,50 @@ $$ \begin{aligned}
 
 ---
 # j-integral
+
+----
+## j-integral
+
+-   The J-Integral is defined as
+
+$$ \int_\Lambda \left( W dy - T_i \frac{\partial u_i}{\partial x} d\Lambda \right ) = \int_\Lambda \left( W n_1 - \sigma_{ij} \frac{\partial u_i}{\partial x} n_j \right ) d\Lambda $$
+
+-   \Lambda is an arbitrary contour beginning at the lower crack surface and end on the upper crack surface
+
+----
+## j-integral
+
+![illustration of path choice of J-integral](..\images\j-integral.png)
+
+----
+## j-integral
+
+-   The J-integral is path-idependent and represents the strain energy release rate
+-   We can prove this using the following principles from elasticity
+
+$$ \begin{aligned}
+	\sigma_{ij,j} &= 0 \qquad \text{(equilibrium)} \\\\
+	e_{ij} &= \frac{1}{2} (u_{i,j} + u_{j,i}) \qquad \text{(strain-displacement)} \\\\
+	\sigma_{ij} &= \frac{\partial W}{\partial e_{ij}} \qquad \text{(stress-strain)}
+\end{aligned}$$
+
+----
+## j-integral
+
+![example countour for j-integral](..\images\j-integral-example.png)
+
+----
+## j-integral
+
+-   $A_0$ represents the area enclosed by the contour
+-   The potential energy can then be expressed as
+
+$$ \iint_{A_0} W dX dY - \int_{\Lambda_t} T_i u_i d\Lambda $$
+
+-   (worked on board)
+
+----
+## examples
+
+![example j-integral calculation](..\images\example-4-1.png)
+
