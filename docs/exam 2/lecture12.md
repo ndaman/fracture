@@ -121,8 +121,22 @@ $$ \begin{aligned}
 \end{aligned} $$
 
 ----
+## comsol notes
+
+-   I have had some trouble with the reaction forces calculated in COMSOL
+-   In your homework, don't worry if you don't get a very good value for $K_I$
+-   In my screencast I show how to switch to linear elements, which performed better for me
+-   I also got a better result when I used the reaction force at the crack tip, instead of $da$ away
+-   This did not match my experience with ABAQUS
+
+----
 ## screencast
 
+<section>
+	<video controls id="directmethod" src="../images/vcct.mp4" type="video/mp4" style="height: 50%; width: 50%;" />
+</section>
+
+ 
 ---
 # j-integral
 
