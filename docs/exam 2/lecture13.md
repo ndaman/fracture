@@ -31,7 +31,7 @@ October 3, 2019
 
 $$ \int_\Gamma \left( W dy - T_i \frac{\partial u_i}{\partial x} d\Gamma \right ) = \int_\Gamma \left( W n_1 - \sigma_{ij} \frac{\partial u_i}{\partial x} n_j \right ) d\Gamma $$
 
--   \Gamma is an arbitrary contour beginning at the lower crack surface and end on the upper crack surface
+-   $\Gamma$ is an arbitrary contour beginning at the lower crack surface and end on the upper crack surface
 
 ----
 ## j-integral
