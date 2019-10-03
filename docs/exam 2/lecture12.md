@@ -144,9 +144,9 @@ $$ \begin{aligned}
 
 -   The J-Integral is defined as
 
-$$ \int_\Lambda \left( W dy - T_i \frac{\partial u_i}{\partial x} d\Lambda \right ) = \int_\Lambda \left( W n_1 - \sigma_{ij} \frac{\partial u_i}{\partial x} n_j \right ) d\Lambda $$
+$$ \int_\Gamma \left( W dy - T_i \frac{\partial u_i}{\partial x} d\Gamma \right ) = \int_\Gamma \left( W n_1 - \sigma_{ij} \frac{\partial u_i}{\partial x} n_j \right ) d\Gamma $$
 
--   \Lambda is an arbitrary contour beginning at the lower crack surface and end on the upper crack surface
+-   $\Gamma$ is an arbitrary contour beginning at the lower crack surface and end on the upper crack surface
 
 ----
 ## j-integral
@@ -176,7 +176,7 @@ $$ \begin{aligned}
 -   $A_0$ represents the area enclosed by the contour
 -   The potential energy can then be expressed as
 
-$$ \iint_{A_0} W dX dY - \int_{\Lambda_t} T_i u_i d\Lambda $$
+$$ \iint_{A_0} W dX dY - \int_{\Lambda_t} T_i u_i d\Gamma $$
 
 -   (worked on board)
 

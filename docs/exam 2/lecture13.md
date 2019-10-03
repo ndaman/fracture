@@ -80,7 +80,25 @@ $$ \iint_{A_0} W dX dY - \int_{\Lambda_t} T_i u_i d\Lambda $$
 -   In COMSOL, we have some nice documentation for how to do it, but we need to set up the integral manually
 
 ----
-## screencast
+## fea implementation
+
+-   if you are using some other software, check the documentation, it may not be set up to calculate the J-integral for a symmetric model
+-   In COMSOL, we will only be calculating half of the J-integral (then we will double it)
+-   First we model the contours, then we will define local variables (the normal vector along various sections), local integrations (around the contour) and finally calculate $J$ and $K$
+
+----
+## screencast I
+
+<section>
+	<video controls id="jintegral1" src="../images/jintegral1.mp4" type="video/mp4" style="height: 50%; width: 50%;" />
+</section>
+
+----
+## screencast II
+
+<section>
+	<video controls id="jintegral2" src="../images/jintegral2.mp4" type="video/mp4" style="height: 50%; width: 50%;" />
+</section> 
 
 ---
 # cohesive zone
