@@ -136,7 +136,6 @@ $$ \begin{aligned}
 	<video controls id="directmethod" src="../images/vcct.mp4" type="video/mp4" style="height: 50%; width: 50%;" />
 </section>
 
- 
 ---
 # j-integral
 
