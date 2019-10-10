@@ -104,7 +104,7 @@ October 10, 2019
 ----
 ## cohesive zone
 
-![illustration of the cohesive zone](../images/cohesive.png)
+![illustration of the cohesive zone](../images/cohesive.png) <!-- .element width="60%" -->
 
 ----
 ## cohesive zone
@@ -123,12 +123,12 @@ October 10, 2019
 ----
 ## failure models
 
-![traction separation laws for various failure models](../images/failuremodels.png)
+![traction separation laws for various failure models](../images/failuremodels.png) <!-- .element width="40%" -->
 
 ----
 ## necking
 
-![a cohesive traction law for necking](../images/necking.png)
+![a cohesive traction law for necking](../images/necking.png) <!-- .element width="60%" -->
 
 ---
 # mixed mode cohesive law
