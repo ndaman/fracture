@@ -1,0 +1,10 @@
+W0 9[in] "specimen width"
+H0 18[in] "specimen height"
+a 1[in] "crack length"
+t 3/16[in] "specimen thickness"
+beta 30[deg] "initial crack angle"
+b a/1000 "minor axis of ellipse"
+da a/100 "radius of region to use cylindrical coordinates"
+E0 200[GPa] stiffness
+nu0 0.3 "poisson's ratio"
+s0 100[MPa] "applied stress"
