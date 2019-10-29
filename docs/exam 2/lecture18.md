@@ -20,6 +20,8 @@ October 29, 2019
 * yield theory
 * constitutive relationship
 * irwin's model
+* dugdale model
+* hrr field
 
 <!-- vim-markdown-toc -->
 
@@ -259,3 +261,54 @@ $$ 2 u_y = \frac{8K_I}{E^*}\sqrt{\frac{r}{2\pi}} $$
 -   The crack tip opening displacement is defined as $\delta = 2u_y |_{r=r_p}$ and thus
 
 $$ \delta = \frac{4}{\pi E^*}\frac{K_I^2}{\sigma_Y^*} $$
+
+---
+# dugdale model
+
+----
+## small scale yielding
+
+-   Dugdale assumed yielding only occurs in a small strip of zero height ahead of the crack tip
+-   For a very small yielding zone, we can assume that
+
+$$ K_I(a + R_0) = K_I(a) $$
+
+-   Stresses are finite at the crack tip, however, which means the stress intensity at the crack tip must be negated by some other $K_I^{(2)}$ induced by the yield zone
+
+$$ K_I + K_I^{(2)} = 0 $$
+
+----
+## dugdale
+
+-   Using the stress intensity factor for a concentrated force and integrating that over the length of the yield zone gives
+
+$$ \begin{aligned} K_I^{(2)} &= \int_0^{R_0} \frac{-\sqrt{2}\sigma_Y^* d\eta}{\sqrt{\pi \eta}} \\\\
+&= -2\sigma_Y^*\sqrt{\frac{2R_0}{pi}} \end{aligned}$$
+
+-   Since this must be equal to $-K_I$ we now find $R_0$ as
+
+$$ R_0 = \frac{\pi}{8}\left( \frac{K_I}{\sigma_Y^*}\right )^2 $$
+
+----
+## large scale
+
+-   While Irwin's approximations are only applicable to small scale yielding, the Dugdale model can also be applied to large scale yielding
+-   Full derivation for this case shown in the text
+
+---
+# hrr field
+
+----
+## strain hardening
+
+-   Hutchinson, Rice, and Rosengren (HRR) studied the Mode I problem for power-law hardening materials
+-   The material follows the following behavior
+
+$$ \frac{e}{e_Y} = \frac{\sigma}{\sigma_Y} + \alpha \left( \frac{\sigma}{\sigma_Y}\right )^N $$
+
+----
+## hrr field
+
+-   HRR were able to characterize the stress field for this case by using the J-integral
+-   Full derivation in 6.9
+
