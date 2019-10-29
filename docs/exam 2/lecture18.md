@@ -39,11 +39,11 @@ October 29, 2019
 -   Tresca yield theory assumes that all yielding is caused by pure shear
 -   The maximum shear stress can be expressed in terms of the principal stresses
 
-$$ \begin{aligned*}
+$$ \begin{aligned}
 \tau_1 &= \frac{1}{2} |\sigma_2-\sigma_3| \\\\
 \tau_2 &= \frac{1}{2} |\sigma_1-\sigma_3| \\\\
 \tau_3 &= \frac{1}{2} |\sigma_1-\sigma_2| 
-\end{aligned*} $$
+\end{aligned} $$
 
 ----
 ## von mises
