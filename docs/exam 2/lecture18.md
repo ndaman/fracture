@@ -273,6 +273,9 @@ $$ \delta = \frac{4}{\pi E^\*}\frac{K_I^2}{\sigma_Y^\*} $$
 
 $$ K_I(a + R_0) = K_I(a) $$
 
+----
+## small scale yielding
+
 -   Stresses are finite at the crack tip, however, which means the stress intensity at the crack tip must be negated by some other $K_I^{(2)}$ induced by the yield zone
 
 $$ K_I + K_I^{(2)} = 0 $$
@@ -284,6 +287,9 @@ $$ K_I + K_I^{(2)} = 0 $$
 
 $$ \begin{aligned} K_I^{(2)} &= \int_0^{R_0} \frac{-\sqrt{2}\sigma_Y^* d\eta}{\sqrt{\pi \eta}} \\\\
 &= -2\sigma_Y^*\sqrt{\frac{2R_0}{pi}} \end{aligned}$$
+
+----
+## dugdale
 
 -   Since this must be equal to $-K_I$ we now find $R_0$ as
 
