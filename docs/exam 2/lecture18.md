@@ -127,9 +127,10 @@ $$\\sigma\_y = \\frac{K\_I}{\\sqrt{2\\pi r}}$$
 ## first approximation
 
 <div class="left">
-<ul>
-<li> We use *C*, the *Plastic Constraint Factor* to convert between Plane Strain and Plane Stress solutions</li>
-<li> The plastic zone size can now be approximated</li>
+
+- We use *C*, the *Plastic Constraint Factor* to convert between Plane Strain and Plane Stress solutions
+- The plastic zone size can now be approximated
+
 </div>
 <div class="right">
 
@@ -248,7 +249,7 @@ $$\\begin{aligned}
 -   Since *r*<sub>*p*</sub> depends on *K*<sub>*I*</sub>, we must iterate a bit to find the "real" *r*<sub>*p*</sub> and *K*<sub>*I*</sub>
 
 ----
-## crack tip opening displacement
+## opening displacement
 
 -   According to Irwin's model, the physical crack tip is on the elastic-plastic boundary
 -   Thus the displacement field is
