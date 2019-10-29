@@ -260,7 +260,7 @@ $$ 2 u_y = \frac{8K_I}{E^*}\sqrt{\frac{r}{2\pi}} $$
 
 -   The crack tip opening displacement is defined as $\delta = 2u_y |_{r=r_p}$ and thus
 
-$$ \delta = \frac{4}{\pi E^*}\frac{K_I^2}{\sigma_Y^*} $$
+$$ \delta = \frac{4}{\pi E^\*}\frac{K_I^2}{\sigma_Y^\*} $$
 
 ---
 # dugdale model
